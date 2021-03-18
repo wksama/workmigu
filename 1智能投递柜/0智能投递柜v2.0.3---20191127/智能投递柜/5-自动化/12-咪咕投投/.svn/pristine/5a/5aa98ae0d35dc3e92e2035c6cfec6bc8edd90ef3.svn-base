@@ -1,0 +1,1036 @@
+#接口入参配置文件,按照格式编辑入参报文
+[Req_Data]
+#报文注释Req_Data_001,登录91100接口（单账号），成功，说明该报文的测试场景,方便后期维护
+Req_Data_001= <soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:new="http://newCabinetSrv.wsservices.services.evs.zteict.com/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <new:newCabinetOperate>
+         <reqInfo><![CDATA[<?xml version="1.0" encoding="GBK" standalone="no" ?><package><pub><txcode>91100</txcode></pub><req><telNo>13910231283</telNo><siteName>MGHY002</siteName></req></package>]]></reqInfo>
+      </new:newCabinetOperate>
+   </soapenv:Body>
+</soapenv:Envelope>
+
+#报文注释Req_Data_002,登录91100接口（多账号），成功
+Req_Data_002=<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:new="http://newCabinetSrv.wsservices.services.evs.zteict.com/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <new:newCabinetOperate>
+         <reqInfo><![CDATA[<?xml version="1.0" encoding="GBK" standalone="no" ?><package><pub><txcode>91100</txcode></pub><req><telNo>13910231283</telNo><siteName>MGHY002</siteName></req></package>]]></reqInfo>
+      </new:newCabinetOperate>
+   </soapenv:Body>
+</soapenv:Envelope>
+
+#报文注释，登录91105接口，影像未上传，成功
+Req_Data_003=<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:new="http://newCabinetSrv.wsservices.services.evs.zteict.com/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <new:newCabinetOperate>
+         <reqInfo><![CDATA[<?xml version="1.0" encoding="GBK" standalone="no" ?><package><pub><txcode>91105</txcode></pub><req><checkSheetList><BoeNum>HY-1171128-0014</BoeNum></checkSheetList><deliempNum>zhangdayue</deliempNum><siteName>MGHY002</siteName></req></package>]]></reqInfo>
+      </new:newCabinetOperate>
+   </soapenv:Body>
+</soapenv:Envelope>
+#报文注释，登录91105接口，影像已上传，失败
+Req_Data_004=<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:new="http://newCabinetSrv.wsservices.services.evs.zteict.com/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <new:newCabinetOperate>
+         <reqInfo><![CDATA[<?xml version="1.0" encoding="GBK" standalone="no" ?><package><pub><txcode>91105</txcode></pub><req><checkSheetList><BoeNum>HY-170329-0017</BoeNum></checkSheetList><deliempNum>wuzehong</deliempNum><siteName>MGHY002</siteName></req></package>]]></reqInfo>
+      </new:newCabinetOperate>
+   </soapenv:Body>
+</soapenv:Envelope>
+
+#报文注释，单据-影像上传91101接口18082（影像图片上传失败:图片复制失败）
+Req_Data_005=<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:new="http://newCabinetSrv.wsservices.services.evs.zteict.com/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <new:newCabinetOperate>
+         <reqInfo><![CDATA[<?xml version="1.0" encoding="GBK" standalone="no" ?><package><pub><txcode>91101</txcode></pub><req><checkSheetList><checkSheet><boeNum>DM-181019-0015</boeNum><imgs><pictureDir>/data/scanauto/evsNewImages/2018/10/29/DM-181019-0015/DM-181019-0015-00000001.jpg</pictureDir></imgs></checkSheet></checkSheetList><deliempNum>yanzhongwei</deliempNum><siteName>MGHY002</siteName></req></package>]]></reqInfo>
+      </new:newCabinetOperate>
+   </soapenv:Body>
+</soapenv:Envelope> 
+#报文注释Req_Data_006，单据-影像上传91101接口18082，投递人员工编号在影像系统不存在
+Req_Data_006=<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:new="http://newCabinetSrv.wsservices.services.evs.zteict.com/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <new:newCabinetOperate>
+         <reqInfo><![CDATA[<?xml version="1.0" encoding="GBK" standalone="no" ?><package><pub><txcode>91101</txcode></pub><req><checkSheetList><checkSheet><boeNum>WH-181031-0020</boeNum><imgs><pictureDir>/data/scanauto/evsNewImages/2018/11/02/WH-181031-0020/WH-181031-0020-00000001.jpg</pictureDir><pictureDir>/data/scanauto/evsNewImages/2018/11/02/WH-181031-0020/WH-181031-0020-00000002.jpg</pictureDir></imgs></checkSheet></checkSheetList><deliempNum>kangkecong</deliempNum><siteName>MGWH001</siteName></req></package>]]></reqInfo>
+      </new:newCabinetOperate>
+   </soapenv:Body>
+</soapenv:Envelope>
+#报文注释Req_Data_007，91120，单据投递柜开启校验，成功
+Req_Data_007=<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:new="http://newCabinetEas.ws.eas.zte.com">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <new:newCabinetOperate>
+         <new:resquest><![CDATA[<?xml version="1.0" encoding="GBK" standalone="no" ?><package><pub><txcode>91120</txcode></pub><req><boeNumList><boeNum>HY-181112-0006</boeNum></boeNumList><deliempNum>yanzhongwei_jc</deliempNum><siteName>MGHY002</siteName></req></package>]]></new:resquest>
+      </new:newCabinetOperate>
+   </soapenv:Body>
+</soapenv:Envelope>
+
+#报文注释Req_Data_008，91120，单据投递柜开启校验，影像未上传失败
+Req_Data_008=<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:new="http://newCabinetEas.ws.eas.zte.com">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <new:newCabinetOperate>
+         <new:resquest><![CDATA[<?xml version="1.0" encoding="GBK" standalone="no" ?><package><pub><txcode>91120</txcode></pub><req><boeNumList><boeNum>HY-170426-0017</boeNum></boeNumList><deliempNum>yanzhongwei_jc</deliempNum><siteName>MGHY002</siteName></req></package>]]></new:resquest>
+      </new:newCabinetOperate>
+   </soapenv:Body>
+</soapenv:Envelope>
+#报文注释Req_Data_009，91127单据-投递状态报告，成功
+Req_Data_009=<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:new="http://newCabinetEas.ws.eas.zte.com">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <new:newCabinetOperate>
+         <new:resquest><![CDATA[<?xml version="1.0" encoding="GBK" standalone="no" ?><package><pub><txcode>91127</txcode></pub><req><boeNumList><boeNum>HY-181112-0006</boeNum></boeNumList><deliempNum>chenbidan</deliempNum><siteName>MGHY002</siteName><doorId>BZD</doorId></req></package>]]></new:resquest>
+      </new:newCabinetOperate>
+   </soapenv:Body>
+</soapenv:Envelope>
+#报文注释Req_Data_010，91126，接收单据状态获取，成功
+Req_Data_010=<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:new="http://newCabinetEas.ws.eas.zte.com">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <new:newCabinetOperate>
+         <new:resquest><![CDATA[<?xml version="1.0" encoding="GBK" standalone="no" ?><package><pub><txcode>91126</txcode></pub><req><boeNumList><boeNum>HY-181112-0006</boeNum></boeNumList><deliempNum>duanmuwenlin</deliempNum><siteName>MG002</siteName></req></package>]]></new:resquest>
+      </new:newCabinetOperate>
+   </soapenv:Body>
+</soapenv:Envelope>
+#报文注释Req_Data_011，91126，打包单据清单获取验证，成功
+Req_Data_011=<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:new="http://newCabinetEas.ws.eas.zte.com">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <new:newCabinetOperate>
+         <new:resquest><![CDATA[<?xml version="1.0" encoding="GBK" standalone="no" ?><package><pub><txcode>91126</txcode></pub><req><boeNumList><boeNum>SM-181101-0017</boeNum><boeNum>SM-181031-0067</boeNum><boeNum>SM-181101-0011</boeNum><boeNum>SM-181031-0084</boeNum><boeNum>SM-181031-0032</boeNum><boeNum>SM-181031-0086</boeNum><boeNum>SM-181031-0083</boeNum></boeNumList><deliempNum>lidan</deliempNum><siteName>MGHY002</siteName></req></package>]]></new:resquest>
+      </new:newCabinetOperate>
+   </soapenv:Body>
+</soapenv:Envelope> 
+
+#报文注释Req_Data_012,91103单据—单据接收报告单据状态：已取出
+Req_Data_012=<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:new="http://newCabinetEas.ws.eas.zte.com">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <new:newCabinetOperate>
+         <new:resquest><![CDATA[<?xml version="1.0" encoding="GBK" standalone="no" ?><package><pub><txcode>91103</txcode></pub><req><boeNumList><boeNums><boeNum>HY-181112-0006</boeNum><status>1</status></boeNums><boeNums><boeNum>SM-181031-0085</boeNum><status>1</status></boeNums><boeNums><boeNum>SM-181029-0003</boeNum><status>1</status></boeNums></boeNumList><siteName>MGSM002</siteName><deliempNum>lidan</deliempNum></req></package>]]></new:resquest>
+      </new:newCabinetOperate>
+   </soapenv:Body>
+</soapenv:Envelope> 
+#报文注释Req_Data_013,91104，成功
+Req_Data_013=<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:new="http://newCabinetEas.ws.eas.zte.com">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <new:newCabinetOperate>
+         <new:resquest><![CDATA[<?xml version="1.0" encoding="GBK" standalone="no" ?><package><pub><txcode>91104</txcode></pub><req><packages><packageNo>MGHY002-181204-0002-${danjudabao}</packageNo><checkSheetNum>1</checkSheetNum><checkSheetList><checkSheet>HY-181112-0006</checkSheet></checkSheetList></packages><packempNum>lidan</packempNum><siteName>MGHY002</siteName></req></package>]]></new:resquest>
+      </new:newCabinetOperate>
+   </soapenv:Body>
+</soapenv:Envelope>  
+#报文注释Req_Data_014,91104，包裹单已存在
+Req_Data_014=<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:new="http://newCabinetEas.ws.eas.zte.com">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <new:newCabinetOperate>
+         <new:resquest><![CDATA[<?xml version="1.0" encoding="GBK" standalone="no" ?><package><pub><txcode>91104</txcode></pub><req><packages><packageNo>MGHY002-180824-9999</packageNo><checkSheetNum>3</checkSheetNum><checkSheetList><checkSheet>HY-170607-0050</checkSheet><checkSheet>HY-170608-0094</checkSheet><checkSheet>HY-170525-0036</checkSheet></checkSheetList></packages><packempNum>lidan</packempNum><siteName>MGHY002</siteName></req></package>]]></new:resquest>
+      </new:newCabinetOperate>
+   </soapenv:Body>
+</soapenv:Envelope> 
+[Req_Data]
+#报文注释Req_Data_015,登录91100接口，手机号码为空，失败
+Req_Data_015=<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:new="http://newCabinetSrv.wsservices.services.evs.zteict.com/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <new:newCabinetOperate>
+         <reqInfo><![CDATA[<?xml version="1.0" encoding="GBK" standalone="no" ?><package><pub><txcode>91100</txcode></pub><req><telNo></telNo><siteName>MGHY002</siteName></req></package>]]></reqInfo>
+      </new:newCabinetOperate>
+   </soapenv:Body>
+</soapenv:Envelope>
+#报文注释Req_Data_016,91104，包裹单号为空
+Req_Data_016=<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:new="http://newCabinetEas.ws.eas.zte.com">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <new:newCabinetOperate>
+         <new:resquest><![CDATA[<?xml version="1.0" encoding="GBK" standalone="no" ?><package><pub><txcode>91104</txcode></pub><req><packages><packageNo></packageNo><checkSheetNum>3</checkSheetNum><checkSheetList><checkSheet>HY-170607-0051</checkSheet><checkSheet>HY-170608-0095</checkSheet><checkSheet>HY-170525-0037</checkSheet></checkSheetList></packages><packempNum>lidan</packempNum><siteName>MGHY002</siteName></req></package>]]></new:resquest>
+      </new:newCabinetOperate>
+   </soapenv:Body>
+</soapenv:Envelope>
+#报文注释Req_Data_017,91104，报账单数量为空
+Req_Data_017=<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:new="http://newCabinetEas.ws.eas.zte.com">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <new:newCabinetOperate>
+         <new:resquest><![CDATA[<?xml version="1.0" encoding="GBK" standalone="no" ?><package><pub><txcode>91104</txcode></pub><req><packages><packageNo>MGHY002-180924-${danjudabao2}</packageNo><checkSheetNum></checkSheetNum><checkSheetList><checkSheet>HY-170607-0051</checkSheet><checkSheet>HY-170608-0095</checkSheet><checkSheet>HY-170525-0037</checkSheet></checkSheetList></packages><packempNum>lidan</packempNum><siteName>MGHY002</siteName></req></package>]]></new:resquest>
+      </new:newCabinetOperate>
+   </soapenv:Body>
+</soapenv:Envelope>  
+
+#报文注释Req_Data_018,91104，报账单数量与报账单编号总和不相等
+Req_Data_018=<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:new="http://newCabinetEas.ws.eas.zte.com">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <new:newCabinetOperate>
+         <new:resquest><![CDATA[<?xml version="1.0" encoding="GBK" standalone="no" ?><package><pub><txcode>91104</txcode></pub><req><packages><packageNo>MGHY002-180924-${danjudabao3}</packageNo><checkSheetNum>2</checkSheetNum><checkSheetList><checkSheet>HY-170607-0051</checkSheet><checkSheet>HY-170608-0095</checkSheet><checkSheet>HY-170525-0037</checkSheet></checkSheetList></packages><packempNum>lidan</packempNum><siteName>MGHY002</siteName></req></package>]]></new:resquest>
+      </new:newCabinetOperate>
+   </soapenv:Body>
+</soapenv:Envelope>  
+#报文注释Req_Data_019,91104，报账单编号不存在
+Req_Data_019=<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:new="http://newCabinetEas.ws.eas.zte.com">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <new:newCabinetOperate>
+         <new:resquest><![CDATA[<?xml version="1.0" encoding="GBK" standalone="no" ?><package><pub><txcode>91104</txcode></pub><req><packages><packageNo>MGHY002-180924-${danjudabao4}</packageNo><checkSheetNum>3</checkSheetNum><checkSheetList><checkSheet></checkSheet><checkSheet>HY-170608-0095</checkSheet><checkSheet>HY-170525-0037</checkSheet></checkSheetList></packages><packempNum>lidan</packempNum><siteName>MGHY002</siteName></req></package>]]></new:resquest>
+      </new:newCabinetOperate>
+   </soapenv:Body>
+</soapenv:Envelope> 
+#报文注释Req_Data_020,91104，打包人员工编号不存在
+Req_Data_020=<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:new="http://newCabinetEas.ws.eas.zte.com">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <new:newCabinetOperate>
+         <new:resquest><![CDATA[<?xml version="1.0" encoding="GBK" standalone="no" ?><package><pub><txcode>91104</txcode></pub><req><packages><packageNo>MGHY002-180924-${danjudabao5}</packageNo><checkSheetNum>3</checkSheetNum><checkSheetList><checkSheet>HY-170607-0051</checkSheet><checkSheet>HY-170608-0095</checkSheet><checkSheet>HY-170525-0037</checkSheet></checkSheetList></packages><packempNum>dddd</packempNum><siteName>MGHY002</siteName></req></package>]]></new:resquest>
+      </new:newCabinetOperate>
+   </soapenv:Body>
+</soapenv:Envelope> 
+
+#报文注释Req_Data_021，系统登录-91100接口18082端口电话号码为空，柜子编号为空
+Req_Data_021=<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:new="http://newCabinetSrv.wsservices.services.evs.zteict.com/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <new:newCabinetOperate>
+         <reqInfo><![CDATA[<?xml version="1.0" encoding="GBK" standalone="no" ?><package><pub><txcode>91100</txcode></pub><req><telNo></telNo><siteName></siteName></req></package>]]></reqInfo>
+      </new:newCabinetOperate>
+   </soapenv:Body>
+</soapenv:Envelope>
+
+#报文注释Req_Data_022，系统登录-91100接口18082端口单据编号为空
+Req_Data_022=<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:new="http://newCabinetSrv.wsservices.services.evs.zteict.com/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <new:newCabinetOperate>
+         <reqInfo><![CDATA[<?xml version="1.0" encoding="GBK" standalone="no" ?><package><pub><txcode>91105</txcode></pub><req><checkSheetList><BoeNum></BoeNum></checkSheetList><deliempNum>wuzehong</deliempNum><siteName>MGHY001</siteName></req></package>]]></reqInfo>
+      </new:newCabinetOperate>
+   </soapenv:Body>
+</soapenv:Envelope>
+#报文注释Req_Data_023，单据-影像上传91101接口18082（pictureDir图片地址为空）
+Req_Data_023=<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:new="http://newCabinetSrv.wsservices.services.evs.zteict.com/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <new:newCabinetOperate>
+         <reqInfo><![CDATA[<?xml version="1.0" encoding="GBK" standalone="no" ?><package><pub><txcode>91101</txcode></pub><req><checkSheetList><checkSheet><boeNum>WH-181031-0020</boeNum><imgs><pictureDir></pictureDir></imgs></checkSheet></checkSheetList><deliempNum>yanzhongwei</deliempNum><siteName>MGHY002</siteName></req></package>]]></reqInfo>
+      </new:newCabinetOperate>
+   </soapenv:Body>
+</soapenv:Envelope> 
+#报文注释Req_Data_024，单据-投递口开启校验-91120接口80(单据错误)
+Req_Data_024=<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:new="http://newCabinetEas.ws.eas.zte.com">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <new:newCabinetOperate>
+         <new:resquest><![CDATA[<?xml version="1.0" encoding="GBK" standalone="no" ?><package><pub><txcode>91120</txcode></pub><req><boeNumList><boeNum></boeNum></boeNumList><deliempNum>yanzhongwei_jc</deliempNum><siteName>MGHY002</siteName></req></package>]]></new:resquest>
+      </new:newCabinetOperate>
+   </soapenv:Body>
+</soapenv:Envelope>
+#报文注释Req_Data_025，单据-投递口开启校验-91120接口80(单据错误)
+Req_Data_025=<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:new="http://newCabinetSrv.wsservices.services.evs.zteict.com/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <new:newCabinetOperate>
+         <reqInfo><![CDATA[<?xml version="1.0" encoding="GBK" standalone="no" ?><package><pub><txcode>91101</txcode></pub><req><checkSheetList><checkSheet><boeNum>DM-181019-0015</boeNum><imgs><pictureDir>evsNewImages/2018/10/29/DM-181019-0015/DM-181019-0015-00000001.jpg</pictureDir></imgs></checkSheet></checkSheetList><deliempNum></deliempNum><siteName>MGHY002</siteName></req></package>]]></reqInfo>
+      </new:newCabinetOperate>
+   </soapenv:Body>
+</soapenv:Envelope> 
+#报文注释Req_Data_026，单据-接收单据状态获取91126接口80(单据接收清单获取异常)
+Req_Data_026=<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:new="http://newCabinetEas.ws.eas.zte.com">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <new:newCabinetOperate>
+         <new:resquest><![CDATA[<?xml version="1.0" encoding="GBK" standalone="no" ?><package><pub><txcode>91126</txcode></pub><req><boeNumList><boeNum>WH-181102-00030000</boeNum></boeNumList><deliempNum>yanzhongwei</deliempNum><siteName>MGHY002</siteName></req></package>]]></new:resquest>
+      </new:newCabinetOperate>
+   </soapenv:Body>
+</soapenv:Envelope>
+#报文注释Req_Data_027，打包-打包单据清单获取-91126接口80(单据接收清单获取异常)
+Req_Data_027=<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:new="http://newCabinetEas.ws.eas.zte.com">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <new:newCabinetOperate>
+         <new:resquest><![CDATA[<?xml version="1.0" encoding="GBK" standalone="no" ?><package><pub><txcode>91126</txcode></pub><req><boeNumList><boeNum></boeNum></boeNumList><deliempNum>yanzhongwei</deliempNum><siteName>MGHY002</siteName></req></package>]]></new:resquest>
+      </new:newCabinetOperate>
+   </soapenv:Body>
+</soapenv:Envelope> 
+#报文注释Req_Data_028，单据—单据接收报告91103接口80（单据状态：未收到）
+Req_Data_028=<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:new="http://newCabinetEas.ws.eas.zte.com">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <new:newCabinetOperate>
+         <new:resquest><![CDATA[<?xml version="1.0" encoding="GBK" standalone="no" ?><package><pub><txcode>91103</txcode></pub><req><boeNumList><boeNums><boeNum>HY-180925-0013</boeNum><status>0</status></boeNums></boeNumList><siteName>MGHY002</siteName><deliempNum>yangzhongwei</deliempNum></req></package>]]></new:resquest>
+      </new:newCabinetOperate>
+   </soapenv:Body>
+</soapenv:Envelope> 
+#报文注释Req_Data_029,报文头接口号输入有误_返回报文传入格式错误
+Req_Data_029= <soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:new="http://newCabinetSrv.wsservices.services.evs.zteict.com/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <new:newCabinetOperate>
+         <reqInfo><![CDATA[<?xml version="1.0" encoding="GBK" standalone="no" ?><package><pub><txcode></txcode></pub><req><telNo>18298029422</telNo><siteName>MGHY002</siteName></req></package>]]></reqInfo>
+      </new:newCabinetOperate>
+   </soapenv:Body>
+</soapenv:Envelope>
+#报文注释Req_Data_030,报文头接口号输入有误_返回报文传入格式错误
+Req_Data_030=<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:new="http://newCabinetSrv.wsservices.services.evs.zteict.com/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <new:newCabinetOperate>
+         <reqInfo><![CDATA[<?xml version="1.0" encoding="GBK" standalone="no" ?><package><pub><txcode>91105</txcode></pub><req><checkSheetList><BoeNum>HY-180831-0055</BoeNum><BoeNum>HY-170304-0015</BoeNum><BoeNum>HY-170329-0017</BoeNum><BoeNum>HY-170304-0019</BoeNum></checkSheetList><deliempNum>wuzehong</deliempNum><siteName>MGHY001</siteName></req></package>]]></reqInfo>
+      </new:newCabinetOperate>
+   </soapenv:Body>
+</soapenv:Envelope>
+#报文注释，Req_Data_031，单据-影像上传91101接口18082（影像图片上传失败:图片复制失败），单据号为空
+Req_Data_031=<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:new="http://newCabinetSrv.wsservices.services.evs.zteict.com/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <new:newCabinetOperate>
+         <reqInfo><![CDATA[<?xml version="1.0" encoding="GBK" standalone="no" ?><package><pub><txcode>91101</txcode></pub><req><checkSheetList><checkSheet><boeNum></boeNum><imgs><pictureDir>/data/scanauto/evsNewImages/2018/10/29/DM-181019-0015/DM-181019-0015-00000001.jpg</pictureDir></imgs></checkSheet></checkSheetList><deliempNum>yanzhongwei</deliempNum><siteName>MGHY002</siteName></req></package>]]></reqInfo>
+      </new:newCabinetOperate>
+   </soapenv:Body>
+</soapenv:Envelope> 
+#报文注释，Req_Data_032，91126接口，据投递柜开启校验消息请求，单据接收清单获取异常，单据号为空，返回失败
+Req_Data_032=<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:new="http://newCabinetEas.ws.eas.zte.com">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <new:newCabinetOperate>
+         <new:resquest><![CDATA[<?xml version="1.0" encoding="GBK" standalone="no" ?><package><pub><txcode>91126</txcode></pub><req><boeNumList><boeNum></boeNum></boeNumList><deliempNum>duanmuwenlin</deliempNum><siteName>MG001</siteName></req></package>]]></new:resquest>
+      </new:newCabinetOperate>
+   </soapenv:Body>
+</soapenv:Envelope>
+#报文注释，Req_Data_033，打包-打包单据清单获取-91126接口80(单据接收清单获取异常，单据号为空)
+Req_Data_033=<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:new="http://newCabinetEas.ws.eas.zte.com">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <new:newCabinetOperate>
+         <new:resquest><![CDATA[<?xml version="1.0" encoding="GBK" standalone="no" ?><package><pub><txcode>91126</txcode></pub><req><boeNumList><boeNum></boeNum></boeNumList><deliempNum>duanmuwenlin</deliempNum><siteName>MG001</siteName></req></package>]]></new:resquest>
+      </new:newCabinetOperate>
+   </soapenv:Body>
+</soapenv:Envelope>
+#报文注释Req_Data_034,单据打包报告91104接口80，员工编号为空-返回打包人员工编号不能为空
+Req_Data_034=<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:new="http://newCabinetEas.ws.eas.zte.com">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <new:newCabinetOperate>
+         <new:resquest><![CDATA[<?xml version="1.0" encoding="GBK" standalone="no" ?><package><pub><txcode>91104</txcode></pub><req><packages><packageNo>MGHY002-180924-${danjudabao5}</packageNo><checkSheetNum>3</checkSheetNum><checkSheetList><checkSheet>HY-170607-0051</checkSheet><checkSheet>HY-170608-0095</checkSheet><checkSheet>HY-170525-0037</checkSheet></checkSheetList></packages><packempNum></packempNum><siteName>MGHY002</siteName></req></package>]]></new:resquest>
+      </new:newCabinetOperate>
+   </soapenv:Body>
+</soapenv:Envelope> 
+#报文注释Req_Data_035,系统登录-91100接口18082，手机号码不存在，返回成功
+Req_Data_035=<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:new="http://newCabinetSrv.wsservices.services.evs.zteict.com/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <new:newCabinetOperate>
+         <reqInfo><![CDATA[<?xml version="1.0" encoding="GBK" standalone="no" ?><package><pub><txcode>91100</txcode></pub><req><telNo>12345678900</telNo><siteName>MGSM001000000</siteName></req></package>]]></reqInfo>
+      </new:newCabinetOperate>
+   </soapenv:Body>
+</soapenv:Envelope>
+#报文注释Req_Data_036,系统登录-91100接口18082，账号无登录权限，账号为移动号码，返回成功
+Req_Data_036=<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:new="http://newCabinetSrv.wsservices.services.evs.zteict.com/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <new:newCabinetOperate>
+         <reqInfo><![CDATA[<?xml version="1.0" encoding="GBK" standalone="no" ?><package><pub><txcode>91100</txcode></pub><req><telNo>18374840728</telNo><siteName>MGSM001</siteName></req></package>]]></reqInfo>
+      </new:newCabinetOperate>
+   </soapenv:Body>
+</soapenv:Envelope>
+#报文注释Req_Data_037,系统登录-91100接口18082，账号无登录权限，账号为电信号码，返回成功
+Req_Data_037=<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:new="http://newCabinetSrv.wsservices.services.evs.zteict.com/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <new:newCabinetOperate>
+         <reqInfo><![CDATA[<?xml version="1.0" encoding="GBK" standalone="no" ?><package><pub><txcode>91100</txcode></pub><req><telNo>18055032651</telNo><siteName>MGSM001</siteName></req></package>]]></reqInfo>
+      </new:newCabinetOperate>
+   </soapenv:Body>
+</soapenv:Envelope>
+#报文注释Req_Data_038,系统登录-91100接口18082，账号无登录权限，账号为联通号码，返回成功
+Req_Data_038=<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:new="http://newCabinetSrv.wsservices.services.evs.zteict.com/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <new:newCabinetOperate>
+         <reqInfo><![CDATA[<?xml version="1.0" encoding="GBK" standalone="no" ?><package><pub><txcode>91100</txcode></pub><req><telNo>13022551837</telNo><siteName>MGSM001</siteName></req></package>]]></reqInfo>
+      </new:newCabinetOperate>
+   </soapenv:Body>
+</soapenv:Envelope>
+#报文注释Req_Data_039,系统登录-91100接口18082，账号过长，返回成功
+Req_Data_039=<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:new="http://newCabinetSrv.wsservices.services.evs.zteict.com/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <new:newCabinetOperate>
+         <reqInfo><![CDATA[<?xml version="1.0" encoding="GBK" standalone="no" ?><package><pub><txcode>91100</txcode></pub><req><telNo>1302255183799999999999999</telNo><siteName>MGSM001</siteName></req></package>]]></reqInfo>
+      </new:newCabinetOperate>
+   </soapenv:Body>
+</soapenv:Envelope>
+#报文注释Req_Data_040,系统登录-91100接口18082，账号过短，返回成功
+Req_Data_040=<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:new="http://newCabinetSrv.wsservices.services.evs.zteict.com/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <new:newCabinetOperate>
+         <reqInfo><![CDATA[<?xml version="1.0" encoding="GBK" standalone="no" ?><package><pub><txcode>91100</txcode></pub><req><telNo>130</telNo><siteName>MGSM001</siteName></req></package>]]></reqInfo>
+      </new:newCabinetOperate>
+   </soapenv:Body>
+</soapenv:Envelope>
+#报文注释Req_Data_041,系统登录-91100接口18082，设备编号为空，返回成功
+Req_Data_041=<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:new="http://newCabinetSrv.wsservices.services.evs.zteict.com/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <new:newCabinetOperate>
+         <reqInfo><![CDATA[<?xml version="1.0" encoding="GBK" standalone="no" ?><package><pub><txcode>91100</txcode></pub><req><telNo>13912031283</telNo><siteName></siteName></req></package>]]></reqInfo>
+      </new:newCabinetOperate>
+   </soapenv:Body>
+</soapenv:Envelope>
+#报文注释Req_Data_042,系统登录-91100接口18082，设备编号过长，返回成功
+Req_Data_042=<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:new="http://newCabinetSrv.wsservices.services.evs.zteict.com/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <new:newCabinetOperate>
+         <reqInfo><![CDATA[<?xml version="1.0" encoding="GBK" standalone="no" ?><package><pub><txcode>91100</txcode></pub><req><telNo>13912031283</telNo><siteName>MGSM001999999999</siteName></req></package>]]></reqInfo>
+      </new:newCabinetOperate>
+   </soapenv:Body>
+</soapenv:Envelope>
+#报文注释Req_Data_043,系统登录-91100接口18082，设备编号过短，返回成功
+Req_Data_043=<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:new="http://newCabinetSrv.wsservices.services.evs.zteict.com/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <new:newCabinetOperate>
+         <reqInfo><![CDATA[<?xml version="1.0" encoding="GBK" standalone="no" ?><package><pub><txcode>91100</txcode></pub><req><telNo>13912031283</telNo><siteName>MGSM0</siteName></req></package>]]></reqInfo>
+      </new:newCabinetOperate>
+   </soapenv:Body>
+</soapenv:Envelope>
+#报文注释Req_Data_044,系统登录-91100接口18082，设备编号不存在，返回成功
+Req_Data_044=<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:new="http://newCabinetSrv.wsservices.services.evs.zteict.com/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <new:newCabinetOperate>
+         <reqInfo><![CDATA[<?xml version="1.0" encoding="GBK" standalone="no" ?><package><pub><txcode>91100</txcode></pub><req><telNo>13912031283</telNo><siteName>MGSM999</siteName></req></package>]]></reqInfo>
+      </new:newCabinetOperate>
+   </soapenv:Body>
+</soapenv:Envelope>
+
+#报文注释，登录91105接口，设备编号为空，失败
+Req_Data_045=<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:new="http://newCabinetSrv.wsservices.services.evs.zteict.com/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <new:newCabinetOperate>
+         <reqInfo><![CDATA[<?xml version="1.0" encoding="GBK" standalone="no" ?><package><pub><txcode>91105</txcode></pub><req><checkSheetList><BoeNum>HY-170329-0017</BoeNum></checkSheetList><deliempNum>wuzehong</deliempNum><siteName></siteName></req></package>]]></reqInfo>
+      </new:newCabinetOperate>
+   </soapenv:Body>
+</soapenv:Envelope>
+
+#报文注释，登录91105接口，设备编号过短，失败
+Req_Data_046=<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:new="http://newCabinetSrv.wsservices.services.evs.zteict.com/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <new:newCabinetOperate>
+         <reqInfo><![CDATA[<?xml version="1.0" encoding="GBK" standalone="no" ?><package><pub><txcode>91105</txcode></pub><req><checkSheetList><BoeNum>HY-170329-0017</BoeNum></checkSheetList><deliempNum>wuzehong</deliempNum><siteName>MGHY</siteName></req></package>]]></reqInfo>
+      </new:newCabinetOperate>
+   </soapenv:Body>
+</soapenv:Envelope>
+
+#报文注释，登录91105接口，设备编号过长，失败
+Req_Data_047=<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:new="http://newCabinetSrv.wsservices.services.evs.zteict.com/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <new:newCabinetOperate>
+         <reqInfo><![CDATA[<?xml version="1.0" encoding="GBK" standalone="no" ?><package><pub><txcode>91105</txcode></pub><req><checkSheetList><BoeNum>HY-170329-0017</BoeNum></checkSheetList><deliempNum>wuzehong</deliempNum><siteName>MGHY002000000000000000000</siteName></req></package>]]></reqInfo>
+      </new:newCabinetOperate>
+   </soapenv:Body>
+</soapenv:Envelope>
+#报文注释，登录91105接口，deliempNum为空，失败
+Req_Data_048=<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:new="http://newCabinetSrv.wsservices.services.evs.zteict.com/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <new:newCabinetOperate>
+         <reqInfo><![CDATA[<?xml version="1.0" encoding="GBK" standalone="no" ?><package><pub><txcode>91105</txcode></pub><req><checkSheetList><BoeNum>HY-170329-0017</BoeNum></checkSheetList><deliempNum></deliempNum><siteName>MGHY002</siteName></req></package>]]></reqInfo>
+      </new:newCabinetOperate>
+   </soapenv:Body>
+</soapenv:Envelope>
+
+#报文注释，登录91105接口，deliempNum过短，失败
+Req_Data_049=<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:new="http://newCabinetSrv.wsservices.services.evs.zteict.com/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <new:newCabinetOperate>
+         <reqInfo><![CDATA[<?xml version="1.0" encoding="GBK" standalone="no" ?><package><pub><txcode>91105</txcode></pub><req><checkSheetList><BoeNum>HY-170329-0017</BoeNum></checkSheetList><deliempNum>w</deliempNum><siteName>MGHY002</siteName></req></package>]]></reqInfo>
+      </new:newCabinetOperate>
+   </soapenv:Body>
+</soapenv:Envelope>
+#报文注释，登录91105接口，deliempNum过长，失败
+Req_Data_050=<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:new="http://newCabinetSrv.wsservices.services.evs.zteict.com/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <new:newCabinetOperate>
+         <reqInfo><![CDATA[<?xml version="1.0" encoding="GBK" standalone="no" ?><package><pub><txcode>91105</txcode></pub><req><checkSheetList><BoeNum>HY-170329-0017</BoeNum></checkSheetList><deliempNum>wuzehongaaa</deliempNum><siteName>MGHY002</siteName></req></package>]]></reqInfo>
+      </new:newCabinetOperate>
+   </soapenv:Body>
+</soapenv:Envelope>
+
+#报文注释，登录91105接口，deliempNum不存在，失败
+Req_Data_051=<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:new="http://newCabinetSrv.wsservices.services.evs.zteict.com/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <new:newCabinetOperate>
+         <reqInfo><![CDATA[<?xml version="1.0" encoding="GBK" standalone="no" ?><package><pub><txcode>91105</txcode></pub><req><checkSheetList><BoeNum>HY-170329-0017</BoeNum></checkSheetList><deliempNum>mayaha</deliempNum><siteName>MGHY002</siteName></req></package>]]></reqInfo>
+      </new:newCabinetOperate>
+   </soapenv:Body>
+</soapenv:Envelope>
+
+#报文注释，登录91105接口，设备编号不存在，失败
+Req_Data_052=<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:new="http://newCabinetSrv.wsservices.services.evs.zteict.com/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <new:newCabinetOperate>
+         <reqInfo><![CDATA[<?xml version="1.0" encoding="GBK" standalone="no" ?><package><pub><txcode>91105</txcode></pub><req><checkSheetList><BoeNum>HY-170329-0017</BoeNum></checkSheetList><deliempNum>wuzehong</deliempNum><siteName>ABC</siteName></req></package>]]></reqInfo>
+      </new:newCabinetOperate>
+   </soapenv:Body>
+</soapenv:Envelope>
+
+#报文注释，登录91105接口，texcode为空，失败
+Req_Data_053=<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:new="http://newCabinetSrv.wsservices.services.evs.zteict.com/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <new:newCabinetOperate>
+         <reqInfo><![CDATA[<?xml version="1.0" encoding="GBK" standalone="no" ?><package><pub><txcode></txcode></pub><req><checkSheetList><BoeNum>HY-170329-0017</BoeNum></checkSheetList><deliempNum>wuzehong</deliempNum><siteName>MGHY002</siteName></req></package>]]></reqInfo>
+      </new:newCabinetOperate>
+   </soapenv:Body>
+</soapenv:Envelope>
+
+#报文注释，登录91105接口，texcode过短，失败
+Req_Data_054=<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:new="http://newCabinetSrv.wsservices.services.evs.zteict.com/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <new:newCabinetOperate>
+         <reqInfo><![CDATA[<?xml version="1.0" encoding="GBK" standalone="no" ?><package><pub><txcode>9</txcode></pub><req><checkSheetList><BoeNum>HY-170329-0017</BoeNum></checkSheetList><deliempNum>wuzehong</deliempNum><siteName>MGHY002</siteName></req></package>]]></reqInfo>
+      </new:newCabinetOperate>
+   </soapenv:Body>
+</soapenv:Envelope>
+
+#报文注释，登录91105接口，texcode过长，失败
+Req_Data_055=<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:new="http://newCabinetSrv.wsservices.services.evs.zteict.com/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <new:newCabinetOperate>
+         <reqInfo><![CDATA[<?xml version="1.0" encoding="GBK" standalone="no" ?><package><pub><txcode>9110500000</txcode></pub><req><checkSheetList><BoeNum>HY-170329-0017</BoeNum></checkSheetList><deliempNum>wuzehong</deliempNum><siteName>MGHY002</siteName></req></package>]]></reqInfo>
+      </new:newCabinetOperate>
+   </soapenv:Body>
+</soapenv:Envelope>
+
+#报文注释，登录91105接口，texcode不存在，失败
+Req_Data_056=<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:new="http://newCabinetSrv.wsservices.services.evs.zteict.com/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <new:newCabinetOperate>
+         <reqInfo><![CDATA[<?xml version="1.0" encoding="GBK" standalone="no" ?><package><pub><txcode>91010</txcode></pub><req><checkSheetList><BoeNum>HY-170329-0017</BoeNum></checkSheetList><deliempNum>wuzehong</deliempNum><siteName>MGHY002</siteName></req></package>]]></reqInfo>
+      </new:newCabinetOperate>
+   </soapenv:Body>
+</soapenv:Envelope>
+
+#报文注释，登录91105接口，BoeNum过短，失败
+Req_Data_057=<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:new="http://newCabinetSrv.wsservices.services.evs.zteict.com/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <new:newCabinetOperate>
+         <reqInfo><![CDATA[<?xml version="1.0" encoding="GBK" standalone="no" ?><package><pub><txcode>91105</txcode></pub><req><checkSheetList><BoeNum>HY-17032</BoeNum></checkSheetList><deliempNum>wuzehong</deliempNum><siteName>MGHY002</siteName></req></package>]]></reqInfo>
+      </new:newCabinetOperate>
+   </soapenv:Body>
+</soapenv:Envelope>
+
+#报文注释，登录91105接口，BoeNum过长，失败
+Req_Data_058=<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:new="http://newCabinetSrv.wsservices.services.evs.zteict.com/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <new:newCabinetOperate>
+         <reqInfo><![CDATA[<?xml version="1.0" encoding="GBK" standalone="no" ?><package><pub><txcode>91105</txcode></pub><req><checkSheetList><BoeNum>HY-170329-001712356</BoeNum></checkSheetList><deliempNum>wuzehong</deliempNum><siteName>MGHY002</siteName></req></package>]]></reqInfo>
+      </new:newCabinetOperate>
+   </soapenv:Body>
+</soapenv:Envelope>
+
+#报文注释，登录91105接口，BoeNum不存在，失败
+Req_Data_059=<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:new="http://newCabinetSrv.wsservices.services.evs.zteict.com/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <new:newCabinetOperate>
+         <reqInfo><![CDATA[<?xml version="1.0" encoding="GBK" standalone="no" ?><package><pub><txcode>91105</txcode></pub><req><checkSheetList><BoeNum>AC-321324-0017</BoeNum></checkSheetList><deliempNum>wuzehong</deliempNum><siteName>MGHY002</siteName></req></package>]]></reqInfo>
+      </new:newCabinetOperate>
+   </soapenv:Body>
+</soapenv:Envelope>
+
+#报文注释，登录91105接口，deliempNum为空，失败
+Req_Data_060=<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:new="http://newCabinetSrv.wsservices.services.evs.zteict.com/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <new:newCabinetOperate>
+         <reqInfo><![CDATA[<?xml version="1.0" encoding="GBK" standalone="no" ?><package><pub><txcode>91105</txcode></pub><req><checkSheetList><BoeNum>HY-170329-0017</BoeNum></checkSheetList><deliempNum></deliempNum><siteName>MGHY002</siteName></req></package>]]></reqInfo>
+      </new:newCabinetOperate>
+   </soapenv:Body>
+</soapenv:Envelope>
+
+#报文注释，登录91105接口，deliempNum过短，失败
+Req_Data_061=<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:new="http://newCabinetSrv.wsservices.services.evs.zteict.com/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <new:newCabinetOperate>
+         <reqInfo><![CDATA[<?xml version="1.0" encoding="GBK" standalone="no" ?><package><pub><txcode>91105</txcode></pub><req><checkSheetList><BoeNum>HY-170329-0017</BoeNum></checkSheetList><deliempNum>wu</deliempNum><siteName>MGHY002</siteName></req></package>]]></reqInfo>
+      </new:newCabinetOperate>
+   </soapenv:Body>
+</soapenv:Envelope>
+
+
+#报文注释，登录91105接口，deliempNum过长，失败
+Req_Data_062=<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:new="http://newCabinetSrv.wsservices.services.evs.zteict.com/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <new:newCabinetOperate>
+         <reqInfo><![CDATA[<?xml version="1.0" encoding="GBK" standalone="no" ?><package><pub><txcode>91105</txcode></pub><req><checkSheetList><BoeNum>HY-170329-0017</BoeNum></checkSheetList><deliempNum>wuzehongaaaaaaaaaaaaaaaaaa</deliempNum><siteName>MGHY002</siteName></req></package>]]></reqInfo>
+      </new:newCabinetOperate>
+   </soapenv:Body>
+</soapenv:Envelope>
+
+#报文注释，登录91105接口，deliempNum不存在，失败
+Req_Data_063=<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:new="http://newCabinetSrv.wsservices.services.evs.zteict.com/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <new:newCabinetOperate>
+         <reqInfo><![CDATA[<?xml version="1.0" encoding="GBK" standalone="no" ?><package><pub><txcode>91105</txcode></pub><req><checkSheetList><BoeNum>HY-170329-0017</BoeNum></checkSheetList><deliempNum>abjkhgff</deliempNum><siteName>MGHY002</siteName></req></package>]]></reqInfo>
+      </new:newCabinetOperate>
+   </soapenv:Body>
+</soapenv:Envelope>
+
+#报文注释Req_Data_064，91127单据-投递状态报告，doorId为空，返回成功
+Req_Data_064=<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:new="http://newCabinetEas.ws.eas.zte.com">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <new:newCabinetOperate>
+         <new:resquest><![CDATA[<?xml version="1.0" encoding="GBK" standalone="no" ?><package><pub><txcode>91127</txcode></pub><req><boeNumList><boeNum>HY-181112-0006</boeNum></boeNumList><deliempNum>chenbidan</deliempNum><siteName>MGHY002</siteName><doorId></doorId></req></package>]]></new:resquest>
+      </new:newCabinetOperate>
+   </soapenv:Body>
+</soapenv:Envelope>
+
+#报文注释Req_Data_065，91127单据-投递状态报告，doorId字段过短，返回成功
+Req_Data_065=<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:new="http://newCabinetEas.ws.eas.zte.com">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <new:newCabinetOperate>
+         <new:resquest><![CDATA[<?xml version="1.0" encoding="GBK" standalone="no" ?><package><pub><txcode>91127</txcode></pub><req><boeNumList><boeNum>HY-181112-0006</boeNum></boeNumList><deliempNum>chenbidan</deliempNum><siteName>MGHY002</siteName><doorId>B</doorId></req></package>]]></new:resquest>
+      </new:newCabinetOperate>
+   </soapenv:Body>
+</soapenv:Envelope>
+#报文注释Req_Data_066，91127单据-投递状态报告，doorId字段过长，返回成功
+Req_Data_066=<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:new="http://newCabinetEas.ws.eas.zte.com">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <new:newCabinetOperate>
+         <new:resquest><![CDATA[<?xml version="1.0" encoding="GBK" standalone="no" ?><package><pub><txcode>91127</txcode></pub><req><boeNumList><boeNum>HY-181112-0006</boeNum></boeNumList><deliempNum>chenbidan</deliempNum><siteName>MGHY002</siteName><doorId>BZDDDDDDD</doorId></req></package>]]></new:resquest>
+      </new:newCabinetOperate>
+   </soapenv:Body>
+</soapenv:Envelope>
+#报文注释Req_Data_067，91127单据-投递状态报告，doorId字段不存在，返回成功
+Req_Data_067=<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:new="http://newCabinetEas.ws.eas.zte.com">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <new:newCabinetOperate>
+         <new:resquest><![CDATA[<?xml version="1.0" encoding="GBK" standalone="no" ?><package><pub><txcode>91127</txcode></pub><req><boeNumList><boeNum>HY-181112-0006</boeNum></boeNumList><deliempNum>chenbidan</deliempNum><siteName>MGHY002</siteName><doorId>ABC</doorId></req></package>]]></new:resquest>
+      </new:newCabinetOperate>
+   </soapenv:Body>
+</soapenv:Envelope>
+#报文注释Req_Data_068,91103单据—单据接收报告单据状态，status为空，返回成功
+Req_Data_068=<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:new="http://newCabinetEas.ws.eas.zte.com">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <new:newCabinetOperate>
+         <new:resquest><![CDATA[<?xml version="1.0" encoding="GBK" standalone="no" ?><package><pub><txcode>91103</txcode></pub><req><boeNumList><boeNums><boeNum>HY-181112-0006</boeNum><status></status></boeNums><boeNums><boeNum>SM-181031-0085</boeNum><status>1</status></boeNums><boeNums><boeNum>SM-181029-0003</boeNum><status>1</status></boeNums></boeNumList><siteName>MGSM002</siteName><deliempNum>lidan</deliempNum></req></package>]]></new:resquest>
+      </new:newCabinetOperate>
+   </soapenv:Body>
+</soapenv:Envelope> 
+#报文注释Req_Data_069,91103单据—单据接收报告单据状态，status为一个字符，返回成功
+Req_Data_069=<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:new="http://newCabinetEas.ws.eas.zte.com">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <new:newCabinetOperate>
+         <new:resquest><![CDATA[<?xml version="1.0" encoding="GBK" standalone="no" ?><package><pub><txcode>91103</txcode></pub><req><boeNumList><boeNums><boeNum>HY-181112-0006</boeNum><status>已</status></boeNums><boeNums><boeNum>SM-181031-0085</boeNum><status>1</status></boeNums><boeNums><boeNum>SM-181029-0003</boeNum><status>1</status></boeNums></boeNumList><siteName>MGSM002</siteName><deliempNum>lidan</deliempNum></req></package>]]></new:resquest>
+      </new:newCabinetOperate>
+   </soapenv:Body>
+</soapenv:Envelope> 
+#报文注释Req_Data_070,91103单据—单据接收报告单据状态，status为多个字符，返回成功
+Req_Data_070=<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:new="http://newCabinetEas.ws.eas.zte.com">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <new:newCabinetOperate>
+         <new:resquest><![CDATA[<?xml version="1.0" encoding="GBK" standalone="no" ?><package><pub><txcode>91103</txcode></pub><req><boeNumList><boeNums><boeNum>HY-181112-0006</boeNum><status>已取出</status></boeNums><boeNums><boeNum>SM-181031-0085</boeNum><status>1</status></boeNums><boeNums><boeNum>SM-181029-0003</boeNum><status>1</status></boeNums></boeNumList><siteName>MGSM002</siteName><deliempNum>lidan</deliempNum></req></package>]]></new:resquest>
+      </new:newCabinetOperate>
+   </soapenv:Body>
+</soapenv:Envelope> 
+#报文注释Req_Data_071,91103单据—单据接收报告单据状态，status为小写字母，返回成功
+Req_Data_071=<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:new="http://newCabinetEas.ws.eas.zte.com">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <new:newCabinetOperate>
+         <new:resquest><![CDATA[<?xml version="1.0" encoding="GBK" standalone="no" ?><package><pub><txcode>91103</txcode></pub><req><boeNumList><boeNums><boeNum>HY-181112-0006</boeNum><status>a</status></boeNums><boeNums><boeNum>SM-181031-0085</boeNum><status>1</status></boeNums><boeNums><boeNum>SM-181029-0003</boeNum><status>1</status></boeNums></boeNumList><siteName>MGSM002</siteName><deliempNum>lidan</deliempNum></req></package>]]></new:resquest>
+      </new:newCabinetOperate>
+   </soapenv:Body>
+</soapenv:Envelope> 
+#报文注释Req_Data_072,91103单据—单据接收报告单据状态，status为大写字母，返回成功
+Req_Data_072=<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:new="http://newCabinetEas.ws.eas.zte.com">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <new:newCabinetOperate>
+         <new:resquest><![CDATA[<?xml version="1.0" encoding="GBK" standalone="no" ?><package><pub><txcode>91103</txcode></pub><req><boeNumList><boeNums><boeNum>HY-181112-0006</boeNum><status>A</status></boeNums><boeNums><boeNum>SM-181031-0085</boeNum><status>1</status></boeNums><boeNums><boeNum>SM-181029-0003</boeNum><status>1</status></boeNums></boeNumList><siteName>MGSM002</siteName><deliempNum>lidan</deliempNum></req></package>]]></new:resquest>
+      </new:newCabinetOperate>
+   </soapenv:Body>
+</soapenv:Envelope> 
+#报文注释Req_Data_073,91103单据—单据接收报告单据状态，status为特殊符号，返回成功
+Req_Data_073=<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:new="http://newCabinetEas.ws.eas.zte.com">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <new:newCabinetOperate>
+         <new:resquest><![CDATA[<?xml version="1.0" encoding="GBK" standalone="no" ?><package><pub><txcode>91103</txcode></pub><req><boeNumList><boeNums><boeNum>HY-181112-0006</boeNum><status>+</status></boeNums><boeNums><boeNum>SM-181031-0085</boeNum><status>1</status></boeNums><boeNums><boeNum>SM-181029-0003</boeNum><status>1</status></boeNums></boeNumList><siteName>MGSM002</siteName><deliempNum>lidan</deliempNum></req></package>]]></new:resquest>
+      </new:newCabinetOperate>
+   </soapenv:Body>
+</soapenv:Envelope> 
+#报文注释Req_Data_074,91104，packageNo过短，返回成功
+Req_Data_074=<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:new="http://newCabinetEas.ws.eas.zte.com">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <new:newCabinetOperate>
+         <new:resquest><![CDATA[<?xml version="1.0" encoding="GBK" standalone="no" ?><package><pub><txcode>91104</txcode></pub><req><packages><packageNo>MGHY002-1-${danjudabao}</packageNo><checkSheetNum>1</checkSheetNum><checkSheetList><checkSheet>HY-181112-0006</checkSheet></checkSheetList></packages><packempNum>lidan</packempNum><siteName>MGHY002</siteName></req></package>]]></new:resquest>
+      </new:newCabinetOperate>
+   </soapenv:Body>
+</soapenv:Envelope>  
+#报文注释Req_Data_075,91104，packageNo过长，返回成功
+Req_Data_075=<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:new="http://newCabinetEas.ws.eas.zte.com">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <new:newCabinetOperate>
+         <new:resquest><![CDATA[<?xml version="1.0" encoding="GBK" standalone="no" ?><package><pub><txcode>91104</txcode></pub><req><packages><packageNo>MGHY002-181204-0002000-${danjudabao}</packageNo><checkSheetNum>1</checkSheetNum><checkSheetList><checkSheet>HY-181112-0006</checkSheet></checkSheetList></packages><packempNum>lidan</packempNum><siteName>MGHY002</siteName></req></package>]]></new:resquest>
+      </new:newCabinetOperate>
+   </soapenv:Body>
+</soapenv:Envelope>  
+#报文注释Req_Data_076,91104，packageNo不存在，返回失败
+Req_Data_076=<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:new="http://newCabinetEas.ws.eas.zte.com">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <new:newCabinetOperate>
+         <new:resquest><![CDATA[<?xml version="1.0" encoding="GBK" standalone="no" ?><package><pub><txcode>91104</txcode></pub><req><packages><packageNo>ABCD002-181204-0002-${danjudabao}</packageNo><checkSheetNum>1</checkSheetNum><checkSheetList><checkSheet>HY-181112-0006</checkSheet></checkSheetList></packages><packempNum>lidan</packempNum><siteName>MGHY002</siteName></req></package>]]></new:resquest>
+      </new:newCabinetOperate>
+   </soapenv:Body>
+</soapenv:Envelope>  
+#报文注释Req_Data_077,单据-退单口开启校验91130接口80端口（单个单据未退过单status=1，返回成功）
+Req_Data_077=<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:new="http://newCabinetEas.ws.eas.zte.com">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <new:newCabinetOperate>
+         <new:resquest><![CDATA[<?xml version="1.0" encoding="GBK" standalone="no" ?><package><pub><txcode>91130</txcode></pub><req><boeNumList><boeNum>HY-180326-0007</boeNum></boeNumList><deliempNum>zhangdayue</deliempNum><siteName>MGHY001</siteName></req></package>]]></new:resquest>
+      </new:newCabinetOperate>
+   </soapenv:Body>
+</soapenv:Envelope>
+#报文注释Req_Data_078,单据-退单口开启校验91130接口80端口（单个单据未退过单status=0，返回成功）
+Req_Data_078=<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:new="http://newCabinetEas.ws.eas.zte.com">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <new:newCabinetOperate>
+         <new:resquest><![CDATA[<?xml version="1.0" encoding="GBK" standalone="no" ?><package><pub><txcode>91130</txcode></pub><req><boeNumList><boeNum>HY-170828-0014-DK</boeNum></boeNumList><deliempNum>wangconggang</deliempNum><siteName>MGHY001</siteName></req></package>]]></new:resquest>
+      </new:newCabinetOperate>
+   </soapenv:Body>
+</soapenv:Envelope>
+#报文注释Req_Data_079,单据-退单口开启校验91130接口80端口（多个单据，单据不属于同一用户，返回成功）
+Req_Data_079=<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:new="http://newCabinetEas.ws.eas.zte.com">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <new:newCabinetOperate>
+         <new:resquest><![CDATA[<?xml version="1.0" encoding="GBK" standalone="no" ?><package><pub><txcode>91130</txcode></pub><req><boeNumList><boeNum>HY-180326-0007</boeNum><boeNum>HY-180803-0014</boeNum></boeNumList><deliempNum>zhangdayue</deliempNum><siteName>MGHY001</siteName></req></package>]]></new:resquest>
+      </new:newCabinetOperate>
+   </soapenv:Body>
+</soapenv:Envelope>
+
+#报文注释Req_Data_080,单据-退单口开启校验91130接口80端口（多个单据，单据属于同一用户，返回成功）
+Req_Data_080=<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:new="http://newCabinetEas.ws.eas.zte.com">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <new:newCabinetOperate>
+         <new:resquest><![CDATA[<?xml version="1.0" encoding="GBK" standalone="no" ?><package><pub><txcode>91130</txcode></pub><req><boeNumList><boeNum>HY-190111-0023</boeNum><boeNum>HY-190111-0022</boeNum><boeNum>HY-190111-0021</boeNum></boeNumList><deliempNum>zhangdayue</deliempNum><siteName>MGHY001</siteName></req></package>]]></new:resquest>
+      </new:newCabinetOperate>
+   </soapenv:Body>
+</soapenv:Envelope>
+
+#报文注释Req_Data_081,单据-退单口开启校验91130接口80端口（单据不存在退单，返回成功）
+Req_Data_081=<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:new="http://newCabinetEas.ws.eas.zte.com">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <new:newCabinetOperate>
+         <new:resquest><![CDATA[<?xml version="1.0" encoding="GBK" standalone="no" ?><package><pub><txcode>91130</txcode></pub><req><boeNumList><boeNum>HY-170426-0017</boeNum></boeNumList><deliempNum>wangconggang</deliempNum><siteName>MGHY001</siteName></req></package>]]></new:resquest>
+      </new:newCabinetOperate>
+   </soapenv:Body>
+</soapenv:Envelope>
+#报文注释Req_Data_082,单据-退单口开启校验91130接口80端口（单据号不全，返回成功）
+Req_Data_082=<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:new="http://newCabinetEas.ws.eas.zte.com">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <new:newCabinetOperate>
+         <new:resquest><![CDATA[<?xml version="1.0" encoding="GBK" standalone="no" ?><package><pub><txcode>91130</txcode></pub><req><boeNumList><boeNum>HY-170</boeNum></boeNumList><deliempNum>wangconggang</deliempNum><siteName>MGHY001</siteName></req></package>]]></new:resquest>
+      </new:newCabinetOperate>
+   </soapenv:Body>
+</soapenv:Envelope>
+#报文注释Req_Data_083,单据-退单口开启校验91130接口80端口（单据号为空，返回成功）
+Req_Data_083=<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:new="http://newCabinetEas.ws.eas.zte.com">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <new:newCabinetOperate>
+         <new:resquest><![CDATA[<?xml version="1.0" encoding="GBK" standalone="no" ?><package><pub><txcode>91130</txcode></pub><req><boeNumList><boeNum></boeNum></boeNumList><deliempNum>wangconggang</deliempNum><siteName>MGHY001</siteName></req></package>]]></new:resquest>
+      </new:newCabinetOperate>
+   </soapenv:Body>
+</soapenv:Envelope>
+#报文注释Req_Data_084,单据-退单口开启校验91130接口80端口（员工编号为空，返回成功）
+Req_Data_084=<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:new="http://newCabinetEas.ws.eas.zte.com">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <new:newCabinetOperate>
+         <new:resquest><![CDATA[<?xml version="1.0" encoding="GBK" standalone="no" ?><package><pub><txcode>91130</txcode></pub><req><boeNumList><boeNum>HY-180326-0007</boeNum></boeNumList><deliempNum></deliempNum><siteName>MGHY001</siteName></req></package>]]></new:resquest>
+      </new:newCabinetOperate>
+   </soapenv:Body>
+</soapenv:Envelope>
+#报文注释Req_Data_085,单据-退单口开启校验91130接口80端口（设备编号为空，返回成功）
+Req_Data_085=<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:new="http://newCabinetEas.ws.eas.zte.com">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <new:newCabinetOperate>
+         <new:resquest><![CDATA[<?xml version="1.0" encoding="GBK" standalone="no" ?><package><pub><txcode>91130</txcode></pub><req><boeNumList><boeNum>HY-180326-0007</boeNum></boeNumList><deliempNum>zhangdayue</deliempNum><siteName></siteName></req></package>]]></new:resquest>
+      </new:newCabinetOperate>
+   </soapenv:Body>
+</soapenv:Envelope>
+#报文注释Req_Data_086,单据-退单投递状态报告91131接口80端口（单个单据，返回成功）
+Req_Data_086=<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:new="http://newCabinetEas.ws.eas.zte.com">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <new:newCabinetOperate>
+         <new:resquest><![CDATA[<?xml version="1.0" encoding="GBK" standalone="no" ?><package><pub><txcode>91131</txcode></pub><req><boeNumList><boeNum>HY-180326-0007</boeNum></boeNumList><code>666983</code><doorId>0</doorId><doorNumber>10</doorNumber><siteDesc>测试柜子</siteDesc><time>20190111160023</time><deliempNum>zhangdayue</deliempNum><siteName>MGHY001</siteName></req></package>]]></new:resquest>
+      </new:newCabinetOperate>
+   </soapenv:Body>
+</soapenv:Envelope>
+#报文注释Req_Data_087,单据-退单投递状态报告91131接口80端口（多个单据，不属于同一用户，返回成功）
+Req_Data_087=<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:new="http://newCabinetEas.ws.eas.zte.com">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <new:newCabinetOperate>
+         <new:resquest><![CDATA[<?xml version="1.0" encoding="GBK" standalone="no" ?><package><pub><txcode>91131</txcode></pub><req><boeNumList><boeNum>HY-180326-0007</boeNum><boeNum>HY-180803-0014</boeNum></boeNumList><code>545592</code><doorId>0</doorId><doorNumber>9</doorNumber><siteDesc>测试柜子</siteDesc><time>20190111155440</time><deliempNum>zhangdayue</deliempNum><siteName>MGHY001</siteName></req></package>]]></new:resquest>
+      </new:newCabinetOperate>
+   </soapenv:Body>
+</soapenv:Envelope>
+#报文注释Req_Data_088,单据-退单投递状态报告91131接口80端口（多个单据，属于同一用户，返回成功）
+Req_Data_088=<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:new="http://newCabinetEas.ws.eas.zte.com">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <new:newCabinetOperate>
+         <new:resquest><![CDATA[<?xml version="1.0" encoding="GBK" standalone="no" ?><package><pub><txcode>91131</txcode></pub><req><boeNumList><boeNum>HY-190111-0023</boeNum><boeNum>HY-190111-0021</boeNum><boeNum>HY-190111-0022</boeNum></boeNumList><code>545592</code><doorId>0</doorId><doorNumber>9</doorNumber><siteDesc>测试柜子</siteDesc><time>20190111155440</time><deliempNum>zhangdayue</deliempNum><siteName>MGHY001</siteName></req></package>]]></new:resquest>
+      </new:newCabinetOperate>
+   </soapenv:Body>
+</soapenv:Envelope>
+#报文注释Req_Data_089,单据-退单投递状态报告91131接口80端口（单据为空，返回成功）
+Req_Data_089=<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:new="http://newCabinetEas.ws.eas.zte.com">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <new:newCabinetOperate>
+         <new:resquest><![CDATA[<?xml version="1.0" encoding="GBK" standalone="no" ?><package><pub><txcode>91131</txcode></pub><req><boeNumList></boeNumList><code>545592</code><doorId>0</doorId><doorNumber>9</doorNumber><siteDesc>测试柜子</siteDesc><time>20190111155440</time><deliempNum>zhangdayue</deliempNum><siteName>MGHY001</siteName></req></package>]]></new:resquest>
+      </new:newCabinetOperate>
+   </soapenv:Body>
+</soapenv:Envelope>
+#报文注释Req_Data_090,单据-退单投递状态报告91131接口80端口（单据号不全，返回成功）
+Req_Data_090=<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:new="http://newCabinetEas.ws.eas.zte.com">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <new:newCabinetOperate>
+         <new:resquest><![CDATA[<?xml version="1.0" encoding="GBK" standalone="no" ?><package><pub><txcode>91131</txcode></pub><req><boeNumList><boeNum>HY-190111-0023</boeNum><boeNum>HY-190111-0021</boeNum><boeNum>HY-12</boeNum></boeNumList><code>545592</code><doorId>0</doorId><doorNumber>9</doorNumber><siteDesc>测试柜子</siteDesc><time>20190111155440</time><deliempNum>zhangdayue</deliempNum><siteName>MGHY001</siteName></req></package>]]></new:resquest>
+      </new:newCabinetOperate>
+   </soapenv:Body>
+</soapenv:Envelope>
+#报文注释Req_Data_091,单据-退单投递状态报告91131接口80端口（验证码为空，返回成功）
+Req_Data_091=<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:new="http://newCabinetEas.ws.eas.zte.com">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <new:newCabinetOperate>
+         <new:resquest><![CDATA[<?xml version="1.0" encoding="GBK" standalone="no" ?><package><pub><txcode>91131</txcode></pub><req><boeNumList><boeNum>HY-190111-0023</boeNum><boeNum>HY-190111-0021</boeNum><boeNum>HY-190111-0022</boeNum></boeNumList><code></code><doorId>0</doorId><doorNumber>9</doorNumber><siteDesc>测试柜子</siteDesc><time>20190111155440</time><deliempNum>zhangdayue</deliempNum><siteName>MGHY001</siteName></req></package>]]></new:resquest>
+      </new:newCabinetOperate>
+   </soapenv:Body>
+</soapenv:Envelope>
+#报文注释Req_Data_092,单据-退单投递状态报告91131接口80端口（验证码位数非空且不足6位，返回成功）
+Req_Data_092=<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:new="http://newCabinetEas.ws.eas.zte.com">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <new:newCabinetOperate>
+         <new:resquest><![CDATA[<?xml version="1.0" encoding="GBK" standalone="no" ?><package><pub><txcode>91131</txcode></pub><req><boeNumList><boeNum>HY-190111-0023</boeNum><boeNum>HY-190111-0021</boeNum><boeNum>HY-190111-0022</boeNum></boeNumList><code>5455</code><doorId>0</doorId><doorNumber>9</doorNumber><siteDesc>测试柜子</siteDesc><time>20190111155440</time><deliempNum>zhangdayue</deliempNum><siteName>MGHY001</siteName></req></package>]]></new:resquest>
+      </new:newCabinetOperate>
+   </soapenv:Body>
+</soapenv:Envelope>
+#报文注释Req_Data_093,单据-退单投递状态报告91131接口80端口（验证码位数大于6位，返回成功）
+Req_Data_093=<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:new="http://newCabinetEas.ws.eas.zte.com">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <new:newCabinetOperate>
+         <new:resquest><![CDATA[<?xml version="1.0" encoding="GBK" standalone="no" ?><package><pub><txcode>91131</txcode></pub><req><boeNumList><boeNum>HY-190111-0023</boeNum><boeNum>HY-190111-0021</boeNum><boeNum>HY-190111-0022</boeNum></boeNumList><code>5455999999999</code><doorId>0</doorId><doorNumber>9</doorNumber><siteDesc>测试柜子</siteDesc><time>20190111155440</time><deliempNum>zhangdayue</deliempNum><siteName>MGHY001</siteName></req></package>]]></new:resquest>
+      </new:newCabinetOperate>
+   </soapenv:Body>
+</soapenv:Envelope>
+#报文注释Req_Data_094,单据-退单投递状态报告91131接口80端口（退单柜门ID为空，返回成功）
+Req_Data_094=<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:new="http://newCabinetEas.ws.eas.zte.com">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <new:newCabinetOperate>
+         <new:resquest><![CDATA[<?xml version="1.0" encoding="GBK" standalone="no" ?><package><pub><txcode>91131</txcode></pub><req><boeNumList><boeNum>HY-190111-0023</boeNum><boeNum>HY-190111-0021</boeNum><boeNum>HY-190111-0022</boeNum></boeNumList><code>545592</code><doorId></doorId><doorNumber>9</doorNumber><siteDesc>测试柜子</siteDesc><time>20190111155440</time><deliempNum>zhangdayue</deliempNum><siteName>MGHY001</siteName></req></package>]]></new:resquest>
+      </new:newCabinetOperate>
+   </soapenv:Body>
+</soapenv:Envelope>
+#报文注释Req_Data_095,单据-退单投递状态报告91131接口80端口（投递时间为空，返回成功）
+Req_Data_095=<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:new="http://newCabinetEas.ws.eas.zte.com">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <new:newCabinetOperate>
+         <new:resquest><![CDATA[<?xml version="1.0" encoding="GBK" standalone="no" ?><package><pub><txcode>91131</txcode></pub><req><boeNumList><boeNum>HY-190111-0023</boeNum><boeNum>HY-190111-0021</boeNum><boeNum>HY-190111-0022</boeNum></boeNumList><code>545592</code><doorId>0</doorId><doorNumber>9</doorNumber><siteDesc>测试柜子</siteDesc><time></time><deliempNum>zhangdayue</deliempNum><siteName>MGHY001</siteName></req></package>]]></new:resquest>
+      </new:newCabinetOperate>
+   </soapenv:Body>
+</soapenv:Envelope>
+#报文注释Req_Data_096,单据-退单投递状态报告91131接口80端口（设备编号为空，返回成功）
+Req_Data_096=<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:new="http://newCabinetEas.ws.eas.zte.com">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <new:newCabinetOperate>
+         <new:resquest><![CDATA[<?xml version="1.0" encoding="GBK" standalone="no" ?><package><pub><txcode>91131</txcode></pub><req><boeNumList><boeNum>HY-190111-0023</boeNum><boeNum>HY-190111-0021</boeNum><boeNum>HY-190111-0022</boeNum></boeNumList><code>545592</code><doorId>0</doorId><doorNumber>9</doorNumber><siteDesc></siteDesc><time>20190111155440</time><deliempNum>zhangdayue</deliempNum><siteName></siteName></req></package>]]></new:resquest>
+      </new:newCabinetOperate>
+   </soapenv:Body>
+</soapenv:Envelope>
+#报文注释Req_Data_097,单据-退单投递状态报告91131接口80端口（员工编号为空，返回成功）
+Req_Data_097=<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:new="http://newCabinetEas.ws.eas.zte.com">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <new:newCabinetOperate>
+         <new:resquest><![CDATA[<?xml version="1.0" encoding="GBK" standalone="no" ?><package><pub><txcode>91131</txcode></pub><req><boeNumList><boeNum>HY-190111-0023</boeNum><boeNum>HY-190111-0021</boeNum><boeNum>HY-190111-0022</boeNum></boeNumList><code>545592</code><doorId>0</doorId><doorNumber>9</doorNumber><siteDesc>测试柜子</siteDesc><time>20190111155440</time><deliempNum></deliempNum><siteName></siteName></req></package>]]></new:resquest>
+      </new:newCabinetOperate>
+   </soapenv:Body>
+</soapenv:Envelope>
+#报文注释Req_Data_098,单据-退单投递状态报告91131接口80端口（退单子柜门ID为空，返回成功）
+Req_Data_098=<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:new="http://newCabinetEas.ws.eas.zte.com">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <new:newCabinetOperate>
+         <new:resquest><![CDATA[<?xml version="1.0" encoding="GBK" standalone="no" ?><package><pub><txcode>91131</txcode></pub><req><boeNumList><boeNum>HY-190111-0023</boeNum><boeNum>HY-190111-0021</boeNum><boeNum>HY-190111-0022</boeNum></boeNumList><code>545592</code><doorId>0</doorId><doorNumber></doorNumber><siteDesc>测试柜子</siteDesc><time>20190111155440</time><deliempNum>zhangdayue</deliempNum><siteName>MGHY001</siteName></req></package>]]></new:resquest>
+      </new:newCabinetOperate>
+   </soapenv:Body>
+</soapenv:Envelope>
+#报文注释Req_Data_099,单据接收报告91133接口，取单成功_返回成功
+Req_Data_099=<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:new="http://newCabinetEas.ws.eas.zte.com">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <new:newCabinetOperate>
+         <new:resquest><![CDATA[<?xml version="1.0" encoding="GBK" standalone="no" ?><package><pub><txcode>91133</txcode></pub><req><boeNumList><boeNum>HY-171115-0005</boeNum></boeNumList><time>20190111160450</time><deliempNum>zhangdayue</deliempNum><siteName>MGHY001</siteName></req></package>]]></new:resquest>
+      </new:newCabinetOperate>
+   </soapenv:Body>
+</soapenv:Envelope>
+#报文注释Req_Data_100,单据接收报告91133接口，单据为空_返回成功
+Req_Data_100=<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:new="http://newCabinetEas.ws.eas.zte.com">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <new:newCabinetOperate>
+         <new:resquest><![CDATA[<?xml version="1.0" encoding="GBK" standalone="no" ?><package><pub><txcode>91133</txcode></pub><req><boeNumList><boeNum></boeNum></boeNumList><time>20190111160450</time><deliempNum>zhangdayue</deliempNum><siteName>MGHY001</siteName></req></package>]]></new:resquest>
+      </new:newCabinetOperate>
+   </soapenv:Body>
+</soapenv:Envelope>
+#报文注释Req_Data_101,单据接收报告91133接口，时间为空_返回成功
+Req_Data_101=<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:new="http://newCabinetEas.ws.eas.zte.com">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <new:newCabinetOperate>
+         <new:resquest><![CDATA[<?xml version="1.0" encoding="GBK" standalone="no" ?><package><pub><txcode>91133</txcode></pub><req><boeNumList><boeNum>HY-171115-0005</boeNum></boeNumList><time></time><deliempNum>zhangdayue</deliempNum><siteName>MGHY001</siteName></req></package>]]></new:resquest>
+      </new:newCabinetOperate>
+   </soapenv:Body>
+</soapenv:Envelope>
+#报文注释Req_Data_102,单据接收报告91133接口，员工编号为空_返回成功
+Req_Data_102=<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:new="http://newCabinetEas.ws.eas.zte.com">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <new:newCabinetOperate>
+         <new:resquest><![CDATA[<?xml version="1.0" encoding="GBK" standalone="no" ?><package><pub><txcode>91133</txcode></pub><req><boeNumList><boeNum>HY-171115-0005</boeNum></boeNumList><time>20190111160450</time><deliempNum></deliempNum><siteName>MGHY001</siteName></req></package>]]></new:resquest>
+      </new:newCabinetOperate>
+   </soapenv:Body>
+</soapenv:Envelope>
+#报文注释Req_Data_103,单据接收报告91133接口，设备编号为空_返回成功
+Req_Data_103=<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:new="http://newCabinetEas.ws.eas.zte.com">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <new:newCabinetOperate>
+         <new:resquest><![CDATA[<?xml version="1.0" encoding="GBK" standalone="no" ?><package><pub><txcode>91133</txcode></pub><req><boeNumList><boeNum>HY-171115-0005</boeNum></boeNumList><time>20190111160450</time><deliempNum>zhangdayue</deliempNum><siteName></siteName></req></package>]]></new:resquest>
+      </new:newCabinetOperate>
+   </soapenv:Body>
+</soapenv:Envelope>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

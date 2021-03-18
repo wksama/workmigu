@@ -1,0 +1,20 @@
+*** Variables ***
+&{SUCCESS_retcode}    code=00000
+&{SUCCESS_Msg}    Msg=成功
+&{FAIL_Msg}       Msg=电话不能为空
+&{FAIL_retcode1}    code=10002
+&{SUCCESS_txcode1}    code=91100
+&{SUCCESS_txcode2}    code=91105
+&{SUCCESS_txcode3}    code=91101
+&{SUCCESS_txcode4}    code=91120
+&{SUCCESS_txcode5}    code=91127
+&{SUCCESS_txcode6}    code=91126
+&{SUCCESS_txcode7}    code=91103
+&{SUCCESS_txcode8}    code=91104
+&{SUCCESS_Msg1}    Msg=验证通过
+&{FAIL_retcode2}    code=10001
+&{FAIL_Msg1}      Msg=报文传入格式错误
+&{FAIL_Msg2}      Msg=打包人员工编号不能为空
+&{SUCCESS_txcode9}    code=91130
+&{SUCCESS_txcode10}    code=91131
+&{SUCCESS_txcode11}    code=91133

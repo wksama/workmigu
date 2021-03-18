@@ -1,0 +1,991 @@
+{
+	"id": "dca4221d-1dd4-1519-468d-05f5d61a528b",
+	"name": "音乐--现网",
+	"description": "",
+	"order": [
+		"383ef1c5-b9cd-25d2-1383-0d1847a04a62",
+		"90197cf3-32f8-9ac4-1358-a3bdc7b0c9ec",
+		"3e7c0be6-988c-d3f4-4759-715808caa92b",
+		"0e8c3e8b-c310-79a5-0804-d06dc32e4ade",
+		"0548ecc6-45c3-44cd-d079-ae48c42de999",
+		"dda34ab5-e5e9-3029-312f-de94847cbd73",
+		"c711287f-fad6-f1dd-70b4-9349431bd1b4",
+		"526b2ee8-42d4-9ca6-8faf-d408c8d5a802",
+		"01ef39c2-a929-9e01-a88f-fd791bade23c",
+		"7aa907b5-404e-71f5-706d-196b4a0c7863",
+		"02afaf78-b090-3e47-7151-0b827743283e",
+		"ce2fec18-85e1-88ef-dcff-024dbe64be37",
+		"afb3fc74-aa2a-990b-3d92-9c6a7953a02e",
+		"32649160-98e9-323d-2892-fdffa55e1596",
+		"1b6349d1-266c-8ab5-1191-85d2f2739191",
+		"eb6bab34-e231-251b-8edc-df834b1191b0"
+	],
+	"folders": [],
+	"folders_order": [],
+	"timestamp": 0,
+	"owner": 0,
+	"public": false,
+	"requests": [
+		{
+			"id": "01ef39c2-a929-9e01-a88f-fd791bade23c",
+			"name": "无维度mv",
+			"description": "",
+			"collectionId": "dca4221d-1dd4-1519-468d-05f5d61a528b",
+			"method": "GET",
+			"headers": "",
+			"dataMode": "raw",
+			"data": [],
+			"rawModeData": "",
+			"url": "",
+			"responses": [],
+			"queryParams": [],
+			"headerData": [],
+			"collection_id": "dca4221d-1dd4-1519-468d-05f5d61a528b"
+		},
+		{
+			"id": "02afaf78-b090-3e47-7151-0b827743283e",
+			"name": "五维度歌曲",
+			"description": "",
+			"collectionId": "dca4221d-1dd4-1519-468d-05f5d61a528b",
+			"method": "GET",
+			"headers": "",
+			"dataMode": "raw",
+			"data": [],
+			"rawModeData": "",
+			"url": "",
+			"responses": [],
+			"queryParams": [],
+			"headerData": [],
+			"collection_id": "dca4221d-1dd4-1519-468d-05f5d61a528b"
+		},
+		{
+			"id": "0548ecc6-45c3-44cd-d079-ae48c42de999",
+			"name": "联想提示",
+			"description": "",
+			"collectionId": "dca4221d-1dd4-1519-468d-05f5d61a528b",
+			"method": "GET",
+			"headers": "",
+			"dataMode": "raw",
+			"data": [],
+			"rawModeData": "",
+			"url": "",
+			"responses": [],
+			"queryParams": [],
+			"headerData": [],
+			"collection_id": "dca4221d-1dd4-1519-468d-05f5d61a528b"
+		},
+		{
+			"id": "0e8c3e8b-c310-79a5-0804-d06dc32e4ade",
+			"headers": "",
+			"headerData": [],
+			"url": "{{url}}/musicsearch/api/json/searchtag?text=人物访谈&issemantic=1&isCorrect=1&isCopyright=0&expire=000000&appId=yyapp2&sid=1&sessionId=1&pageSize=10&timestamp={{time}}&pageIndex=1&token={{yyapp2_token}}",
+			"queryParams": [
+				{
+					"key": "text",
+					"value": "人物访谈",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "issemantic",
+					"value": "1",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "isCorrect",
+					"value": "1",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "isCopyright",
+					"value": "0",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "expire",
+					"value": "000000",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "appId",
+					"value": "yyapp2",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "sid",
+					"value": "1",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "sessionId",
+					"value": "1",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "pageSize",
+					"value": "10",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "timestamp",
+					"value": "{{time}}",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "pageIndex",
+					"value": "1",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "token",
+					"value": "{{yyapp2_token}}",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				}
+			],
+			"preRequestScript": "//设置当前时间戳\npostman.setGlobalVariable(\"time\",Date.parse(new Date()) / 1000);\ntime = postman.getGlobalVariable('time')\n\n//字符串进行md5加密\nvar wwwmigu_token= CryptoJS.MD5(\"wwwmigu\"+\"ff2102dcf16002d8c1dde6547ea98824\"+time).toString();\nvar yyapp2_token= CryptoJS.MD5(\"yyapp2\"+\"d16148780a1dcc7408e06336b98cfd50\"+time).toString();\nvar yyapp_token= CryptoJS.MD5(\"yyapp\"+\"ff28c965cf94b22c042d6888f4d3187b\"+time).toString();\nvar open_token= CryptoJS.MD5(\"open\"+\"88c47fe265ee1cdaf4a30dcb6c71e9cd\"+time).toString();\nvar wap_token= CryptoJS.MD5(\"wap\"+\"46d1056431ba453a1995de9c08bba66a\"+time).toString();\nvar l2530_token= CryptoJS.MD5(\"12530\"+\"eb7fce6c20924529a4d9add1745d836b\"+time).toString();\nvar miguyytv_token= CryptoJS.MD5(\"miguyytv\"+\"3867ae7240bc4ab6b5621ed7be045483\"+time).toString();\nvar ringapp_token= CryptoJS.MD5(\"ringapp\"+\"8674e3b06228ec547bbf86ee319d07d3\"+time).toString();\nvar ysten_token= CryptoJS.MD5(\"ysten\"+\"6dd6e7530edeafe4ad748a551d5fd954\"+time).toString();\nvar ivr_token= CryptoJS.MD5(\"ivr\"+\"78cde2980f8b4af08d27ab26c3e9c74d\"+time).toString();\nvar miguyytwx_token= CryptoJS.MD5(\"miguyytwx\"+\"e51c5764cea7fda1eb22dee74a15fed6\"+time).toString();\npm.globals.get(\"variable_key\");\n\n//设置token\npm.globals.get(\"variable_key\");\npostman.setGlobalVariable(\"wwwmigu_token\",wwwmigu_token)\npostman.setGlobalVariable(\"yyapp2_token\",yyapp2_token)\npostman.setGlobalVariable(\"yyapp_token\",yyapp_token)",
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": [],
+			"dataMode": "raw",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1571038864251,
+			"name": "标签下歌曲",
+			"description": "",
+			"collectionId": "dca4221d-1dd4-1519-468d-05f5d61a528b",
+			"responses": [],
+			"rawModeData": ""
+		},
+		{
+			"id": "1b6349d1-266c-8ab5-1191-85d2f2739191",
+			"headers": "",
+			"headerData": [],
+			"url": "172.20.37.42:9119/musicsearch/api/json/voiceBoxSearchSong?text=222&searchType=4&sort=0&issemantic=1&isCorrect=1&isCopyright=0&expire=000000&searchRange={\"movieName\":[\"\"],\"songName\":[\"小星星\"],\"singerName\":[\"\"],\"writterName\":[\"\"],\"albumName\":[\"\"],\"tagName\":[\"儿歌\"]}&appId=yyapp2&timestamp={{time}}&sid=1&sessionId=1&token={{yyapp2_token}}&pageSize=10&pageIndex=1&contentFilter=01",
+			"queryParams": [
+				{
+					"key": "text",
+					"value": "222",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "searchType",
+					"value": "4",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "sort",
+					"value": "0",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "issemantic",
+					"value": "1",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "isCorrect",
+					"value": "1",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "isCopyright",
+					"value": "0",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "expire",
+					"value": "000000",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "searchRange",
+					"value": "{\"movieName\":[\"\"],\"songName\":[\"小星星\"],\"singerName\":[\"\"],\"writterName\":[\"\"],\"albumName\":[\"\"],\"tagName\":[\"儿歌\"]}",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "appId",
+					"value": "yyapp2",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "timestamp",
+					"value": "{{time}}",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "sid",
+					"value": "1",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "sessionId",
+					"value": "1",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "token",
+					"value": "{{yyapp2_token}}",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "pageSize",
+					"value": "10",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "pageIndex",
+					"value": "1",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "contentFilter",
+					"value": "01",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				}
+			],
+			"preRequestScript": "//设置当前时间戳\npostman.setGlobalVariable(\"time\",Date.parse(new Date()) / 1000);\ntime = postman.getGlobalVariable('time')\n\n//字符串进行md5加密\nvar wwwmigu_token= CryptoJS.MD5(\"wwwmigu\"+\"ff2102dcf16002d8c1dde6547ea98824\"+time).toString();\nvar yyapp2_token= CryptoJS.MD5(\"yyapp2\"+\"d16148780a1dcc7408e06336b98cfd50\"+time).toString();\nvar yyapp_token= CryptoJS.MD5(\"yyapp\"+\"ff28c965cf94b22c042d6888f4d3187b\"+time).toString();\nvar open_token= CryptoJS.MD5(\"open\"+\"88c47fe265ee1cdaf4a30dcb6c71e9cd\"+time).toString();\nvar wap_token= CryptoJS.MD5(\"wap\"+\"46d1056431ba453a1995de9c08bba66a\"+time).toString();\nvar l2530_token= CryptoJS.MD5(\"12530\"+\"eb7fce6c20924529a4d9add1745d836b\"+time).toString();\nvar miguyytv_token= CryptoJS.MD5(\"miguyytv\"+\"3867ae7240bc4ab6b5621ed7be045483\"+time).toString();\nvar ringapp_token= CryptoJS.MD5(\"ringapp\"+\"8674e3b06228ec547bbf86ee319d07d3\"+time).toString();\nvar ysten_token= CryptoJS.MD5(\"ysten\"+\"6dd6e7530edeafe4ad748a551d5fd954\"+time).toString();\nvar ivr_token= CryptoJS.MD5(\"ivr\"+\"78cde2980f8b4af08d27ab26c3e9c74d\"+time).toString();\nvar miguyytwx_token= CryptoJS.MD5(\"miguyytwx\"+\"e51c5764cea7fda1eb22dee74a15fed6\"+time).toString();\n\n//设置token\npostman.setGlobalVariable(\"wwwmigu_token\",wwwmigu_token)\npostman.setGlobalVariable(\"yyapp2_token\",yyapp2_token)\npostman.setGlobalVariable(\"yyapp_token\",yyapp_token)\npm.globals.get(\"variable_key\");",
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": null,
+			"dataMode": "params",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1584128654133,
+			"name": "音响搜索",
+			"description": "",
+			"collectionId": "dca4221d-1dd4-1519-468d-05f5d61a528b",
+			"responses": []
+		},
+		{
+			"id": "32649160-98e9-323d-2892-fdffa55e1596",
+			"name": "歌单搜索",
+			"description": "",
+			"collectionId": "dca4221d-1dd4-1519-468d-05f5d61a528b",
+			"method": "GET",
+			"headers": "",
+			"dataMode": "raw",
+			"data": [],
+			"rawModeData": "",
+			"url": "",
+			"responses": [],
+			"queryParams": [],
+			"headerData": [],
+			"collection_id": "dca4221d-1dd4-1519-468d-05f5d61a528b"
+		},
+		{
+			"id": "383ef1c5-b9cd-25d2-1383-0d1847a04a62",
+			"headers": "",
+			"headerData": [],
+			"url": "{{url}}/musicsearch/api/json/searchsong?text=爱与诚 &searchType=2&sort=1&issemantic=1&isCorrect=1&isCopyright=0&expire=000000&searchRange={\"movieName\":[\"\"],\"songName\":[\"\"],\"singerName\":[\"\"],\"writterName\":[\"\"],\"albumName\":[\"\"],\"tagName\":[\"\"]}&appId=yyapp2&timestamp={{time}}&sid=1&sessionId=1&token={{yyapp2_token}}&pageSize=10&pageIndex=1",
+			"queryParams": [
+				{
+					"key": "text",
+					"value": "爱与诚 ",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "searchType",
+					"value": "2",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "sort",
+					"value": "1",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "issemantic",
+					"value": "1",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "isCorrect",
+					"value": "1",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "isCopyright",
+					"value": "0",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "expire",
+					"value": "000000",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "searchRange",
+					"value": "{\"movieName\":[\"\"],\"songName\":[\"\"],\"singerName\":[\"\"],\"writterName\":[\"\"],\"albumName\":[\"\"],\"tagName\":[\"\"]}",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "appId",
+					"value": "yyapp2",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "timestamp",
+					"value": "{{time}}",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "sid",
+					"value": "1",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "sessionId",
+					"value": "1",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "token",
+					"value": "{{yyapp2_token}}",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "pageSize",
+					"value": "10",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "pageIndex",
+					"value": "1",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				}
+			],
+			"preRequestScript": "//设置当前时间戳\npostman.setGlobalVariable(\"time\",Date.parse(new Date()) / 1000);\ntime = postman.getGlobalVariable('time')\n\n//字符串进行md5加密\nvar wwwmigu_token= CryptoJS.MD5(\"wwwmigu\"+\"ff2102dcf16002d8c1dde6547ea98824\"+time).toString();\nvar yyapp2_token= CryptoJS.MD5(\"yyapp2\"+\"d16148780a1dcc7408e06336b98cfd50\"+time).toString();\nvar yyapp_token= CryptoJS.MD5(\"yyapp\"+\"ff28c965cf94b22c042d6888f4d3187b\"+time).toString();\nvar open_token= CryptoJS.MD5(\"open\"+\"88c47fe265ee1cdaf4a30dcb6c71e9cd\"+time).toString();\nvar wap_token= CryptoJS.MD5(\"wap\"+\"46d1056431ba453a1995de9c08bba66a\"+time).toString();\nvar l2530_token= CryptoJS.MD5(\"12530\"+\"eb7fce6c20924529a4d9add1745d836b\"+time).toString();\nvar miguyytv_token= CryptoJS.MD5(\"miguyytv\"+\"3867ae7240bc4ab6b5621ed7be045483\"+time).toString();\nvar ringapp_token= CryptoJS.MD5(\"ringapp\"+\"8674e3b06228ec547bbf86ee319d07d3\"+time).toString();\nvar ysten_token= CryptoJS.MD5(\"ysten\"+\"6dd6e7530edeafe4ad748a551d5fd954\"+time).toString();\nvar ivr_token= CryptoJS.MD5(\"ivr\"+\"78cde2980f8b4af08d27ab26c3e9c74d\"+time).toString();\nvar miguyytwx_token= CryptoJS.MD5(\"miguyytwx\"+\"e51c5764cea7fda1eb22dee74a15fed6\"+time).toString();\npm.globals.get(\"variable_key\");\n\n//设置token\npm.globals.get(\"variable_key\");\npostman.setGlobalVariable(\"wwwmigu_token\",wwwmigu_token)\npostman.setGlobalVariable(\"yyapp2_token\",yyapp2_token)\npostman.setGlobalVariable(\"yyapp_token\",yyapp_token)",
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": [],
+			"dataMode": "raw",
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1573485756176,
+			"name": "歌曲搜索",
+			"description": "",
+			"collectionId": "dca4221d-1dd4-1519-468d-05f5d61a528b",
+			"responses": [],
+			"rawModeData": ""
+		},
+		{
+			"id": "3e7c0be6-988c-d3f4-4759-715808caa92b",
+			"name": "歌词搜",
+			"description": "",
+			"collectionId": "dca4221d-1dd4-1519-468d-05f5d61a528b",
+			"method": "GET",
+			"headers": "",
+			"dataMode": "raw",
+			"data": [],
+			"rawModeData": "",
+			"url": "",
+			"responses": [],
+			"queryParams": [],
+			"headerData": [],
+			"collection_id": "dca4221d-1dd4-1519-468d-05f5d61a528b"
+		},
+		{
+			"id": "526b2ee8-42d4-9ca6-8faf-d408c8d5a802",
+			"name": "视频彩铃",
+			"description": "",
+			"collectionId": "dca4221d-1dd4-1519-468d-05f5d61a528b",
+			"method": "GET",
+			"headers": "",
+			"dataMode": "raw",
+			"data": [],
+			"rawModeData": "",
+			"url": "",
+			"responses": [],
+			"queryParams": [],
+			"headerData": [],
+			"collection_id": "dca4221d-1dd4-1519-468d-05f5d61a528b"
+		},
+		{
+			"id": "7aa907b5-404e-71f5-706d-196b4a0c7863",
+			"headers": "",
+			"headerData": [],
+			"url": "{{url}}/musicsearch/api/json/getsingerSAM?text=31975&isCopyright=0&isSAM=111&appId=yyapp2&timestamp={{time}}&sid=1&sessionId=1&token={{yyapp2_token}}&pageSize=100&pageIndex=1",
+			"queryParams": [
+				{
+					"key": "text",
+					"value": "31975",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "isCopyright",
+					"value": "0",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "isSAM",
+					"value": "111",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "appId",
+					"value": "yyapp2",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "timestamp",
+					"value": "{{time}}",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "sid",
+					"value": "1",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "sessionId",
+					"value": "1",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "token",
+					"value": "{{yyapp2_token}}",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "pageSize",
+					"value": "100",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "pageIndex",
+					"value": "1",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				}
+			],
+			"preRequestScript": "//设置当前时间戳\npostman.setGlobalVariable(\"time\",Date.parse(new Date()) / 1000);\ntime = postman.getGlobalVariable('time')\n\n//字符串进行md5加密\nvar wwwmigu_token= CryptoJS.MD5(\"wwwmigu\"+\"ff2102dcf16002d8c1dde6547ea98824\"+time).toString();\nvar yyapp2_token= CryptoJS.MD5(\"yyapp2\"+\"d16148780a1dcc7408e06336b98cfd50\"+time).toString();\nvar yyapp_token= CryptoJS.MD5(\"yyapp\"+\"ff28c965cf94b22c042d6888f4d3187b\"+time).toString();\nvar open_token= CryptoJS.MD5(\"open\"+\"88c47fe265ee1cdaf4a30dcb6c71e9cd\"+time).toString();\nvar wap_token= CryptoJS.MD5(\"wap\"+\"46d1056431ba453a1995de9c08bba66a\"+time).toString();\nvar l2530_token= CryptoJS.MD5(\"12530\"+\"eb7fce6c20924529a4d9add1745d836b\"+time).toString();\nvar miguyytv_token= CryptoJS.MD5(\"miguyytv\"+\"3867ae7240bc4ab6b5621ed7be045483\"+time).toString();\nvar ringapp_token= CryptoJS.MD5(\"ringapp\"+\"8674e3b06228ec547bbf86ee319d07d3\"+time).toString();\nvar ysten_token= CryptoJS.MD5(\"ysten\"+\"6dd6e7530edeafe4ad748a551d5fd954\"+time).toString();\nvar ivr_token= CryptoJS.MD5(\"ivr\"+\"78cde2980f8b4af08d27ab26c3e9c74d\"+time).toString();\nvar miguyytwx_token= CryptoJS.MD5(\"miguyytwx\"+\"e51c5764cea7fda1eb22dee74a15fed6\"+time).toString();\n\n//设置token\npostman.setGlobalVariable(\"wwwmigu_token\",wwwmigu_token)\npostman.setGlobalVariable(\"yyapp2_token\",yyapp2_token)\npostman.setGlobalVariable(\"yyapp_token\",yyapp_token)\npm.globals.get(\"variable_key\");",
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": [],
+			"dataMode": "raw",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1579199275669,
+			"name": "歌手下mv",
+			"description": "",
+			"collectionId": "dca4221d-1dd4-1519-468d-05f5d61a528b",
+			"responses": [],
+			"rawModeData": ""
+		},
+		{
+			"id": "90197cf3-32f8-9ac4-1358-a3bdc7b0c9ec",
+			"headers": "",
+			"headerData": [],
+			"url": "{{url}}/musicsearch/api/json/searchall?text=谭咏麟\n &searchType=2&isCorrect=1&isCopyright=0&expire=000000&bestShowType=0&searchSwitch={\"song\":1,\"album\":1,\"singer\":1,\"tagSong\":1,\"mvSong\":1,\"bestShow\":1,\"concert\":1,\"songlist\":1}&appId=yyapp2&timestamp={{time}}&sid=1&sessionId=1&token={{yyapp2_token}}&pageSize=10&pageIndex=1&bestIndicate=11111",
+			"queryParams": [
+				{
+					"key": "text",
+					"value": "谭咏麟\n ",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "searchType",
+					"value": "2",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "isCorrect",
+					"value": "1",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "isCopyright",
+					"value": "0",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "expire",
+					"value": "000000",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "bestShowType",
+					"value": "0",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "searchSwitch",
+					"value": "{\"song\":1,\"album\":1,\"singer\":1,\"tagSong\":1,\"mvSong\":1,\"bestShow\":1,\"concert\":1,\"songlist\":1}",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "appId",
+					"value": "yyapp2",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "timestamp",
+					"value": "{{time}}",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "sid",
+					"value": "1",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "sessionId",
+					"value": "1",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "token",
+					"value": "{{yyapp2_token}}",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "pageSize",
+					"value": "10",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "pageIndex",
+					"value": "1",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "bestIndicate",
+					"value": "11111",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				}
+			],
+			"preRequestScript": "//设置当前时间戳\npostman.setGlobalVariable(\"time\",Date.parse(new Date()) / 1000);\ntime = postman.getGlobalVariable('time')\n\n//字符串进行md5加密\nvar wwwmigu_token= CryptoJS.MD5(\"wwwmigu\"+\"ff2102dcf16002d8c1dde6547ea98824\"+time).toString();\nvar yyapp2_token= CryptoJS.MD5(\"yyapp2\"+\"d16148780a1dcc7408e06336b98cfd50\"+time).toString();\nvar yyapp_token= CryptoJS.MD5(\"yyapp\"+\"ff28c965cf94b22c042d6888f4d3187b\"+time).toString();\nvar open_token= CryptoJS.MD5(\"open\"+\"88c47fe265ee1cdaf4a30dcb6c71e9cd\"+time).toString();\nvar wap_token= CryptoJS.MD5(\"wap\"+\"46d1056431ba453a1995de9c08bba66a\"+time).toString();\nvar l2530_token= CryptoJS.MD5(\"12530\"+\"eb7fce6c20924529a4d9add1745d836b\"+time).toString();\nvar miguyytv_token= CryptoJS.MD5(\"miguyytv\"+\"3867ae7240bc4ab6b5621ed7be045483\"+time).toString();\nvar ringapp_token= CryptoJS.MD5(\"ringapp\"+\"8674e3b06228ec547bbf86ee319d07d3\"+time).toString();\nvar ysten_token= CryptoJS.MD5(\"ysten\"+\"6dd6e7530edeafe4ad748a551d5fd954\"+time).toString();\nvar ivr_token= CryptoJS.MD5(\"ivr\"+\"78cde2980f8b4af08d27ab26c3e9c74d\"+time).toString();\nvar miguyytwx_token= CryptoJS.MD5(\"miguyytwx\"+\"e51c5764cea7fda1eb22dee74a15fed6\"+time).toString();\n\n//设置token\npostman.setGlobalVariable(\"wwwmigu_token\",wwwmigu_token)\npostman.setGlobalVariable(\"yyapp2_token\",yyapp2_token)\npostman.setGlobalVariable(\"yyapp_token\",yyapp_token)\npm.globals.get(\"variable_key\");",
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": [],
+			"dataMode": "raw",
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1583807001158,
+			"name": "五维度",
+			"description": "",
+			"collectionId": "dca4221d-1dd4-1519-468d-05f5d61a528b",
+			"responses": [],
+			"rawModeData": ""
+		},
+		{
+			"id": "afb3fc74-aa2a-990b-3d92-9c6a7953a02e",
+			"headers": "",
+			"headerData": [],
+			"url": "{{url}}/musicsearch/api/json/suggestrec?text=整瓶的梦&timestamp={{time}}&size=10&appId=yyapp2&token={{yyapp2_token}}&sid=1&sessionId=1&pageIndex=1&pageSize=1",
+			"queryParams": [
+				{
+					"key": "text",
+					"value": "整瓶的梦",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "timestamp",
+					"value": "{{time}}",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "size",
+					"value": "10",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "appId",
+					"value": "yyapp2",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "token",
+					"value": "{{yyapp2_token}}",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "sid",
+					"value": "1",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "sessionId",
+					"value": "1",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "pageIndex",
+					"value": "1",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "pageSize",
+					"value": "1",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				}
+			],
+			"preRequestScript": "//设置当前时间戳\npostman.setGlobalVariable(\"time\",Date.parse(new Date()) / 1000);\ntime = postman.getGlobalVariable('time')\n\n//字符串进行md5加密\nvar wwwmigu_token= CryptoJS.MD5(\"wwwmigu\"+\"ff2102dcf16002d8c1dde6547ea98824\"+time).toString();\nvar yyapp2_token= CryptoJS.MD5(\"yyapp2\"+\"d16148780a1dcc7408e06336b98cfd50\"+time).toString();\nvar yyapp_token= CryptoJS.MD5(\"yyapp\"+\"ff28c965cf94b22c042d6888f4d3187b\"+time).toString();\nvar open_token= CryptoJS.MD5(\"open\"+\"88c47fe265ee1cdaf4a30dcb6c71e9cd\"+time).toString();\nvar wap_token= CryptoJS.MD5(\"wap\"+\"46d1056431ba453a1995de9c08bba66a\"+time).toString();\nvar l2530_token= CryptoJS.MD5(\"12530\"+\"eb7fce6c20924529a4d9add1745d836b\"+time).toString();\nvar miguyytv_token= CryptoJS.MD5(\"miguyytv\"+\"3867ae7240bc4ab6b5621ed7be045483\"+time).toString();\nvar ringapp_token= CryptoJS.MD5(\"ringapp\"+\"8674e3b06228ec547bbf86ee319d07d3\"+time).toString();\nvar ysten_token= CryptoJS.MD5(\"ysten\"+\"6dd6e7530edeafe4ad748a551d5fd954\"+time).toString();\nvar ivr_token= CryptoJS.MD5(\"ivr\"+\"78cde2980f8b4af08d27ab26c3e9c74d\"+time).toString();\nvar miguyytwx_token= CryptoJS.MD5(\"miguyytwx\"+\"e51c5764cea7fda1eb22dee74a15fed6\"+time).toString();\n\n//设置token\npostman.setGlobalVariable(\"wwwmigu_token\",wwwmigu_token)\npostman.setGlobalVariable(\"yyapp2_token\",yyapp2_token)\npostman.setGlobalVariable(\"yyapp_token\",yyapp_token)\npm.globals.get(\"variable_key\");",
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": [],
+			"dataMode": "raw",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1573183664945,
+			"name": "联想推荐",
+			"description": "",
+			"collectionId": "dca4221d-1dd4-1519-468d-05f5d61a528b",
+			"responses": [],
+			"rawModeData": ""
+		},
+		{
+			"id": "c711287f-fad6-f1dd-70b4-9349431bd1b4",
+			"headers": "",
+			"headerData": [],
+			"url": "{{url}}/musicsearch/api/json/searchmv?text=好妹妹&searchType=2&issemantic=1&isCorrect=1&isCopyright=0&expire=000000&appId=yyapp2&timestamp={{time}}&sid=1&sessionId=1&token={{yyapp2_token}}\n&pageSize=10&pageIndex=1",
+			"queryParams": [
+				{
+					"key": "text",
+					"value": "好妹妹",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "searchType",
+					"value": "2",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "issemantic",
+					"value": "1",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "isCorrect",
+					"value": "1",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "isCopyright",
+					"value": "0",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "expire",
+					"value": "000000",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "appId",
+					"value": "yyapp2",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "timestamp",
+					"value": "{{time}}",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "sid",
+					"value": "1",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "sessionId",
+					"value": "1",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "token",
+					"value": "{{yyapp2_token}}\n",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "pageSize",
+					"value": "10",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "pageIndex",
+					"value": "1",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				}
+			],
+			"preRequestScript": "//设置当前时间戳\npostman.setGlobalVariable(\"time\",Date.parse(new Date()) / 1000);\ntime = postman.getGlobalVariable('time')\n\n//字符串进行md5加密\nvar wwwmigu_token= CryptoJS.MD5(\"wwwmigu\"+\"ff2102dcf16002d8c1dde6547ea98824\"+time).toString();\nvar yyapp2_token= CryptoJS.MD5(\"yyapp2\"+\"d16148780a1dcc7408e06336b98cfd50\"+time).toString();\nvar yyapp_token= CryptoJS.MD5(\"yyapp\"+\"ff28c965cf94b22c042d6888f4d3187b\"+time).toString();\nvar open_token= CryptoJS.MD5(\"open\"+\"88c47fe265ee1cdaf4a30dcb6c71e9cd\"+time).toString();\nvar wap_token= CryptoJS.MD5(\"wap\"+\"46d1056431ba453a1995de9c08bba66a\"+time).toString();\nvar l2530_token= CryptoJS.MD5(\"12530\"+\"eb7fce6c20924529a4d9add1745d836b\"+time).toString();\nvar miguyytv_token= CryptoJS.MD5(\"miguyytv\"+\"3867ae7240bc4ab6b5621ed7be045483\"+time).toString();\nvar ringapp_token= CryptoJS.MD5(\"ringapp\"+\"8674e3b06228ec547bbf86ee319d07d3\"+time).toString();\nvar ysten_token= CryptoJS.MD5(\"ysten\"+\"6dd6e7530edeafe4ad748a551d5fd954\"+time).toString();\nvar ivr_token= CryptoJS.MD5(\"ivr\"+\"78cde2980f8b4af08d27ab26c3e9c74d\"+time).toString();\nvar miguyytwx_token= CryptoJS.MD5(\"miguyytwx\"+\"e51c5764cea7fda1eb22dee74a15fed6\"+time).toString();\n\n//设置token\npostman.setGlobalVariable(\"wwwmigu_token\",wwwmigu_token)\npostman.setGlobalVariable(\"yyapp2_token\",yyapp2_token)\npostman.setGlobalVariable(\"yyapp_token\",yyapp_token)\npm.globals.get(\"variable_key\");",
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": [],
+			"dataMode": "raw",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1573156869597,
+			"name": "mv",
+			"description": "",
+			"collectionId": "dca4221d-1dd4-1519-468d-05f5d61a528b",
+			"responses": [],
+			"rawModeData": ""
+		},
+		{
+			"id": "ce2fec18-85e1-88ef-dcff-024dbe64be37",
+			"name": "视频彩铃搜索",
+			"description": "",
+			"collectionId": "dca4221d-1dd4-1519-468d-05f5d61a528b",
+			"method": "GET",
+			"headers": "",
+			"dataMode": "raw",
+			"data": [],
+			"rawModeData": "",
+			"url": "",
+			"responses": [],
+			"queryParams": [],
+			"headerData": [],
+			"collection_id": "dca4221d-1dd4-1519-468d-05f5d61a528b"
+		},
+		{
+			"id": "dda34ab5-e5e9-3029-312f-de94847cbd73",
+			"name": "albumnew",
+			"description": "",
+			"collectionId": "dca4221d-1dd4-1519-468d-05f5d61a528b",
+			"method": "GET",
+			"headers": "",
+			"dataMode": "raw",
+			"data": [],
+			"rawModeData": "",
+			"url": "",
+			"responses": [],
+			"queryParams": [],
+			"headerData": [],
+			"collection_id": "dca4221d-1dd4-1519-468d-05f5d61a528b"
+		},
+		{
+			"id": "eb6bab34-e231-251b-8edc-df834b1191b0",
+			"headers": "",
+			"headerData": [],
+			"url": "http://172.20.37.42:8886/music_sc/general?word=泰勒斯威夫特 Love story&type=3&num=3",
+			"queryParams": [
+				{
+					"key": "word",
+					"value": "泰勒斯威夫特 Love story",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "type",
+					"value": "3",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "num",
+					"value": "3",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				}
+			],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": null,
+			"dataMode": "params",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1582720663204,
+			"name": "现网纠错",
+			"description": "",
+			"collectionId": "dca4221d-1dd4-1519-468d-05f5d61a528b",
+			"responses": []
+		}
+	]
+}

@@ -1,0 +1,44 @@
+彩蛋数据redis 数据结构 hash
+key1:op_specialeffect
+key2:music_v1
+value:彩蛋特效数据为如下json 转字符串
+增加type掉落模式0-等概率展示图片 1-混合展示图片
+增加图片h5地址，h5Url
+
+
+[
+	{
+		"startTime": "2020-12-14 20:00:00",
+		"expire": "2020-12-15 20:00:00",
+		"keywords": [
+			"春节",
+			"圣诞"
+		],
+		"pics": [
+			{
+				"pic": "https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=3755676744,707503084&fm=26&gp=0.jpg",
+				"probability": 0.25,
+				"h5Url":"https://www.baidu.com"
+			},
+			{
+				"pic": "https://ss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=2180964378,3759980169&fm=26&gp=0.jpg",
+				"probability": 0.25,
+				"h5Url":"https://www.baidu.com"
+			},
+			{
+				"pic": "https://ss3.bdstatic.com/70cFv8Sh_Q1YnxGkpoWK1HF6hhy/it/u=2020023918,3925028839&fm=26&gp=0.jpg",
+				"probability": 0.25,
+				"h5Url":"https://www.baidu.com"
+			},
+			{
+				"pic": "https://ss3.bdstatic.com/70cFv8Sh_Q1YnxGkpoWK1HF6hhy/it/u=3399725863,3957412926&fm=26&gp=0.jpg",
+				"probability": 0.25,
+				"h5Url":"https://www.baidu.com"
+			}
+		],
+		"pictureNums": 4,
+		"repeatTimes": 1,
+		"speed": 0.2,
+		"type":1
+	}
+]

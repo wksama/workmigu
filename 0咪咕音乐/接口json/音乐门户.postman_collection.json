@@ -1,0 +1,1742 @@
+{
+	"id": "09651b74-2631-e67b-648a-5a4f24da9c53",
+	"name": "音乐门户",
+	"description": "",
+	"order": [
+		"346c33fe-3c05-0fff-5623-04c8d2c1409e",
+		"bb9a505d-20d5-c20e-326b-3f3b17a0197b",
+		"d33eaa1a-0aac-06ae-cc00-6f0038ae4911",
+		"3d110a2e-a0ab-2919-f7bf-921852743d9d",
+		"0ac398a0-77c5-2c08-74b2-6ee75cec79a8",
+		"c5196851-8537-5af6-5794-f624dc4a7a12",
+		"31f2c7fd-06c9-bed1-8f59-6e7f1f29baa8",
+		"f60214b6-37de-ac5e-18ab-80392b87471c",
+		"a5189b90-e9b2-7532-9fc1-5b8e9b0025db",
+		"18080c72-6f7a-cc2a-0229-131c1b1dc116",
+		"673924f7-7792-88b1-cccf-a8e9fa0d76ce",
+		"157fb028-c7df-6edd-b69c-9aa582891293",
+		"908ea14c-6ff0-d1f4-94f1-2d5d61beeba1",
+		"a1f5f614-eb16-ced6-24a0-59c80e3b420a",
+		"142324d7-916e-8ce3-cff7-6881683d40ff",
+		"6a206007-59bd-f6cf-088b-f39643ed3764",
+		"b4ed4f65-7054-940d-78a2-b0c00ed52d45",
+		"7919e821-8bf7-3beb-b18a-a41606452bc8",
+		"c4ab4f79-70bf-f2f9-8a80-c72499675b6b",
+		"40a19b32-5c3e-0ddb-972c-76472e8715b9",
+		"68f58bfd-8623-3d16-e659-fe85e894723b",
+		"234a57b0-1e55-81a2-d7f3-be37074c2e77",
+		"0e09bca7-0de5-cce1-f8a8-0b832bf761ad",
+		"dcb246a1-40eb-0231-5798-1ed746306551",
+		"3143d025-f5da-6547-01b6-531bf5ddc012",
+		"0e0c0d3f-b2f4-563b-9a00-cf2582069c92",
+		"c06f7f66-5bce-6607-0d3e-a3175bda3b1b",
+		"4bcb8a19-09bd-85e1-1dd9-7f2bf7cab4b2",
+		"aa6947c4-75f8-cf4e-34cb-ef5d4a3e6f21",
+		"56415008-66a0-04e5-bd00-d588f7a4ae9f"
+	],
+	"folders": [],
+	"folders_order": [],
+	"timestamp": 1567757644994,
+	"owner": "3715120",
+	"public": false,
+	"events": [],
+	"variables": [],
+	"auth": null,
+	"requests": [
+		{
+			"id": "0ac398a0-77c5-2c08-74b2-6ee75cec79a8",
+			"headers": "",
+			"headerData": [],
+			"url": "http://223.111.8.196:8030/musicSongDetail/resource/song/list-by-songids? songId=1002240399",
+			"queryParams": [
+				{
+					"key": " songId",
+					"value": "1002240399",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				}
+			],
+			"events": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": null,
+			"dataMode": "params",
+			"version": 2,
+			"auth": null,
+			"time": 1572834330000,
+			"name": "歌曲详情 copy copy",
+			"description": "",
+			"collectionId": "09651b74-2631-e67b-648a-5a4f24da9c53",
+			"responses": [],
+			"currentHelper": null,
+			"helperAttributes": null
+		},
+		{
+			"id": "0e09bca7-0de5-cce1-f8a8-0b832bf761ad",
+			"headers": "",
+			"headerData": [],
+			"url": "http://223.111.8.196:3030/musicsearch/api/json/searchall?text=王晰&searchType=2&sort=0&issemantic=1&isCorrect=1&isCopyright=0&expire=000000&searchRange={\"movieName\":[\"\"],\"songName\":[\"\"],\"singerName\":[\"\"],\"writterName\":[\"\"],\"albumName\":[\"\"],\"tagName\":[\"\"]}&appId=yyapp2&timestamp={{time}}&sid=1&sessionId=1&token={{yyapp2_token}}&pageSize=200&pageIndex=1&searchSwitch={\"song\":1,\"album\":0,\"singer\":0,\"tagSong\":1,\"mvSong\":0,\"songlist\":0,\"bestShow\":1,\"lyricSong\":0,\"concert\":0}&bestIndicate=11111",
+			"queryParams": [
+				{
+					"key": "text",
+					"value": "王晰",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "searchType",
+					"value": "2",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "sort",
+					"value": "0",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "issemantic",
+					"value": "1",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "isCorrect",
+					"value": "1",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "isCopyright",
+					"value": "0",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "expire",
+					"value": "000000",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "searchRange",
+					"value": "{\"movieName\":[\"\"],\"songName\":[\"\"],\"singerName\":[\"\"],\"writterName\":[\"\"],\"albumName\":[\"\"],\"tagName\":[\"\"]}",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "appId",
+					"value": "yyapp2",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "timestamp",
+					"value": "{{time}}",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "sid",
+					"value": "1",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "sessionId",
+					"value": "1",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "token",
+					"value": "{{yyapp2_token}}",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "pageSize",
+					"value": "200",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "pageIndex",
+					"value": "1",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "searchSwitch",
+					"value": "{\"song\":1,\"album\":0,\"singer\":0,\"tagSong\":1,\"mvSong\":0,\"songlist\":0,\"bestShow\":1,\"lyricSong\":0,\"concert\":0}",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "bestIndicate",
+					"value": "11111",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				}
+			],
+			"events": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"id": "52cad6f7-d74f-445e-88eb-c7ae9ef7f76b",
+						"exec": [
+							"//设置当前时间戳",
+							"postman.setGlobalVariable(\"time\",Date.parse(new Date()) / 1000);",
+							"time = postman.getGlobalVariable('time')",
+							"",
+							"//字符串进行md5加密",
+							"var wwwmigu_token= CryptoJS.MD5(\"wwwmigu\"+\"ff2102dcf16002d8c1dde6547ea98824\"+time).toString();",
+							"var yyapp2_token= CryptoJS.MD5(\"yyapp2\"+\"d16148780a1dcc7408e06336b98cfd50\"+time).toString();",
+							"var yyapp_token= CryptoJS.MD5(\"yyapp\"+\"ff28c965cf94b22c042d6888f4d3187b\"+time).toString();",
+							"var open_token= CryptoJS.MD5(\"open\"+\"88c47fe265ee1cdaf4a30dcb6c71e9cd\"+time).toString();",
+							"var wap_token= CryptoJS.MD5(\"wap\"+\"46d1056431ba453a1995de9c08bba66a\"+time).toString();",
+							"var l2530_token= CryptoJS.MD5(\"12530\"+\"eb7fce6c20924529a4d9add1745d836b\"+time).toString();",
+							"var miguyytv_token= CryptoJS.MD5(\"miguyytv\"+\"3867ae7240bc4ab6b5621ed7be045483\"+time).toString();",
+							"var ringapp_token= CryptoJS.MD5(\"ringapp\"+\"8674e3b06228ec547bbf86ee319d07d3\"+time).toString();",
+							"var ysten_token= CryptoJS.MD5(\"ysten\"+\"6dd6e7530edeafe4ad748a551d5fd954\"+time).toString();",
+							"var ivr_token= CryptoJS.MD5(\"ivr\"+\"78cde2980f8b4af08d27ab26c3e9c74d\"+time).toString();",
+							"var miguyytwx_token= CryptoJS.MD5(\"miguyytwx\"+\"e51c5764cea7fda1eb22dee74a15fed6\"+time).toString();",
+							"",
+							"//设置token",
+							"postman.setGlobalVariable(\"wwwmigu_token\",wwwmigu_token)",
+							"postman.setGlobalVariable(\"yyapp2_token\",yyapp2_token)",
+							"postman.setGlobalVariable(\"yyapp_token\",yyapp_token)"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"auth": null,
+			"time": 1572834326565,
+			"name": "搜索五维度",
+			"description": "",
+			"collectionId": "09651b74-2631-e67b-648a-5a4f24da9c53",
+			"responses": [],
+			"preRequestScript": "//设置当前时间戳\npostman.setGlobalVariable(\"time\",Date.parse(new Date()) / 1000);\ntime = postman.getGlobalVariable('time')\n\n//字符串进行md5加密\nvar wwwmigu_token= CryptoJS.MD5(\"wwwmigu\"+\"ff2102dcf16002d8c1dde6547ea98824\"+time).toString();\nvar yyapp2_token= CryptoJS.MD5(\"yyapp2\"+\"d16148780a1dcc7408e06336b98cfd50\"+time).toString();\nvar yyapp_token= CryptoJS.MD5(\"yyapp\"+\"ff28c965cf94b22c042d6888f4d3187b\"+time).toString();\nvar open_token= CryptoJS.MD5(\"open\"+\"88c47fe265ee1cdaf4a30dcb6c71e9cd\"+time).toString();\nvar wap_token= CryptoJS.MD5(\"wap\"+\"46d1056431ba453a1995de9c08bba66a\"+time).toString();\nvar l2530_token= CryptoJS.MD5(\"12530\"+\"eb7fce6c20924529a4d9add1745d836b\"+time).toString();\nvar miguyytv_token= CryptoJS.MD5(\"miguyytv\"+\"3867ae7240bc4ab6b5621ed7be045483\"+time).toString();\nvar ringapp_token= CryptoJS.MD5(\"ringapp\"+\"8674e3b06228ec547bbf86ee319d07d3\"+time).toString();\nvar ysten_token= CryptoJS.MD5(\"ysten\"+\"6dd6e7530edeafe4ad748a551d5fd954\"+time).toString();\nvar ivr_token= CryptoJS.MD5(\"ivr\"+\"78cde2980f8b4af08d27ab26c3e9c74d\"+time).toString();\nvar miguyytwx_token= CryptoJS.MD5(\"miguyytwx\"+\"e51c5764cea7fda1eb22dee74a15fed6\"+time).toString();\n\n//设置token\npostman.setGlobalVariable(\"wwwmigu_token\",wwwmigu_token)\npostman.setGlobalVariable(\"yyapp2_token\",yyapp2_token)\npostman.setGlobalVariable(\"yyapp_token\",yyapp_token)",
+			"tests": null,
+			"currentHelper": null,
+			"helperAttributes": null,
+			"rawModeData": ""
+		},
+		{
+			"id": "0e0c0d3f-b2f4-563b-9a00-cf2582069c92",
+			"headers": "ua: Ios_migu\nversion: 6.8.4\n",
+			"headerData": [
+				{
+					"key": "ua",
+					"value": "Ios_migu",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "version",
+					"value": "6.8.4",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "https://app.c.nf.migu.cn/MIGUM2.0/v2.0/content/default_search.do",
+			"queryParams": [],
+			"events": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": null,
+			"dataMode": "params",
+			"auth": null,
+			"time": 1571652378567,
+			"name": "默认词",
+			"description": "",
+			"collectionId": "09651b74-2631-e67b-648a-5a4f24da9c53",
+			"responses": [],
+			"currentHelper": null,
+			"helperAttributes": null
+		},
+		{
+			"id": "142324d7-916e-8ce3-cff7-6881683d40ff",
+			"headers": "msisdn: 15682051518\n",
+			"headerData": [
+				{
+					"key": "msisdn",
+					"value": "15682051518",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://app.c.nf.migu.cn/MIGUM2.0/v1.0/content/resourceinfo.do?resourceType=D&resourceId=600976000000026539",
+			"queryParams": [
+				{
+					"key": "resourceType",
+					"value": "D",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "resourceId",
+					"value": "600976000000026539",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				}
+			],
+			"events": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": null,
+			"dataMode": "params",
+			"version": 2,
+			"auth": null,
+			"time": 1572834327510,
+			"name": "Mv详情",
+			"description": "",
+			"collectionId": "09651b74-2631-e67b-648a-5a4f24da9c53",
+			"responses": [],
+			"currentHelper": null,
+			"helperAttributes": null
+		},
+		{
+			"id": "157fb028-c7df-6edd-b69c-9aa582891293",
+			"headers": "",
+			"headerData": [],
+			"url": "http://app.c.nf.migu.cn/MIGUM2.0//v1.0/content/resourceinfo.do?resourceType=2022&resourceId=25426942",
+			"queryParams": [
+				{
+					"key": "resourceType",
+					"value": "2022",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "resourceId",
+					"value": "25426942",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				}
+			],
+			"events": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": null,
+			"dataMode": "params",
+			"version": 2,
+			"auth": null,
+			"time": 1572834322685,
+			"name": "演唱会详情",
+			"description": "",
+			"collectionId": "09651b74-2631-e67b-648a-5a4f24da9c53",
+			"responses": [],
+			"currentHelper": null,
+			"helperAttributes": null
+		},
+		{
+			"id": "18080c72-6f7a-cc2a-0229-131c1b1dc116",
+			"headers": "",
+			"headerData": [],
+			"url": "http://39.156.1.73:8080/music_search/v2/suggest?text=你好",
+			"queryParams": [
+				{
+					"key": "text",
+					"value": "你好",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				}
+			],
+			"events": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": null,
+			"dataMode": "params",
+			"version": 2,
+			"auth": null,
+			"time": 1572834337814,
+			"name": "联想 copy",
+			"description": "",
+			"collectionId": "09651b74-2631-e67b-648a-5a4f24da9c53",
+			"responses": [],
+			"currentHelper": null,
+			"helperAttributes": null
+		},
+		{
+			"id": "234a57b0-1e55-81a2-d7f3-be37074c2e77",
+			"headers": "msisdn: 1234567890\n",
+			"headerData": [
+				{
+					"key": "msisdn",
+					"value": "1234567890",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://app.c.nf.migu.cn/MIGUM2.0/v1.0/content/resourceinfo.do?resourceType=2016&resourceId=20439813",
+			"queryParams": [
+				{
+					"key": "resourceType",
+					"value": "2016",
+					"equals": true
+				},
+				{
+					"key": "resourceId",
+					"value": "20439813",
+					"equals": true
+				}
+			],
+			"events": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": null,
+			"dataMode": "params",
+			"version": 2,
+			"auth": null,
+			"time": 1572834309733,
+			"name": "电台详情 copy",
+			"description": "",
+			"collectionId": "09651b74-2631-e67b-648a-5a4f24da9c53",
+			"responses": [],
+			"currentHelper": null,
+			"helperAttributes": null
+		},
+		{
+			"id": "3143d025-f5da-6547-01b6-531bf5ddc012",
+			"headers": "",
+			"headerData": [],
+			"url": "http://223.111.8.196:9119/musicsearch/api/json/suggestrec?text=%2B&size=15&appId=yyapp2&sid=1&sessionId=1&timestamp={{time}}&sid=1&sessionId=1&token={{yyapp2_token}}",
+			"queryParams": [
+				{
+					"key": "text",
+					"value": "%2B",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "size",
+					"value": "15",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "appId",
+					"value": "yyapp2",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "sid",
+					"value": "1",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "sessionId",
+					"value": "1",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "timestamp",
+					"value": "{{time}}",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "sid",
+					"value": "1",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "sessionId",
+					"value": "1",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "token",
+					"value": "{{yyapp2_token}}",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				}
+			],
+			"events": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"id": "52cad6f7-d74f-445e-88eb-c7ae9ef7f76b",
+						"exec": [
+							"//设置当前时间戳",
+							"postman.setGlobalVariable(\"time\",Date.parse(new Date()) / 1000);",
+							"time = postman.getGlobalVariable('time')",
+							"",
+							"//字符串进行md5加密",
+							"var wwwmigu_token= CryptoJS.MD5(\"wwwmigu\"+\"ff2102dcf16002d8c1dde6547ea98824\"+time).toString();",
+							"var yyapp2_token= CryptoJS.MD5(\"yyapp2\"+\"d16148780a1dcc7408e06336b98cfd50\"+time).toString();",
+							"var yyapp_token= CryptoJS.MD5(\"yyapp\"+\"ff28c965cf94b22c042d6888f4d3187b\"+time).toString();",
+							"var open_token= CryptoJS.MD5(\"open\"+\"88c47fe265ee1cdaf4a30dcb6c71e9cd\"+time).toString();",
+							"var wap_token= CryptoJS.MD5(\"wap\"+\"46d1056431ba453a1995de9c08bba66a\"+time).toString();",
+							"var l2530_token= CryptoJS.MD5(\"12530\"+\"eb7fce6c20924529a4d9add1745d836b\"+time).toString();",
+							"var miguyytv_token= CryptoJS.MD5(\"miguyytv\"+\"3867ae7240bc4ab6b5621ed7be045483\"+time).toString();",
+							"var ringapp_token= CryptoJS.MD5(\"ringapp\"+\"8674e3b06228ec547bbf86ee319d07d3\"+time).toString();",
+							"var ysten_token= CryptoJS.MD5(\"ysten\"+\"6dd6e7530edeafe4ad748a551d5fd954\"+time).toString();",
+							"var ivr_token= CryptoJS.MD5(\"ivr\"+\"78cde2980f8b4af08d27ab26c3e9c74d\"+time).toString();",
+							"var miguyytwx_token= CryptoJS.MD5(\"miguyytwx\"+\"e51c5764cea7fda1eb22dee74a15fed6\"+time).toString();",
+							"",
+							"//设置token",
+							"postman.setGlobalVariable(\"wwwmigu_token\",wwwmigu_token)",
+							"postman.setGlobalVariable(\"yyapp2_token\",yyapp2_token)",
+							"postman.setGlobalVariable(\"yyapp_token\",yyapp_token)"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"auth": null,
+			"time": 1572834335800,
+			"name": "搜索联想",
+			"description": "",
+			"collectionId": "09651b74-2631-e67b-648a-5a4f24da9c53",
+			"responses": [],
+			"preRequestScript": "//设置当前时间戳\npostman.setGlobalVariable(\"time\",Date.parse(new Date()) / 1000);\ntime = postman.getGlobalVariable('time')\n\n//字符串进行md5加密\nvar wwwmigu_token= CryptoJS.MD5(\"wwwmigu\"+\"ff2102dcf16002d8c1dde6547ea98824\"+time).toString();\nvar yyapp2_token= CryptoJS.MD5(\"yyapp2\"+\"d16148780a1dcc7408e06336b98cfd50\"+time).toString();\nvar yyapp_token= CryptoJS.MD5(\"yyapp\"+\"ff28c965cf94b22c042d6888f4d3187b\"+time).toString();\nvar open_token= CryptoJS.MD5(\"open\"+\"88c47fe265ee1cdaf4a30dcb6c71e9cd\"+time).toString();\nvar wap_token= CryptoJS.MD5(\"wap\"+\"46d1056431ba453a1995de9c08bba66a\"+time).toString();\nvar l2530_token= CryptoJS.MD5(\"12530\"+\"eb7fce6c20924529a4d9add1745d836b\"+time).toString();\nvar miguyytv_token= CryptoJS.MD5(\"miguyytv\"+\"3867ae7240bc4ab6b5621ed7be045483\"+time).toString();\nvar ringapp_token= CryptoJS.MD5(\"ringapp\"+\"8674e3b06228ec547bbf86ee319d07d3\"+time).toString();\nvar ysten_token= CryptoJS.MD5(\"ysten\"+\"6dd6e7530edeafe4ad748a551d5fd954\"+time).toString();\nvar ivr_token= CryptoJS.MD5(\"ivr\"+\"78cde2980f8b4af08d27ab26c3e9c74d\"+time).toString();\nvar miguyytwx_token= CryptoJS.MD5(\"miguyytwx\"+\"e51c5764cea7fda1eb22dee74a15fed6\"+time).toString();\n\n//设置token\npostman.setGlobalVariable(\"wwwmigu_token\",wwwmigu_token)\npostman.setGlobalVariable(\"yyapp2_token\",yyapp2_token)\npostman.setGlobalVariable(\"yyapp_token\",yyapp_token)",
+			"tests": null,
+			"currentHelper": null,
+			"helperAttributes": null,
+			"rawModeData": ""
+		},
+		{
+			"id": "31f2c7fd-06c9-bed1-8f59-6e7f1f29baa8",
+			"headers": "msisdn: 15682051518\n",
+			"headerData": [
+				{
+					"key": "msisdn",
+					"value": "15682051518",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://39.156.1.73:8080/music_search/v2/search/searchAll?isCopyright=1&isCorrect=1&pageNo=1&pageSize=10&searchSwitch={\"song\":1,\"album\":1,\"singer\":0,\"tagSong\":1,\"mvSong\":0,\"songlist\":0,\"bestShow\":1,\"lyricSong\":0}&sort=0&text=林忆莲&sid=1122334455&debug=1",
+			"queryParams": [
+				{
+					"key": "isCopyright",
+					"value": "1",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "isCorrect",
+					"value": "1",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "pageNo",
+					"value": "1",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "pageSize",
+					"value": "10",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "searchSwitch",
+					"value": "{\"song\":1,\"album\":1,\"singer\":0,\"tagSong\":1,\"mvSong\":0,\"songlist\":0,\"bestShow\":1,\"lyricSong\":0}",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "sort",
+					"value": "0",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "text",
+					"value": "林忆莲",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "sid",
+					"value": "1122334455",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "debug",
+					"value": "1",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				}
+			],
+			"events": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": null,
+			"dataMode": "params",
+			"version": 2,
+			"auth": null,
+			"time": 1572934069613,
+			"name": "无维度 copy",
+			"description": "",
+			"collectionId": "09651b74-2631-e67b-648a-5a4f24da9c53",
+			"responses": [],
+			"currentHelper": null,
+			"helperAttributes": null
+		},
+		{
+			"id": "346c33fe-3c05-0fff-5623-04c8d2c1409e",
+			"headers": "",
+			"headerData": [],
+			"url": "http://app.c.nf.migu.cn/MIGUM2.0//v1.0/content/resourceinfo.do?resourceType=2&copyrightId=6005971JKZS",
+			"queryParams": [
+				{
+					"key": "resourceType",
+					"value": "2",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "copyrightId",
+					"value": "6005971JKZS",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				}
+			],
+			"events": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": null,
+			"dataMode": "params",
+			"version": 2,
+			"auth": null,
+			"time": 1572834334649,
+			"name": "歌曲详情",
+			"description": "",
+			"collectionId": "09651b74-2631-e67b-648a-5a4f24da9c53",
+			"responses": [],
+			"currentHelper": null,
+			"helperAttributes": null
+		},
+		{
+			"id": "3d110a2e-a0ab-2919-f7bf-921852743d9d",
+			"headers": "",
+			"headerData": [],
+			"url": "http://218.200.229.178/MIGUM2.0/resource/song/list-by-songids?songId=1125144289",
+			"queryParams": [
+				{
+					"key": "songId",
+					"value": "1125144289",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				}
+			],
+			"events": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": null,
+			"dataMode": "params",
+			"version": 2,
+			"auth": null,
+			"time": 1572834283007,
+			"name": "歌曲详情 copy copy",
+			"description": "",
+			"collectionId": "09651b74-2631-e67b-648a-5a4f24da9c53",
+			"responses": [],
+			"currentHelper": null,
+			"helperAttributes": null
+		},
+		{
+			"id": "40a19b32-5c3e-0ddb-972c-76472e8715b9",
+			"headers": "msisdn: 1234567890\n",
+			"headerData": [
+				{
+					"key": "msisdn",
+					"value": "1234567890",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://app.c.nf.migu.cn/MIGUM2.0/v1.0/content/resourceinfo.do?resourceType=2016&resourceId=20439813",
+			"queryParams": [
+				{
+					"key": "resourceType",
+					"value": "2016",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "resourceId",
+					"value": "20439813",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				}
+			],
+			"events": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": null,
+			"dataMode": "params",
+			"version": 2,
+			"auth": null,
+			"time": 1572834312716,
+			"name": "电台详情",
+			"description": "",
+			"collectionId": "09651b74-2631-e67b-648a-5a4f24da9c53",
+			"responses": [],
+			"currentHelper": null,
+			"helperAttributes": null
+		},
+		{
+			"id": "4bcb8a19-09bd-85e1-1dd9-7f2bf7cab4b2",
+			"headers": "ua: Android_migu\nIMEI: 861647039955683\ndeviceId: d4cb9dddab286c56\nappId: d4cb9dddab286c56\nversion: 6.8.5\nmode: android\nbrand: Meizu\nsign: 38322DB85CB275304EE422BE1380E458\n//timestamp: 1572329729190\nmsisdn: 15895987033\n",
+			"headerData": [
+				{
+					"key": "ua",
+					"value": "Android_migu",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "IMEI",
+					"value": "861647039955683",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "deviceId",
+					"value": "d4cb9dddab286c56",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "appId",
+					"value": "d4cb9dddab286c56",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "version",
+					"value": "6.8.5",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "mode",
+					"value": "android",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "brand",
+					"value": "Meizu",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "sign",
+					"value": "38322DB85CB275304EE422BE1380E458",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "timestamp",
+					"value": "1572329729190",
+					"description": "",
+					"enabled": false
+				},
+				{
+					"key": "msisdn",
+					"value": "15895987033",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://jadeite.migu.cn:7090/music_search/v2/search/hotword",
+			"queryParams": [],
+			"events": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": null,
+			"dataMode": "params",
+			"version": 2,
+			"auth": null,
+			"time": 1572934021870,
+			"name": "热词 copy",
+			"description": "",
+			"collectionId": "09651b74-2631-e67b-648a-5a4f24da9c53",
+			"responses": [],
+			"currentHelper": null,
+			"helperAttributes": null
+		},
+		{
+			"id": "56415008-66a0-04e5-bd00-d588f7a4ae9f",
+			"headers": "",
+			"headerData": [],
+			"url": "http://app.c.nf.migu.cn/MIGUM2.0/v1.0/content/resourceinfo.do?resourceId=25530487&resourceType=2037&needSimple=01",
+			"queryParams": [
+				{
+					"key": "resourceId",
+					"value": "25530487",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "resourceType",
+					"value": "2037",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "needSimple",
+					"value": "01",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				}
+			],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"events": [],
+			"auth": null,
+			"method": "GET",
+			"collectionId": "09651b74-2631-e67b-648a-5a4f24da9c53",
+			"data": null,
+			"dataMode": "params",
+			"name": "短视频",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1571885728056,
+			"version": 2,
+			"responses": [],
+			"currentHelper": null,
+			"helperAttributes": null
+		},
+		{
+			"id": "673924f7-7792-88b1-cccf-a8e9fa0d76ce",
+			"headers": "",
+			"headerData": [],
+			"url": "http://app.c.nf.migu.cn/MIGUM2.0/v1.0/content/resourceinfo.do?resourceType=2021&resourceId=135765874",
+			"queryParams": [
+				{
+					"key": "resourceType",
+					"value": "2021",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "resourceId",
+					"value": "135765874",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				}
+			],
+			"events": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": null,
+			"dataMode": "params",
+			"version": 2,
+			"auth": null,
+			"time": 1572834323399,
+			"name": "歌单详情",
+			"description": "",
+			"collectionId": "09651b74-2631-e67b-648a-5a4f24da9c53",
+			"responses": [],
+			"currentHelper": null,
+			"helperAttributes": null
+		},
+		{
+			"id": "68f58bfd-8623-3d16-e659-fe85e894723b",
+			"headers": "//msisdn: 1234567890\n",
+			"headerData": [
+				{
+					"key": "msisdn",
+					"value": "1234567890",
+					"description": "",
+					"enabled": false
+				}
+			],
+			"url": "http://app.c.nf.migu.cn/MIGUM2.0/v1.0/content/querycontentbyId.do?columnId=23810428&needAll=0",
+			"queryParams": [
+				{
+					"key": "columnId",
+					"value": "23810428",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "needAll",
+					"value": "0",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				}
+			],
+			"events": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": null,
+			"dataMode": "params",
+			"version": 2,
+			"auth": null,
+			"time": 1572834286094,
+			"name": "电台详情 copy",
+			"description": "",
+			"collectionId": "09651b74-2631-e67b-648a-5a4f24da9c53",
+			"responses": [],
+			"currentHelper": null,
+			"helperAttributes": null
+		},
+		{
+			"id": "6a206007-59bd-f6cf-088b-f39643ed3764",
+			"headers": "msisdn: 15682051518\n",
+			"headerData": [
+				{
+					"key": "msisdn",
+					"value": "15682051518",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://app.c.nf.migu.cn/MIGUM2.0/v1.0/content/resourceinfo.do?resourceType=0&resourceId=600902000006889008",
+			"queryParams": [
+				{
+					"key": "resourceType",
+					"value": "0",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "resourceId",
+					"value": "600902000006889008",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				}
+			],
+			"events": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": null,
+			"dataMode": "params",
+			"version": 2,
+			"auth": null,
+			"time": 1572834321237,
+			"name": "彩铃详情",
+			"description": "",
+			"collectionId": "09651b74-2631-e67b-648a-5a4f24da9c53",
+			"responses": [],
+			"currentHelper": null,
+			"helperAttributes": null
+		},
+		{
+			"id": "7919e821-8bf7-3beb-b18a-a41606452bc8",
+			"headers": "",
+			"headerData": [],
+			"url": "http://218.200.229.178/MIGUM2.0/v1.0/content/resourceinfo.do?resourceType=2002&resourceId=112",
+			"queryParams": [
+				{
+					"key": "resourceType",
+					"value": "2002",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "resourceId",
+					"value": "112",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				}
+			],
+			"events": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": null,
+			"dataMode": "params",
+			"version": 2,
+			"auth": null,
+			"time": 1572834320202,
+			"name": "艺人详情",
+			"description": "",
+			"collectionId": "09651b74-2631-e67b-648a-5a4f24da9c53",
+			"responses": [],
+			"currentHelper": null,
+			"helperAttributes": null
+		},
+		{
+			"id": "908ea14c-6ff0-d1f4-94f1-2d5d61beeba1",
+			"headers": "",
+			"headerData": [],
+			"url": "http://app.c.nf.migu.cn/MIGUM2.0/v1.0/content/resourceinfo.do?resourceType=2003&resourceId=1118500207",
+			"queryParams": [
+				{
+					"key": "resourceType",
+					"value": "2003",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "resourceId",
+					"value": "1118500207",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				}
+			],
+			"events": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": null,
+			"dataMode": "params",
+			"version": 2,
+			"auth": null,
+			"time": 1572834321917,
+			"name": "专辑详情",
+			"description": "",
+			"collectionId": "09651b74-2631-e67b-648a-5a4f24da9c53",
+			"responses": [],
+			"currentHelper": null,
+			"helperAttributes": null
+		},
+		{
+			"id": "a1f5f614-eb16-ced6-24a0-59c80e3b420a",
+			"headers": "",
+			"headerData": [],
+			"url": "http://app.c.nf.migu.cn/MIGUM2.0//v1.0/content/resourceinfo.do?resourceType=5&resourceId=600927015009000287",
+			"queryParams": [
+				{
+					"key": "resourceType",
+					"value": "5",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "resourceId",
+					"value": "600927015009000287",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				}
+			],
+			"events": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": null,
+			"dataMode": "params",
+			"version": 2,
+			"auth": null,
+			"time": 1571882053421,
+			"name": "数字专辑详情 copy",
+			"description": "",
+			"collectionId": "09651b74-2631-e67b-648a-5a4f24da9c53",
+			"responses": [],
+			"currentHelper": null,
+			"helperAttributes": null
+		},
+		{
+			"id": "a5189b90-e9b2-7532-9fc1-5b8e9b0025db",
+			"headers": "",
+			"headerData": [],
+			"url": "http://app.c.nf.migu.cn/MIGUM2.0/v1.0/content/suggestrec.do?isCopyright=1&isCorrect=1&pageNo=1&pageSize=10&text=你好",
+			"queryParams": [
+				{
+					"key": "isCopyright",
+					"value": "1",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "isCorrect",
+					"value": "1",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "pageNo",
+					"value": "1",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "pageSize",
+					"value": "10",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "text",
+					"value": "你好",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				}
+			],
+			"events": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": null,
+			"dataMode": "params",
+			"version": 2,
+			"auth": null,
+			"time": 1572834336814,
+			"name": "联想",
+			"description": "",
+			"collectionId": "09651b74-2631-e67b-648a-5a4f24da9c53",
+			"responses": [],
+			"currentHelper": null,
+			"helperAttributes": null
+		},
+		{
+			"id": "aa6947c4-75f8-cf4e-34cb-ef5d4a3e6f21",
+			"headers": "",
+			"headerData": [],
+			"url": "http://app.c.nf.migu.cn/MIGUM3.0//v1.0/ticket/detail?projectId=119000168",
+			"queryParams": [
+				{
+					"key": "projectId",
+					"value": "119000168",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				}
+			],
+			"events": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": null,
+			"dataMode": "params",
+			"version": 2,
+			"auth": null,
+			"time": 1572834311421,
+			"name": "票务详情",
+			"description": "",
+			"collectionId": "09651b74-2631-e67b-648a-5a4f24da9c53",
+			"responses": [],
+			"currentHelper": null,
+			"helperAttributes": null
+		},
+		{
+			"id": "b4ed4f65-7054-940d-78a2-b0c00ed52d45",
+			"headers": "",
+			"headerData": [],
+			"url": "http://app.c.nf.migu.cn/MIGUM2.0//v1.0/content/resourceinfo.do?resourceType=M&resourceId=600913000006339680",
+			"queryParams": [
+				{
+					"key": "resourceType",
+					"value": "M",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "resourceId",
+					"value": "600913000006339680",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				}
+			],
+			"events": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": null,
+			"dataMode": "params",
+			"version": 2,
+			"auth": null,
+			"time": 1569569362259,
+			"name": "视频彩铃详情",
+			"description": "",
+			"collectionId": "09651b74-2631-e67b-648a-5a4f24da9c53",
+			"responses": [],
+			"currentHelper": null,
+			"helperAttributes": null
+		},
+		{
+			"id": "bb9a505d-20d5-c20e-326b-3f3b17a0197b",
+			"headers": "",
+			"headerData": [],
+			"url": "http://app.c.nf.migu.cn/MIGUM2.0//v1.0/content/resourceinfo.do?resourceType=2&resourceId=60051270481",
+			"queryParams": [
+				{
+					"key": "resourceType",
+					"value": "2",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "resourceId",
+					"value": "60051270481",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				}
+			],
+			"events": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": null,
+			"dataMode": "params",
+			"version": 2,
+			"auth": null,
+			"time": 1572934025321,
+			"name": "歌曲详情 copy",
+			"description": "",
+			"collectionId": "09651b74-2631-e67b-648a-5a4f24da9c53",
+			"responses": [],
+			"currentHelper": null,
+			"helperAttributes": null
+		},
+		{
+			"id": "c06f7f66-5bce-6607-0d3e-a3175bda3b1b",
+			"headers": "//ua: Android_migu\n//IMEI: 861647039955683\n",
+			"headerData": [
+				{
+					"key": "ua",
+					"value": "Android_migu",
+					"description": "",
+					"enabled": false
+				},
+				{
+					"key": "IMEI",
+					"value": "861647039955683",
+					"description": "",
+					"enabled": false
+				}
+			],
+			"url": "https://app.c.nf.migu.cn/MIGUM2.0/v2.0/content/hot-words",
+			"queryParams": [],
+			"events": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": null,
+			"dataMode": "params",
+			"version": 2,
+			"auth": null,
+			"time": 1572934022783,
+			"name": "热词",
+			"description": "",
+			"collectionId": "09651b74-2631-e67b-648a-5a4f24da9c53",
+			"responses": [],
+			"currentHelper": null,
+			"helperAttributes": null
+		},
+		{
+			"id": "c4ab4f79-70bf-f2f9-8a80-c72499675b6b",
+			"headers": "",
+			"headerData": [],
+			"url": "http://app.c.nf.migu.cn/MIGUM2.0//v1.0/content/resourceinfo.do?resourceType=2023&resourceId=25566054",
+			"queryParams": [
+				{
+					"key": "resourceType",
+					"value": "2023",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "resourceId",
+					"value": "25566054",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				}
+			],
+			"events": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": null,
+			"dataMode": "params",
+			"version": 2,
+			"auth": null,
+			"time": 1572834287685,
+			"name": "栏目详情-期刊-咪咕出品",
+			"description": "",
+			"collectionId": "09651b74-2631-e67b-648a-5a4f24da9c53",
+			"responses": [],
+			"currentHelper": null,
+			"helperAttributes": null
+		},
+		{
+			"id": "c5196851-8537-5af6-5794-f624dc4a7a12",
+			"headers": "",
+			"headerData": [],
+			"url": "http://app.c.nf.migu.cn/MIGUM2.0/v1.0/content/search_all.do?isCopyright=1&isCorrect=1&pageNo=1&pageSize=30&searchSwitch={\"song\":1,\"album\":0,\"singer\":0,\"tagSong\":0,\"mvSong\":1,\"songlist\":0,\"bestShow\":1,\"lyricSong\":0}&sort=0&text=听妈妈的话",
+			"queryParams": [
+				{
+					"key": "isCopyright",
+					"value": "1",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "isCorrect",
+					"value": "1",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "pageNo",
+					"value": "1",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "pageSize",
+					"value": "30",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "searchSwitch",
+					"value": "{\"song\":1,\"album\":0,\"singer\":0,\"tagSong\":0,\"mvSong\":1,\"songlist\":0,\"bestShow\":1,\"lyricSong\":0}",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "sort",
+					"value": "0",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "text",
+					"value": "听妈妈的话",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				}
+			],
+			"events": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": null,
+			"dataMode": "params",
+			"version": 2,
+			"auth": null,
+			"time": 1572834328239,
+			"name": "无维度",
+			"description": "",
+			"collectionId": "09651b74-2631-e67b-648a-5a4f24da9c53",
+			"responses": [],
+			"currentHelper": null,
+			"helperAttributes": null
+		},
+		{
+			"id": "d33eaa1a-0aac-06ae-cc00-6f0038ae4911",
+			"headers": "",
+			"headerData": [],
+			"url": "http://218.200.229.178/MIGUM2.0/resource/song/list-by-songids?songId=1125144289",
+			"queryParams": [
+				{
+					"key": "songId",
+					"value": "1125144289",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				}
+			],
+			"events": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": null,
+			"dataMode": "params",
+			"version": 2,
+			"auth": null,
+			"time": 1572834324092,
+			"name": "歌曲详情 copy",
+			"description": "",
+			"collectionId": "09651b74-2631-e67b-648a-5a4f24da9c53",
+			"responses": [],
+			"currentHelper": null,
+			"helperAttributes": null
+		},
+		{
+			"id": "dcb246a1-40eb-0231-5798-1ed746306551",
+			"headers": "",
+			"headerData": [],
+			"url": "http://39.156.1.73:8080/musicsearch/api/json/searchall?text=次元资讯&searchType=2&sort=0&issemantic=1&isCorrect=1&isCopyright=0&expire=000000&searchRange={\"movieName\":[\"\"],\"songName\":[\"\"],\"singerName\":[\"\"],\"writterName\":[\"\"],\"albumName\":[\"\"],\"tagName\":[\"\"]}&appId=yyapp2&timestamp={{time}}&sid=1&sessionId=1&token={{yyapp2_token}}&pageSize=10&pageIndex=1&searchSwitch={%22song%22:1,%22album%22:0,%22singer%22:0,%22tagSong%22:0,%22mvSong%22:0,%22songlist%22:0,%22bestShow%22:1}&bestIndicate=11111",
+			"queryParams": [
+				{
+					"key": "text",
+					"value": "次元资讯",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "searchType",
+					"value": "2",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "sort",
+					"value": "0",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "issemantic",
+					"value": "1",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "isCorrect",
+					"value": "1",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "isCopyright",
+					"value": "0",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "expire",
+					"value": "000000",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "searchRange",
+					"value": "{\"movieName\":[\"\"],\"songName\":[\"\"],\"singerName\":[\"\"],\"writterName\":[\"\"],\"albumName\":[\"\"],\"tagName\":[\"\"]}",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "appId",
+					"value": "yyapp2",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "timestamp",
+					"value": "{{time}}",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "sid",
+					"value": "1",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "sessionId",
+					"value": "1",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "token",
+					"value": "{{yyapp2_token}}",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "pageSize",
+					"value": "10",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "pageIndex",
+					"value": "1",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "searchSwitch",
+					"value": "{%22song%22:1,%22album%22:0,%22singer%22:0,%22tagSong%22:0,%22mvSong%22:0,%22songlist%22:0,%22bestShow%22:1}",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "bestIndicate",
+					"value": "11111",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				}
+			],
+			"events": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"id": "52cad6f7-d74f-445e-88eb-c7ae9ef7f76b",
+						"exec": [
+							"//设置当前时间戳",
+							"postman.setGlobalVariable(\"time\",Date.parse(new Date()) / 1000);",
+							"time = postman.getGlobalVariable('time')",
+							"",
+							"//字符串进行md5加密",
+							"var wwwmigu_token= CryptoJS.MD5(\"wwwmigu\"+\"ff2102dcf16002d8c1dde6547ea98824\"+time).toString();",
+							"var yyapp2_token= CryptoJS.MD5(\"yyapp2\"+\"d16148780a1dcc7408e06336b98cfd50\"+time).toString();",
+							"var yyapp_token= CryptoJS.MD5(\"yyapp\"+\"ff28c965cf94b22c042d6888f4d3187b\"+time).toString();",
+							"var open_token= CryptoJS.MD5(\"open\"+\"88c47fe265ee1cdaf4a30dcb6c71e9cd\"+time).toString();",
+							"var wap_token= CryptoJS.MD5(\"wap\"+\"46d1056431ba453a1995de9c08bba66a\"+time).toString();",
+							"var l2530_token= CryptoJS.MD5(\"12530\"+\"eb7fce6c20924529a4d9add1745d836b\"+time).toString();",
+							"var miguyytv_token= CryptoJS.MD5(\"miguyytv\"+\"3867ae7240bc4ab6b5621ed7be045483\"+time).toString();",
+							"var ringapp_token= CryptoJS.MD5(\"ringapp\"+\"8674e3b06228ec547bbf86ee319d07d3\"+time).toString();",
+							"var ysten_token= CryptoJS.MD5(\"ysten\"+\"6dd6e7530edeafe4ad748a551d5fd954\"+time).toString();",
+							"var ivr_token= CryptoJS.MD5(\"ivr\"+\"78cde2980f8b4af08d27ab26c3e9c74d\"+time).toString();",
+							"var miguyytwx_token= CryptoJS.MD5(\"miguyytwx\"+\"e51c5764cea7fda1eb22dee74a15fed6\"+time).toString();",
+							"",
+							"//设置token",
+							"postman.setGlobalVariable(\"wwwmigu_token\",wwwmigu_token)",
+							"postman.setGlobalVariable(\"yyapp2_token\",yyapp2_token)",
+							"postman.setGlobalVariable(\"yyapp_token\",yyapp_token)"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"auth": null,
+			"time": 1572834284668,
+			"name": "搜索五维度 copy",
+			"description": "",
+			"collectionId": "09651b74-2631-e67b-648a-5a4f24da9c53",
+			"responses": [],
+			"preRequestScript": "//设置当前时间戳\npostman.setGlobalVariable(\"time\",Date.parse(new Date()) / 1000);\ntime = postman.getGlobalVariable('time')\n\n//字符串进行md5加密\nvar wwwmigu_token= CryptoJS.MD5(\"wwwmigu\"+\"ff2102dcf16002d8c1dde6547ea98824\"+time).toString();\nvar yyapp2_token= CryptoJS.MD5(\"yyapp2\"+\"d16148780a1dcc7408e06336b98cfd50\"+time).toString();\nvar yyapp_token= CryptoJS.MD5(\"yyapp\"+\"ff28c965cf94b22c042d6888f4d3187b\"+time).toString();\nvar open_token= CryptoJS.MD5(\"open\"+\"88c47fe265ee1cdaf4a30dcb6c71e9cd\"+time).toString();\nvar wap_token= CryptoJS.MD5(\"wap\"+\"46d1056431ba453a1995de9c08bba66a\"+time).toString();\nvar l2530_token= CryptoJS.MD5(\"12530\"+\"eb7fce6c20924529a4d9add1745d836b\"+time).toString();\nvar miguyytv_token= CryptoJS.MD5(\"miguyytv\"+\"3867ae7240bc4ab6b5621ed7be045483\"+time).toString();\nvar ringapp_token= CryptoJS.MD5(\"ringapp\"+\"8674e3b06228ec547bbf86ee319d07d3\"+time).toString();\nvar ysten_token= CryptoJS.MD5(\"ysten\"+\"6dd6e7530edeafe4ad748a551d5fd954\"+time).toString();\nvar ivr_token= CryptoJS.MD5(\"ivr\"+\"78cde2980f8b4af08d27ab26c3e9c74d\"+time).toString();\nvar miguyytwx_token= CryptoJS.MD5(\"miguyytwx\"+\"e51c5764cea7fda1eb22dee74a15fed6\"+time).toString();\n\n//设置token\npostman.setGlobalVariable(\"wwwmigu_token\",wwwmigu_token)\npostman.setGlobalVariable(\"yyapp2_token\",yyapp2_token)\npostman.setGlobalVariable(\"yyapp_token\",yyapp_token)",
+			"tests": null,
+			"currentHelper": null,
+			"helperAttributes": null,
+			"rawModeData": ""
+		},
+		{
+			"id": "f60214b6-37de-ac5e-18ab-80392b87471c",
+			"headers": "msisdn: 15682051518\nappId: yyapp2\ntimeStamp: 1571983319\nsign: badd343b65de06128e69f8539bd78ca7\n",
+			"headerData": [
+				{
+					"key": "msisdn",
+					"value": "15682051518",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "appId",
+					"value": "yyapp2",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "timeStamp",
+					"value": "1571983319",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "sign",
+					"value": "badd343b65de06128e69f8539bd78ca7",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://39.156.1.73:8080/music_search/v2/search/searchAll?isCopyright=1&isCorrect=1&pageNo=1&pageSize=10&searchSwitch={\"song\":1,\"album\":0,\"singer\":0,\"tagSong\":1,\"mvSong\":0,\"songlist\":0,\"bestShow\":1,\"lyricSong\":0}&sort=0&text=周杰伦&sid=112233",
+			"queryParams": [
+				{
+					"key": "isCopyright",
+					"value": "1",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "isCorrect",
+					"value": "1",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "pageNo",
+					"value": "1",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "pageSize",
+					"value": "10",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "searchSwitch",
+					"value": "{\"song\":1,\"album\":0,\"singer\":0,\"tagSong\":1,\"mvSong\":0,\"songlist\":0,\"bestShow\":1,\"lyricSong\":0}",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "sort",
+					"value": "0",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "text",
+					"value": "周杰伦",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "sid",
+					"value": "112233",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				}
+			],
+			"events": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": null,
+			"dataMode": "params",
+			"version": 2,
+			"auth": null,
+			"time": 1572934024505,
+			"name": "无维度 copy copy",
+			"description": "",
+			"collectionId": "09651b74-2631-e67b-648a-5a4f24da9c53",
+			"responses": [],
+			"currentHelper": null,
+			"helperAttributes": null
+		}
+	]
+}

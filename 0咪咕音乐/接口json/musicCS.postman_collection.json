@@ -1,0 +1,2822 @@
+{
+	"id": "b8c612c7-f067-593e-f85f-1e4c7e55e6dd",
+	"name": "音乐 Copy",
+	"description": "",
+	"order": [
+		"d9ba1b06-007d-0de0-0f7b-637669217f00",
+		"39d5d43c-6746-4659-0095-85af3ec1fab5",
+		"59b02bac-cff1-89e5-1e79-5294e19865a5",
+		"562bd6df-4059-479c-b743-28fa6a4247a3",
+		"fc42ac4a-8170-94da-7081-a04caa3022f0",
+		"94d706a5-6fe7-832c-b7bd-5ff210321aa8",
+		"42da8e2d-79f6-84ab-d383-5abb46abb8d5",
+		"9f3b3eb3-9c2f-e1a8-c172-6ea84766e93b",
+		"825f3d24-5a31-e83d-d4f2-a0ab8e055481",
+		"32cc5020-40f6-7a55-35b3-8d2a7c305ceb",
+		"dedd760f-e5ae-2cfd-01bd-eee8379782b5",
+		"d21701de-2cd5-710a-c07f-cfac666555a9",
+		"a3dd8422-9d2d-a961-57da-87edadd697ef",
+		"394c42fc-4274-a800-0af1-c09251696141",
+		"0161f2a9-7528-9f50-22fd-1a886df2a2a3",
+		"01e661cc-cf1b-645f-73f6-3111e42626b6",
+		"e344fd7b-8f7f-d9c2-b330-e18da846c2a5",
+		"651fb510-a791-00df-d74f-39694b169032",
+		"7d28792d-5acf-b873-9adb-f79ef4b03c94",
+		"4edfc1ac-ca0e-f302-d3c0-fd850c6fac12",
+		"7258b42b-447e-cf34-0211-c2748444512e",
+		"9afac66e-696a-0b5b-8909-ed99e9594663",
+		"078ca8ce-58f7-efe2-a022-598d7d5000f3",
+		"eeafeb7a-90f1-0d3a-4112-b6272ab50d2d",
+		"419fe62d-5090-6ef1-13d2-88b251f070dc",
+		"6c9e0d49-97ed-63ad-2459-b7b6b12ef68a",
+		"9c5a5950-3ab9-1089-f164-d8f30153289a",
+		"65348a88-893d-a174-8912-566d12adacdd",
+		"d1e4e4d1-8be6-c163-b2ef-e7a77aeb555b",
+		"e0d6a206-17ff-cd16-16c3-cb73b70d553c",
+		"38a4652c-4f34-036e-22c7-0e21e0fb5156",
+		"d30ad5f1-7b53-29d3-1a39-bc1f619aee09",
+		"4c7d182e-9254-58fa-3812-5803c261c111",
+		"d66308b1-fc16-547d-1fa2-c4c88dc4eb8a"
+	],
+	"folders": [],
+	"folders_order": [],
+	"timestamp": 0,
+	"owner": 0,
+	"public": false,
+	"requests": [
+		{
+			"id": "0161f2a9-7528-9f50-22fd-1a886df2a2a3",
+			"headers": "",
+			"headerData": [],
+			"url": "{{url}}/musicsearch/api/json/searchVideoTone?text=咪咕咖啡宣传片&searchType=2&issemantic=1&isCorrect=1&isCopyright=0&expire=000000&appId=yyapp2&timestamp={{timestamp}}&sid=1&sessionId=1&token={{token}}&pageSize=10&pageIndex=1",
+			"queryParams": [
+				{
+					"key": "text",
+					"value": "咪咕咖啡宣传片",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "searchType",
+					"value": "2",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "issemantic",
+					"value": "1",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "isCorrect",
+					"value": "1",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "isCopyright",
+					"value": "0",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "expire",
+					"value": "000000",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "appId",
+					"value": "yyapp2",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "timestamp",
+					"value": "{{timestamp}}",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "sid",
+					"value": "1",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "sessionId",
+					"value": "1",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "token",
+					"value": "{{token}}",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "pageSize",
+					"value": "10",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "pageIndex",
+					"value": "1",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				}
+			],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": [],
+			"dataMode": "raw",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1573130449238,
+			"name": "视频彩铃",
+			"description": "",
+			"collectionId": "b8c612c7-f067-593e-f85f-1e4c7e55e6dd",
+			"responses": [],
+			"rawModeData": ""
+		},
+		{
+			"id": "01e661cc-cf1b-645f-73f6-3111e42626b6",
+			"headers": "",
+			"headerData": [],
+			"url": "{{url}}/musicsearch/api/json/getsingerSAM?text=398&isCopyright=0&isSAM=011&appId=yyapp2&timestamp=1581503117&sid=1&sessionId=1&token=4e5c4d5a056f4cb8110d67a833a32df0&pageSize=100&pageIndex=1&mvTypeC=1",
+			"queryParams": [
+				{
+					"key": "text",
+					"value": "398",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "isCopyright",
+					"value": "0",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "isSAM",
+					"value": "011",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "appId",
+					"value": "yyapp2",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "timestamp",
+					"value": "1581503117",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "sid",
+					"value": "1",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "sessionId",
+					"value": "1",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "token",
+					"value": "4e5c4d5a056f4cb8110d67a833a32df0",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "pageSize",
+					"value": "100",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "pageIndex",
+					"value": "1",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "mvTypeC",
+					"value": "1",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				}
+			],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": [],
+			"dataMode": "raw",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1582276948280,
+			"name": "歌手下mv",
+			"description": "",
+			"collectionId": "b8c612c7-f067-593e-f85f-1e4c7e55e6dd",
+			"responses": [],
+			"rawModeData": ""
+		},
+		{
+			"id": "078ca8ce-58f7-efe2-a022-598d7d5000f3",
+			"headers": "",
+			"headerData": [],
+			"url": "{{url}}/musicsearch/api/json/voiceBoxSearchSong?text=0&searchType=4&sort=0&issemantic=1&isCorrect=1&isCopyright=0&expire=000000&searchRange={\"movieName\":[\"\"],\"songName\":[\"\"],\"singerName\":[\"王菲\"],\"writterName\":[\"\"],\"albumName\":[\"\"],\"tagName\":[\"欢快\"]}&appId=yyapp2&timestamp={{timestamp}}&sid=1&sessionId=1&token={{token}}&pageSize=50&pageIndex=1",
+			"queryParams": [
+				{
+					"key": "text",
+					"value": "0",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "searchType",
+					"value": "4",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "sort",
+					"value": "0",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "issemantic",
+					"value": "1",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "isCorrect",
+					"value": "1",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "isCopyright",
+					"value": "0",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "expire",
+					"value": "000000",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "searchRange",
+					"value": "{\"movieName\":[\"\"],\"songName\":[\"\"],\"singerName\":[\"王菲\"],\"writterName\":[\"\"],\"albumName\":[\"\"],\"tagName\":[\"欢快\"]}",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "appId",
+					"value": "yyapp2",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "timestamp",
+					"value": "{{timestamp}}",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "sid",
+					"value": "1",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "sessionId",
+					"value": "1",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "token",
+					"value": "{{token}}",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "pageSize",
+					"value": "50",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "pageIndex",
+					"value": "1",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				}
+			],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": [],
+			"dataMode": "raw",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1572324212972,
+			"name": "音响搜索",
+			"description": "",
+			"collectionId": "b8c612c7-f067-593e-f85f-1e4c7e55e6dd",
+			"responses": [],
+			"rawModeData": ""
+		},
+		{
+			"id": "32cc5020-40f6-7a55-35b3-8d2a7c305ceb",
+			"name": "标签下歌曲",
+			"description": "",
+			"collectionId": "b8c612c7-f067-593e-f85f-1e4c7e55e6dd",
+			"method": "GET",
+			"headers": "",
+			"dataMode": "raw",
+			"data": [],
+			"rawModeData": "",
+			"url": "{{url}}/musicsearch/api/json/searchtag?text=人物访谈&issemantic=1&isCorrect=1&isCopyright=0&expire=000000&appId=yyapp2&timestamp={{timestamp}}&sid=1&sessionId=1&token={{token}}&pageSize=10&pageIndex=1",
+			"responses": [],
+			"queryParams": [
+				{
+					"key": "text",
+					"value": "人物访谈"
+				},
+				{
+					"key": "issemantic",
+					"value": "1"
+				},
+				{
+					"key": "isCorrect",
+					"value": "1"
+				},
+				{
+					"key": "isCopyright",
+					"value": "0"
+				},
+				{
+					"key": "expire",
+					"value": "000000"
+				},
+				{
+					"key": "appId",
+					"value": "yyapp2"
+				},
+				{
+					"key": "timestamp",
+					"value": "{{timestamp}}"
+				},
+				{
+					"key": "sid",
+					"value": "1"
+				},
+				{
+					"key": "sessionId",
+					"value": "1"
+				},
+				{
+					"key": "token",
+					"value": "{{token}}"
+				},
+				{
+					"key": "pageSize",
+					"value": "10"
+				},
+				{
+					"key": "pageIndex",
+					"value": "1"
+				}
+			],
+			"headerData": [],
+			"collection_id": "b8c612c7-f067-593e-f85f-1e4c7e55e6dd"
+		},
+		{
+			"id": "38a4652c-4f34-036e-22c7-0e21e0fb5156",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "10.148.159.183:48094/nlp/doSemanticUnderstanding",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1584079084755,
+			"name": "音乐nlp",
+			"description": "",
+			"collectionId": "b8c612c7-f067-593e-f85f-1e4c7e55e6dd",
+			"responses": [],
+			"rawModeData": "{\n\t\"keyword\":\"推荐陈奕迅最新的粤语歌\"\n}"
+		},
+		{
+			"id": "394c42fc-4274-a800-0af1-c09251696141",
+			"headers": "",
+			"headerData": [],
+			"url": "10.148.159.183:8010/musicsearch/api/json/getsingerSAM?text=975391&isCopyright=0&isSAM=100&appId=yyapp2&timestamp=1581503117&sid=1&sessionId=1&token=4e5c4d5a056f4cb8110d67a833a32df0&pageSize=10&pageIndex=1",
+			"queryParams": [
+				{
+					"key": "text",
+					"value": "975391",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "isCopyright",
+					"value": "0",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "isSAM",
+					"value": "100",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "appId",
+					"value": "yyapp2",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "timestamp",
+					"value": "1581503117",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "sid",
+					"value": "1",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "sessionId",
+					"value": "1",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "token",
+					"value": "4e5c4d5a056f4cb8110d67a833a32df0",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "pageSize",
+					"value": "10",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "pageIndex",
+					"value": "1",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				}
+			],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": [],
+			"dataMode": "raw",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1583911484055,
+			"name": "歌手下歌曲专辑mv",
+			"description": "",
+			"collectionId": "b8c612c7-f067-593e-f85f-1e4c7e55e6dd",
+			"responses": [],
+			"rawModeData": ""
+		},
+		{
+			"id": "39d5d43c-6746-4659-0095-85af3ec1fab5",
+			"name": "在家支持时用 Copy",
+			"description": "",
+			"collectionId": "b8c612c7-f067-593e-f85f-1e4c7e55e6dd",
+			"method": "GET",
+			"headers": "",
+			"dataMode": "raw",
+			"data": [],
+			"rawModeData": "",
+			"url": "",
+			"responses": [],
+			"queryParams": [],
+			"headerData": [],
+			"collection_id": "b8c612c7-f067-593e-f85f-1e4c7e55e6dd"
+		},
+		{
+			"id": "419fe62d-5090-6ef1-13d2-88b251f070dc",
+			"headers": "",
+			"headerData": [],
+			"url": "{{url}}/musicsearch/api/json/searchPeriodical?text=&searchType=2&timestamp=1581503117&size=10&appId=yyapp2&token=4e5c4d5a056f4cb8110d67a833a32df0&sid=1&sessionId=1&pageIndex=1&pageSize=1",
+			"queryParams": [
+				{
+					"key": "text",
+					"value": "",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "searchType",
+					"value": "2",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "timestamp",
+					"value": "1581503117",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "size",
+					"value": "10",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "appId",
+					"value": "yyapp2",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "token",
+					"value": "4e5c4d5a056f4cb8110d67a833a32df0",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "sid",
+					"value": "1",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "sessionId",
+					"value": "1",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "pageIndex",
+					"value": "1",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "pageSize",
+					"value": "1",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				}
+			],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": [],
+			"dataMode": "raw",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1581660723010,
+			"name": "期刊搜索",
+			"description": "",
+			"collectionId": "b8c612c7-f067-593e-f85f-1e4c7e55e6dd",
+			"responses": [],
+			"rawModeData": ""
+		},
+		{
+			"id": "42da8e2d-79f6-84ab-d383-5abb46abb8d5",
+			"headers": "",
+			"headerData": [],
+			"url": "{{url}}/musicsearch/api/json/searchsinger?text=Taylor swift&issemantic=1&isCorrect=1&appId=wwwmigu&timestamp=1571881267&sid=1&sessionId=1&token=93d59c31aa76c3033a1935d713d3b349&pageSize=10&pageIndex=1",
+			"queryParams": [
+				{
+					"key": "text",
+					"value": "Taylor swift",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "issemantic",
+					"value": "1",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "isCorrect",
+					"value": "1",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "appId",
+					"value": "wwwmigu",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "timestamp",
+					"value": "1571881267",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "sid",
+					"value": "1",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "sessionId",
+					"value": "1",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "token",
+					"value": "93d59c31aa76c3033a1935d713d3b349",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "pageSize",
+					"value": "10",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "pageIndex",
+					"value": "1",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				}
+			],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": null,
+			"dataMode": "params",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1576117853508,
+			"name": "歌手",
+			"description": "",
+			"collectionId": "b8c612c7-f067-593e-f85f-1e4c7e55e6dd",
+			"responses": []
+		},
+		{
+			"id": "4c7d182e-9254-58fa-3812-5803c261c111",
+			"headers": "",
+			"headerData": [],
+			"url": "{{url}}/musicsearch/api/json/searchticket?text=任贤齐 &appId=yyapp2&timestamp={{time}}&pageSize=10&pageIndex=1&sid=1&token={{yyapp2_token}}&sessionId=1",
+			"queryParams": [
+				{
+					"key": "text",
+					"value": "任贤齐 ",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "appId",
+					"value": "yyapp2",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "timestamp",
+					"value": "{{time}}",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "pageSize",
+					"value": "10",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "pageIndex",
+					"value": "1",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "sid",
+					"value": "1",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "token",
+					"value": "{{yyapp2_token}}",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "sessionId",
+					"value": "1",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				}
+			],
+			"preRequestScript": "//设置当前时间戳\npostman.setGlobalVariable(\"time\",Date.parse(new Date()) / 1000);\ntime = postman.getGlobalVariable('time')\n\n//字符串进行md5加密\nvar wwwmigu_token= CryptoJS.MD5(\"wwwmigu\"+\"ff2102dcf16002d8c1dde6547ea98824\"+time).toString();\nvar yyapp2_token= CryptoJS.MD5(\"yyapp2\"+\"d16148780a1dcc7408e06336b98cfd50\"+time).toString();\nvar yyapp_token= CryptoJS.MD5(\"yyapp\"+\"ff28c965cf94b22c042d6888f4d3187b\"+time).toString();\nvar open_token= CryptoJS.MD5(\"open\"+\"88c47fe265ee1cdaf4a30dcb6c71e9cd\"+time).toString();\nvar wap_token= CryptoJS.MD5(\"wap\"+\"46d1056431ba453a1995de9c08bba66a\"+time).toString();\nvar l2530_token= CryptoJS.MD5(\"12530\"+\"eb7fce6c20924529a4d9add1745d836b\"+time).toString();\nvar miguyytv_token= CryptoJS.MD5(\"miguyytv\"+\"3867ae7240bc4ab6b5621ed7be045483\"+time).toString();\nvar ringapp_token= CryptoJS.MD5(\"ringapp\"+\"8674e3b06228ec547bbf86ee319d07d3\"+time).toString();\nvar ysten_token= CryptoJS.MD5(\"ysten\"+\"6dd6e7530edeafe4ad748a551d5fd954\"+time).toString();\nvar ivr_token= CryptoJS.MD5(\"ivr\"+\"78cde2980f8b4af08d27ab26c3e9c74d\"+time).toString();\nvar miguyytwx_token= CryptoJS.MD5(\"miguyytwx\"+\"e51c5764cea7fda1eb22dee74a15fed6\"+time).toString();\n\n//设置token\npostman.setGlobalVariable(\"wwwmigu_token\",wwwmigu_token)\npostman.setGlobalVariable(\"yyapp2_token\",yyapp2_token)\npostman.setGlobalVariable(\"yyapp_token\",yyapp_token)\npm.globals.get(\"variable_key\");",
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": null,
+			"dataMode": "params",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1579201339054,
+			"name": "票务 copy",
+			"description": "",
+			"collectionId": "b8c612c7-f067-593e-f85f-1e4c7e55e6dd",
+			"responses": []
+		},
+		{
+			"id": "4edfc1ac-ca0e-f302-d3c0-fd850c6fac12",
+			"name": "http://10.148.159.183:9030/bcse_video_op/sx/search/getSearchResult",
+			"description": "",
+			"collectionId": "b8c612c7-f067-593e-f85f-1e4c7e55e6dd",
+			"method": "POST",
+			"headers": "Content-Type: application/json",
+			"dataMode": "raw",
+			"data": [],
+			"rawModeData": "{\r\n\"searchKey\": \"name\",\r\n\"searchValue\": \"速度与激情5\",\r\n\"businessType\": \"live\",\r\n\"indexStatus\": \"0\",\r\n\"pageIndex\": \"1\",\r\n\"pageSize\": \"10\"\r\n}",
+			"url": "http://10.148.159.183:9030/bcse_video_op/sx/search/getSearchResult",
+			"responses": [],
+			"queryParams": [],
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"name": "Content-Type",
+					"value": "application/json",
+					"type": "text"
+				}
+			],
+			"collection_id": "b8c612c7-f067-593e-f85f-1e4c7e55e6dd"
+		},
+		{
+			"id": "562bd6df-4059-479c-b743-28fa6a4247a3",
+			"headers": "",
+			"headerData": [],
+			"url": "10.148.159.183:8010/musicsearch/api/json/searchall?text=Taylor Swift lover()&sid=1&searchType=2&isCorrect=1&isCopyright=0&expire=000000&bestShowType=0&searchSwitch={\"song\":1,\"album\":1,\"singer\":1,\"tagSong\":1,\"mvSong\":1,\"bestShow\":1,\"concert\":1,\"songlist\":1}&appId=yyapp2&timestamp=1581503117&sid=1&sessionId=1&token=4e5c4d5a056f4cb8110d67a833a32df0&pageSize=10&pageIndex=1&bestMultiValue=1&bussId=1&feature=1111000000",
+			"queryParams": [
+				{
+					"key": "text",
+					"value": "Taylor Swift lover()",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "sid",
+					"value": "1",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "searchType",
+					"value": "2",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "isCorrect",
+					"value": "1",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "isCopyright",
+					"value": "0",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "expire",
+					"value": "000000",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "bestShowType",
+					"value": "0",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "searchSwitch",
+					"value": "{\"song\":1,\"album\":1,\"singer\":1,\"tagSong\":1,\"mvSong\":1,\"bestShow\":1,\"concert\":1,\"songlist\":1}",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "appId",
+					"value": "yyapp2",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "timestamp",
+					"value": "1581503117",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "sid",
+					"value": "1",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "sessionId",
+					"value": "1",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "token",
+					"value": "4e5c4d5a056f4cb8110d67a833a32df0",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "pageSize",
+					"value": "10",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "pageIndex",
+					"value": "1",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "bestMultiValue",
+					"value": "1",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "bussId",
+					"value": "1",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "feature",
+					"value": "1111000000",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				}
+			],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": [],
+			"dataMode": "raw",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1582717199373,
+			"name": "无维度开发",
+			"description": "",
+			"collectionId": "b8c612c7-f067-593e-f85f-1e4c7e55e6dd",
+			"responses": [],
+			"rawModeData": ""
+		},
+		{
+			"id": "59b02bac-cff1-89e5-1e79-5294e19865a5",
+			"headers": "",
+			"headerData": [],
+			"url": "10.148.159.183:8010/musicsearch/api/json/searchall?text=小凌&sid=1&searchType=2&isCorrect=1&isCopyright=0&expire=000000&bestShowType=0&searchSwitch={\"song\":1,\"album\":1,\"singer\":1,\"tagSong\":1,\"mvSong\":1,\"bestShow\":1,\"concert\":1,\"songlist\":1}&appId=yyapp2&timestamp=1581503117&sid=1&sessionId=1&token=4e5c4d5a056f4cb8110d67a833a32df0&pageSize=10&pageIndex=1&bestMultiValue=1&bussId=1&feature=1111000000&uiVersion=I_music_3.0.0",
+			"queryParams": [
+				{
+					"key": "text",
+					"value": "小凌",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "sid",
+					"value": "1",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "searchType",
+					"value": "2",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "isCorrect",
+					"value": "1",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "isCopyright",
+					"value": "0",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "expire",
+					"value": "000000",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "bestShowType",
+					"value": "0",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "searchSwitch",
+					"value": "{\"song\":1,\"album\":1,\"singer\":1,\"tagSong\":1,\"mvSong\":1,\"bestShow\":1,\"concert\":1,\"songlist\":1}",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "appId",
+					"value": "yyapp2",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "timestamp",
+					"value": "1581503117",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "sid",
+					"value": "1",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "sessionId",
+					"value": "1",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "token",
+					"value": "4e5c4d5a056f4cb8110d67a833a32df0",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "pageSize",
+					"value": "10",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "pageIndex",
+					"value": "1",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "bestMultiValue",
+					"value": "1",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "bussId",
+					"value": "1",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "feature",
+					"value": "1111000000",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "uiVersion",
+					"value": "I_music_3.0.0",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				}
+			],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": [],
+			"dataMode": "raw",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1583911477490,
+			"name": "无维度",
+			"description": "",
+			"collectionId": "b8c612c7-f067-593e-f85f-1e4c7e55e6dd",
+			"responses": [],
+			"rawModeData": ""
+		},
+		{
+			"id": "651fb510-a791-00df-d74f-39694b169032",
+			"headers": "",
+			"headerData": [],
+			"url": "{{url}}/musicsearch/api/json/searchVideoTone?text=视频彩铃测试妈妈&searchType=2&issemantic=1&isCorrect=1&isCopyright=1&expire=000000&appId=yyapp2&timestamp={{timestamp}}&sid=1&sessionId=1&token={{token}}&pageSize=10&pageIndex=1",
+			"queryParams": [
+				{
+					"key": "text",
+					"value": "视频彩铃测试妈妈",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "searchType",
+					"value": "2",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "issemantic",
+					"value": "1",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "isCorrect",
+					"value": "1",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "isCopyright",
+					"value": "1",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "expire",
+					"value": "000000",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "appId",
+					"value": "yyapp2",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "timestamp",
+					"value": "{{timestamp}}",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "sid",
+					"value": "1",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "sessionId",
+					"value": "1",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "token",
+					"value": "{{token}}",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "pageSize",
+					"value": "10",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "pageIndex",
+					"value": "1",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				}
+			],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": [],
+			"dataMode": "raw",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1572259447073,
+			"name": "视频彩铃搜索",
+			"description": "",
+			"collectionId": "b8c612c7-f067-593e-f85f-1e4c7e55e6dd",
+			"responses": [],
+			"rawModeData": ""
+		},
+		{
+			"id": "65348a88-893d-a174-8912-566d12adacdd",
+			"headers": "",
+			"headerData": [],
+			"url": "http://10.148.159.183:8010/musicsearch/api/json/config?name=spellcheckEnabled&value=true&appId=yyapp2&timestamp={{timestamp}}&sid=1&sessionId=1&token={{token}}",
+			"queryParams": [
+				{
+					"key": "name",
+					"value": "spellcheckEnabled",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "value",
+					"value": "true",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "appId",
+					"value": "yyapp2",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "timestamp",
+					"value": "{{timestamp}}",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "sid",
+					"value": "1",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "sessionId",
+					"value": "1",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "token",
+					"value": "{{token}}",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				}
+			],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": null,
+			"dataMode": "params",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1575012017774,
+			"name": "搜索调纠错开关",
+			"description": "",
+			"collectionId": "b8c612c7-f067-593e-f85f-1e4c7e55e6dd",
+			"responses": []
+		},
+		{
+			"id": "6c9e0d49-97ed-63ad-2459-b7b6b12ef68a",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "10.148.159.183:48094/nlp/doSemanticUnderstanding",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1572414767809,
+			"name": "语义",
+			"description": "",
+			"collectionId": "b8c612c7-f067-593e-f85f-1e4c7e55e6dd",
+			"responses": [],
+			"rawModeData": "{\"keyword\":\"推荐歌手周杰伦的歌曲\"}"
+		},
+		{
+			"id": "7258b42b-447e-cf34-0211-c2748444512e",
+			"name": "音乐导流",
+			"description": "",
+			"collectionId": "b8c612c7-f067-593e-f85f-1e4c7e55e6dd",
+			"method": "GET",
+			"headers": "",
+			"dataMode": "raw",
+			"data": [],
+			"rawModeData": "",
+			"url": "{{url}}/musicsearch/api/json/ searchvideo?text=1002644291&issemantic=1&isCorrect=1&appId=yyapp2&timestamp=1563527427&sid=1&sessionId=1&token=c31dfe3d9fb68028d2cef7745d1239c1&pageSize=10&pageIndex=1",
+			"responses": [],
+			"queryParams": [
+				{
+					"key": "text",
+					"value": "1002644291"
+				},
+				{
+					"key": "issemantic",
+					"value": "1"
+				},
+				{
+					"key": "isCorrect",
+					"value": "1"
+				},
+				{
+					"key": "appId",
+					"value": "yyapp2"
+				},
+				{
+					"key": "timestamp",
+					"value": "1563527427"
+				},
+				{
+					"key": "sid",
+					"value": "1"
+				},
+				{
+					"key": "sessionId",
+					"value": "1"
+				},
+				{
+					"key": "token",
+					"value": "c31dfe3d9fb68028d2cef7745d1239c1"
+				},
+				{
+					"key": "pageSize",
+					"value": "10"
+				},
+				{
+					"key": "pageIndex",
+					"value": "1"
+				}
+			],
+			"headerData": [],
+			"collection_id": "b8c612c7-f067-593e-f85f-1e4c7e55e6dd"
+		},
+		{
+			"id": "7d28792d-5acf-b873-9adb-f79ef4b03c94",
+			"headers": "",
+			"headerData": [],
+			"url": "{{url}}/musicsearch/api/json/searchsong?text=水中花&searchType=2&sort=0&issemantic=1&isCorrect=1&isCopyright=1&expire=000000&searchRange={\"movieName\":[\"\"],\"songName\":[\"\"],\"singerName\":[\"\"],\"writterName\":[\"\"],\"albumName\":[\"\"],\"tagName\":[\"\"]}&appId=yyapp2&timestamp=1581503117&sid=1&sessionId=1&token=4e5c4d5a056f4cb8110d67a833a32df0&pageSize=20&pageIndex=1",
+			"queryParams": [
+				{
+					"key": "text",
+					"value": "水中花",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "searchType",
+					"value": "2",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "sort",
+					"value": "0",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "issemantic",
+					"value": "1",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "isCorrect",
+					"value": "1",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "isCopyright",
+					"value": "1",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "expire",
+					"value": "000000",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "searchRange",
+					"value": "{\"movieName\":[\"\"],\"songName\":[\"\"],\"singerName\":[\"\"],\"writterName\":[\"\"],\"albumName\":[\"\"],\"tagName\":[\"\"]}",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "appId",
+					"value": "yyapp2",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "timestamp",
+					"value": "1581503117",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "sid",
+					"value": "1",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "sessionId",
+					"value": "1",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "token",
+					"value": "4e5c4d5a056f4cb8110d67a833a32df0",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "pageSize",
+					"value": "20",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "pageIndex",
+					"value": "1",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				}
+			],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": [],
+			"dataMode": "raw",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1583991036533,
+			"name": "歌曲搜索 抽屉排序",
+			"description": "",
+			"collectionId": "b8c612c7-f067-593e-f85f-1e4c7e55e6dd",
+			"responses": [],
+			"rawModeData": ""
+		},
+		{
+			"id": "825f3d24-5a31-e83d-d4f2-a0ab8e055481",
+			"headers": "",
+			"headerData": [],
+			"url": "{{url}}/musicsearch/api/json/searchlyric?text=风到这里就是黏 黏住过客的思念&isCopyright=0&expire=000000&appId=yyapp2&timestamp={{timestamp}}&sid=1&sessionId=1&token={{token}}&pageSize=10&pageIndex=1",
+			"queryParams": [
+				{
+					"key": "text",
+					"value": "风到这里就是黏 黏住过客的思念",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "isCopyright",
+					"value": "0",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "expire",
+					"value": "000000",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "appId",
+					"value": "yyapp2",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "timestamp",
+					"value": "{{timestamp}}",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "sid",
+					"value": "1",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "sessionId",
+					"value": "1",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "token",
+					"value": "{{token}}",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "pageSize",
+					"value": "10",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "pageIndex",
+					"value": "1",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				}
+			],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": [],
+			"dataMode": "raw",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1572260295422,
+			"name": "歌词搜",
+			"description": "",
+			"collectionId": "b8c612c7-f067-593e-f85f-1e4c7e55e6dd",
+			"responses": [],
+			"rawModeData": ""
+		},
+		{
+			"id": "94d706a5-6fe7-832c-b7bd-5ff210321aa8",
+			"headers": "",
+			"headerData": [],
+			"url": "http://10.148.130.130:48080/sc/general?word=周杰仑&type=3&num=3",
+			"queryParams": [
+				{
+					"key": "word",
+					"value": "周杰仑",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "type",
+					"value": "3",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "num",
+					"value": "3",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				}
+			],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": null,
+			"dataMode": "params",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1582724346304,
+			"name": "纠错 copy",
+			"description": "",
+			"collectionId": "b8c612c7-f067-593e-f85f-1e4c7e55e6dd",
+			"responses": []
+		},
+		{
+			"id": "9afac66e-696a-0b5b-8909-ed99e9594663",
+			"headers": "",
+			"headerData": [],
+			"url": "{{url}}/musicsearch/api/json/suggestrec?text=周杰伦的&timestamp=1581503117&size=10&appId=yyapp2&token=4e5c4d5a056f4cb8110d67a833a32df0&sid=1&sessionId=1&pageIndex=1&pageSize=10",
+			"queryParams": [
+				{
+					"key": "text",
+					"value": "周杰伦的",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "timestamp",
+					"value": "1581503117",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "size",
+					"value": "10",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "appId",
+					"value": "yyapp2",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "token",
+					"value": "4e5c4d5a056f4cb8110d67a833a32df0",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "sid",
+					"value": "1",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "sessionId",
+					"value": "1",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "pageIndex",
+					"value": "1",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "pageSize",
+					"value": "10",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				}
+			],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": [],
+			"dataMode": "raw",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1583910962126,
+			"name": "联想推荐",
+			"description": "",
+			"collectionId": "b8c612c7-f067-593e-f85f-1e4c7e55e6dd",
+			"responses": [],
+			"rawModeData": ""
+		},
+		{
+			"id": "9c5a5950-3ab9-1089-f164-d8f30153289a",
+			"headers": "",
+			"headerData": [],
+			"url": "http://10.148.159.183:8010/musicsearch/api/json/config?name=list&value=true&appId=yyapp2&timestamp={{timestamp}}&sid=1&sessionId=1&token={{token}}",
+			"queryParams": [
+				{
+					"key": "name",
+					"value": "list",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "value",
+					"value": "true",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "appId",
+					"value": "yyapp2",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "timestamp",
+					"value": "{{timestamp}}",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "sid",
+					"value": "1",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "sessionId",
+					"value": "1",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "token",
+					"value": "{{token}}",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				}
+			],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": null,
+			"dataMode": "params",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1575012029292,
+			"name": "搜索目前开关配置",
+			"description": "",
+			"collectionId": "b8c612c7-f067-593e-f85f-1e4c7e55e6dd",
+			"responses": []
+		},
+		{
+			"id": "9f3b3eb3-9c2f-e1a8-c172-6ea84766e93b",
+			"headers": "",
+			"headerData": [],
+			"url": "10.148.159.183:8010/musicsearch/api/json/searchsong?text=霈丹 世界第一等&searchType=1&pageSize=10&pageIndex=1&sort=0&issemantic=1&isCorrect=1&isCopyright=0&expire=000000&searchRange={\"movieName\":[\"\"],\"songName\":[\"\"],\"singerName\":[\"\"],\"writterName\":[\"\"],\"albumName\":[\"\"],\"tagName\":[\"\"]}&appId=yyapp2&timestamp=1581503117&sid=1&sessionId=1&token=4e5c4d5a056f4cb8110d67a833a32df0&uiVersion=I_music_3.0.0",
+			"queryParams": [
+				{
+					"key": "text",
+					"value": "霈丹 世界第一等",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "searchType",
+					"value": "1",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "pageSize",
+					"value": "10",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "pageIndex",
+					"value": "1",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "sort",
+					"value": "0",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "issemantic",
+					"value": "1",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "isCorrect",
+					"value": "1",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "isCopyright",
+					"value": "0",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "expire",
+					"value": "000000",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "searchRange",
+					"value": "{\"movieName\":[\"\"],\"songName\":[\"\"],\"singerName\":[\"\"],\"writterName\":[\"\"],\"albumName\":[\"\"],\"tagName\":[\"\"]}",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "appId",
+					"value": "yyapp2",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "timestamp",
+					"value": "1581503117",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "sid",
+					"value": "1",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "sessionId",
+					"value": "1",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "token",
+					"value": "4e5c4d5a056f4cb8110d67a833a32df0",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "uiVersion",
+					"value": "I_music_3.0.0",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				}
+			],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": [],
+			"dataMode": "raw",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1584079045888,
+			"name": "歌曲搜索",
+			"description": "",
+			"collectionId": "b8c612c7-f067-593e-f85f-1e4c7e55e6dd",
+			"responses": [],
+			"rawModeData": ""
+		},
+		{
+			"id": "a3dd8422-9d2d-a961-57da-87edadd697ef",
+			"headers": "",
+			"headerData": [],
+			"url": "{{url}}/musicsearch/api/json/searchmv?text=生活&searchType=2&issemantic=1&isCorrect=1&isCopyright=0&expire=000000&appId=yyapp2&timestamp={{timestamp}}&sid=1&sessionId=1&token={{token}}&pageSize=100&pageIndex=1&mvTypeC=1",
+			"queryParams": [
+				{
+					"key": "text",
+					"value": "生活",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "searchType",
+					"value": "2",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "issemantic",
+					"value": "1",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "isCorrect",
+					"value": "1",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "isCopyright",
+					"value": "0",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "expire",
+					"value": "000000",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "appId",
+					"value": "yyapp2",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "timestamp",
+					"value": "{{timestamp}}",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "sid",
+					"value": "1",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "sessionId",
+					"value": "1",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "token",
+					"value": "{{token}}",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "pageSize",
+					"value": "100",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "pageIndex",
+					"value": "1",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "mvTypeC",
+					"value": "1",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				}
+			],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": [],
+			"dataMode": "raw",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1575443721897,
+			"name": "mv",
+			"description": "",
+			"collectionId": "b8c612c7-f067-593e-f85f-1e4c7e55e6dd",
+			"responses": [],
+			"rawModeData": ""
+		},
+		{
+			"id": "d1e4e4d1-8be6-c163-b2ef-e7a77aeb555b",
+			"headers": "",
+			"headerData": [],
+			"url": "http://10.148.159.183:8010/musicsearch/api/json/config?name=searchSongDegraded&value=true&appId=yyapp2&timestamp={{timestamp}}&sid=1&sessionId=1&token={{token}}",
+			"queryParams": [
+				{
+					"key": "name",
+					"value": "searchSongDegraded",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "value",
+					"value": "true",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "appId",
+					"value": "yyapp2",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "timestamp",
+					"value": "{{timestamp}}",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "sid",
+					"value": "1",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "sessionId",
+					"value": "1",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "token",
+					"value": "{{token}}",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				}
+			],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": null,
+			"dataMode": "params",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1575256926891,
+			"name": "搜索降级开关.true降级;false不降级",
+			"description": "",
+			"collectionId": "b8c612c7-f067-593e-f85f-1e4c7e55e6dd",
+			"responses": []
+		},
+		{
+			"id": "d21701de-2cd5-710a-c07f-cfac666555a9",
+			"name": "albumnew",
+			"description": "",
+			"collectionId": "b8c612c7-f067-593e-f85f-1e4c7e55e6dd",
+			"method": "GET",
+			"headers": "",
+			"dataMode": "raw",
+			"data": [],
+			"rawModeData": "",
+			"url": "{{url}}/musicsearch/api/json/searchalbum?text=周杰等你下课&issemantic=1&isCorrect=1&appId=yyapp2&timestamp={{timestamp}}&sid=1&sessionId=1&token={{token}}&pageSize=10&pageIndex=1",
+			"responses": [],
+			"queryParams": [
+				{
+					"key": "text",
+					"value": "周杰等你下课"
+				},
+				{
+					"key": "issemantic",
+					"value": "1"
+				},
+				{
+					"key": "isCorrect",
+					"value": "1"
+				},
+				{
+					"key": "appId",
+					"value": "yyapp2"
+				},
+				{
+					"key": "timestamp",
+					"value": "{{timestamp}}"
+				},
+				{
+					"key": "sid",
+					"value": "1"
+				},
+				{
+					"key": "sessionId",
+					"value": "1"
+				},
+				{
+					"key": "token",
+					"value": "{{token}}"
+				},
+				{
+					"key": "pageSize",
+					"value": "10"
+				},
+				{
+					"key": "pageIndex",
+					"value": "1"
+				}
+			],
+			"headerData": [],
+			"collection_id": "b8c612c7-f067-593e-f85f-1e4c7e55e6dd"
+		},
+		{
+			"id": "d30ad5f1-7b53-29d3-1a39-bc1f619aee09",
+			"headers": "",
+			"headerData": [],
+			"url": "10.148.159.183:8010/musicsearch/api/json/searchticket?text=测试&appId=yyapp2&timestamp=1572226858&pageSize=10&pageIndex=1&sid=1&token=3d8680272b71d220fc2d6dc3a1b6f1e9&sessionId=1",
+			"queryParams": [
+				{
+					"key": "text",
+					"value": "测试",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "appId",
+					"value": "yyapp2",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "timestamp",
+					"value": "1572226858",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "pageSize",
+					"value": "10",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "pageIndex",
+					"value": "1",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "sid",
+					"value": "1",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "token",
+					"value": "3d8680272b71d220fc2d6dc3a1b6f1e9",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "sessionId",
+					"value": "1",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				}
+			],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": null,
+			"dataMode": "params",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1578966315020,
+			"name": "票务",
+			"description": "",
+			"collectionId": "b8c612c7-f067-593e-f85f-1e4c7e55e6dd",
+			"responses": []
+		},
+		{
+			"id": "d66308b1-fc16-547d-1fa2-c4c88dc4eb8a",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "10.148.159.193:6788/opmanager/jadeite/api/redis/get",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": "",
+			"method": "POST",
+			"collectionId": "b8c612c7-f067-593e-f85f-1e4c7e55e6dd",
+			"data": [],
+			"dataMode": "raw",
+			"name": "音乐测试redis",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1578563472509,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"rawModeData": "{\n\t\"key\":\"Playlist:千里之外\",\n\t\"reidType\":\"music\"\n}"
+		},
+		{
+			"id": "d9ba1b06-007d-0de0-0f7b-637669217f00",
+			"name": "在家支持时用",
+			"description": "",
+			"collectionId": "b8c612c7-f067-593e-f85f-1e4c7e55e6dd",
+			"method": "GET",
+			"headers": "",
+			"dataMode": "raw",
+			"data": [],
+			"rawModeData": "",
+			"url": "",
+			"responses": [],
+			"queryParams": [],
+			"headerData": [],
+			"collection_id": "b8c612c7-f067-593e-f85f-1e4c7e55e6dd"
+		},
+		{
+			"id": "dedd760f-e5ae-2cfd-01bd-eee8379782b5",
+			"headers": "",
+			"headerData": [],
+			"url": "{{url}}/musicsearch/api/json/suggest?text=周杰伦的&timestamp={{timestamp}}&size=5&appId=yyapp2&token={{token}}&sid=1&sessionId=1&pageIndex=1&pageSize=1",
+			"queryParams": [
+				{
+					"key": "text",
+					"value": "周杰伦的",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "timestamp",
+					"value": "{{timestamp}}",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "size",
+					"value": "5",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "appId",
+					"value": "yyapp2",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "token",
+					"value": "{{token}}",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "sid",
+					"value": "1",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "sessionId",
+					"value": "1",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "pageIndex",
+					"value": "1",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "pageSize",
+					"value": "1",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				}
+			],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": [],
+			"dataMode": "raw",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1578971165135,
+			"name": "联想",
+			"description": "",
+			"collectionId": "b8c612c7-f067-593e-f85f-1e4c7e55e6dd",
+			"responses": [],
+			"rawModeData": ""
+		},
+		{
+			"id": "e0d6a206-17ff-cd16-16c3-cb73b70d553c",
+			"headers": "",
+			"headerData": [],
+			"url": "10.148.159.183:8010/musicsearch/api/json/searchsongbyplaylist?text=老人与海&playlistId=100000009&playlistType=2&isCopyright=1&appId=yyapp2&timestamp=1581503117&sid=1&sessionId=1&token=4e5c4d5a056f4cb8110d67a833a32df0&pageSize=10&pageIndex=1",
+			"queryParams": [
+				{
+					"key": "text",
+					"value": "老人与海",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "playlistId",
+					"value": "100000009",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "playlistType",
+					"value": "2",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "isCopyright",
+					"value": "1",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "appId",
+					"value": "yyapp2",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "timestamp",
+					"value": "1581503117",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "sid",
+					"value": "1",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "sessionId",
+					"value": "1",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "token",
+					"value": "4e5c4d5a056f4cb8110d67a833a32df0",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "pageSize",
+					"value": "10",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "pageIndex",
+					"value": "1",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				}
+			],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": null,
+			"dataMode": "params",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1583722151086,
+			"name": "歌单下歌曲",
+			"description": "",
+			"collectionId": "b8c612c7-f067-593e-f85f-1e4c7e55e6dd",
+			"responses": []
+		},
+		{
+			"id": "e344fd7b-8f7f-d9c2-b330-e18da846c2a5",
+			"headers": "",
+			"headerData": [],
+			"url": "{{url}}/musicsearch/api/json/searchsonglist?text=和🌰的KTV歌单&appId=yyapp2&timestamp={{timestamp}}&sid=1&sessionId=1&token={{token}}&pageSize=100&pageIndex=1",
+			"queryParams": [
+				{
+					"key": "text",
+					"value": "和🌰的KTV歌单",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "appId",
+					"value": "yyapp2",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "timestamp",
+					"value": "{{timestamp}}",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "sid",
+					"value": "1",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "sessionId",
+					"value": "1",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "token",
+					"value": "{{token}}",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "pageSize",
+					"value": "100",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "pageIndex",
+					"value": "1",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				}
+			],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": [],
+			"dataMode": "raw",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1576117863495,
+			"name": "歌单搜索",
+			"description": "",
+			"collectionId": "b8c612c7-f067-593e-f85f-1e4c7e55e6dd",
+			"responses": [],
+			"rawModeData": ""
+		},
+		{
+			"id": "eeafeb7a-90f1-0d3a-4112-b6272ab50d2d",
+			"headers": "",
+			"headerData": [],
+			"url": "10.148.159.183:8010/musicsearch/api/json/voiceBoxSearchSong?text=推荐陈奕迅最新的粤语歌&searchType=2&sort=0&issemantic=1&isCorrect=1&isCopyright=0&expire=000000&searchRange={\"movieName\":[\"\"],\"songName\":[\"\"],\"singerName\":[\"\"],\"writterName\":[\"\"],\"albumName\":[\"\"],\"tagName\":[\"\"]}&appId=yyapp2&timestamp=1581503117&sid=1&sessionId=1&token=4e5c4d5a056f4cb8110d67a833a32df0&pageSize=10&pageIndex=1",
+			"queryParams": [
+				{
+					"key": "text",
+					"value": "推荐陈奕迅最新的粤语歌",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "searchType",
+					"value": "2",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "sort",
+					"value": "0",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "issemantic",
+					"value": "1",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "isCorrect",
+					"value": "1",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "isCopyright",
+					"value": "0",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "expire",
+					"value": "000000",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "searchRange",
+					"value": "{\"movieName\":[\"\"],\"songName\":[\"\"],\"singerName\":[\"\"],\"writterName\":[\"\"],\"albumName\":[\"\"],\"tagName\":[\"\"]}",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "appId",
+					"value": "yyapp2",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "timestamp",
+					"value": "1581503117",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "sid",
+					"value": "1",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "sessionId",
+					"value": "1",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "token",
+					"value": "4e5c4d5a056f4cb8110d67a833a32df0",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "pageSize",
+					"value": "10",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "pageIndex",
+					"value": "1",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				}
+			],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": [],
+			"dataMode": "raw",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1584127467567,
+			"name": "音响搜索 Copy",
+			"description": "",
+			"collectionId": "b8c612c7-f067-593e-f85f-1e4c7e55e6dd",
+			"responses": [],
+			"rawModeData": ""
+		},
+		{
+			"id": "fc42ac4a-8170-94da-7081-a04caa3022f0",
+			"headers": "",
+			"headerData": [],
+			"url": "http://10.148.159.183:48080/sc/general?word=爱是永恒&type=3&num=3",
+			"queryParams": [
+				{
+					"key": "word",
+					"value": "爱是永恒",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "type",
+					"value": "3",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "num",
+					"value": "3",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				}
+			],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": null,
+			"dataMode": "params",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1583911473638,
+			"name": "纠错",
+			"description": "",
+			"collectionId": "b8c612c7-f067-593e-f85f-1e4c7e55e6dd",
+			"responses": []
+		}
+	]
+}
