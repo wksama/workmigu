@@ -1,0 +1,32 @@
+1 数据处理
+一、升级操作。
+1) 把新包放到各个节点目录，升级前停止数据处理Task 和对应的xxl-job定时任务
+2) 停服务，执行pandora_music_new_migration_3.8.0.sql脚本，升级jar包
+3) 重启服务
+4)启动xxl-job定时任务。
+5)更新xxl-job定时任务：
+	a.歌手别名过滤：
+	java -jar -Dspring.profiles.active=xxx -Dserver.port=xxxx pandora-music-task-3.8.*.*.jar compute artistAction -a 2 -sleep 3000
+	a.1单个歌手别名过滤
+	java -jar -Dspring.profiles.active=xxx -Dserver.port=xxxx pandora-music-task-3.8.*.*.jar compute artistAction -a 2 -sleep 3000 -id 歌手id
+	b.歌曲伴奏处理：
+	java -jar -Dspring.profiles.active=xxx -Dserver.port=xxxx pandora-music-task-3.8.*.*.jar compute songAction -a 9 -sleep 3000
+6)新增xxl-job定时任务：
+	a.sam歌曲排序数据处理任务：(每日一次)
+	java -jar -Dspring.profiles.active=xxx -Dserver.port=xxxx pandora-music-task-3.8.*.*.jar autoTop syncSamTop
+7)数据割接任务：
+	Redis数据迁移：
+	java -jar -Dspring.profiles.active=xxx -Dserver.port=xxxx pandora-music-task-3.8.*.*.jar cutdata redisSync
+	付费专辑标识计算：
+	java -jar -Dspring.profiles.active=xxx -Dserver.port=xxxx pandora-music-task-3.8.*.*.jar compute albumAction -at 2
+	java -jar -Dspring.profiles.active=xxx -Dserver.port=xxxx pandora-music-task-3.8.*.*.jar compute albumAction -at 2 -a 5
+	歌曲伴奏处理:
+	java -jar -Dspring.profiles.active=xxx -Dserver.port=xxxx pandora-music-task-3.8.*.*.jar compute songAction -a 9 -sleep 3000
+	歌手别名过滤：
+	java -jar -Dspring.profiles.active=xxx -Dserver.port=xxxx pandora-music-task-3.8.*.*.jar compute artistAction -a 2 -sleep 3000
+	MV热度计算：
+	java -jar -Dspring.profiles.active=xxx -Dserver.port=xxxx pandora-music-task-3.8.*.*.jar compute mvAction -a 4 -sleep 3000
+ jar：
+pandora-music-task.USS_music_V3.8.0.*.jar
+pandora-music-controller.USS_music_V3.8.0.*.jar
+pandora-music-consumer.USS_music_V3.8.0.*.jar
